@@ -81,7 +81,28 @@ export default function(router) {
             },
             subRoutes:{
                 //个人资料
-                'person-info': personInfo
+                'person-info': personInfo,
+                'new-friends': {
+                    component:resolve => {
+                        require(['./views/contact/new-friends.vue'], resolve)
+                    }
+                },
+                'group-chat': {
+                    component:resolve => {
+                        require(['./views/contact/group-chat.vue'], resolve)
+                    }
+                },
+                'tag': {
+                    component:resolve => {
+                        require(['./views/contact/tag.vue'], resolve)
+                    }
+                },
+                'public':{
+                    component:resolve => {
+                        require(['./views/contact/public.vue'], resolve)
+                    
+                    }}
+
             }
         },
         '/find': {

@@ -25,6 +25,8 @@ require('./assets/css/reset.css')
 require('./assets/css/weui.min.css')
 require('./assets/css/iconfont.css')
 require('./assets/css/common.scss')
+require('./assets/css/dialogue-bar.scss')
+require('./assets/css/contact.scss')
 require('./assets/css/base.scss')
 
 export default {

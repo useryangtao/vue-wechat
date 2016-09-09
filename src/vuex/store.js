@@ -8,12 +8,12 @@ const state = {
     back_path:'',
     is_back:false,//是否是下一页
     menu: [],
-    menu_active:{text:"微信",index:0},
+    menu_active:{text:"",index:0},
     wechat_list:[],
     //dialogue
-    dialogue_bar:'dialogueBarPerson',
+    dialogue_bar:'dialogueBar',//dialogueBarPerson dialogueBar
     dialogue_id:'',
-    dialogue_type:''
+    dialogue_type:'' //对话框右侧图标
 }
 
 const mutations = {

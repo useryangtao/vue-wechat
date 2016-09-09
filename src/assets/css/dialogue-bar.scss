@@ -1,0 +1,182 @@
+/*dialogue-bar*/
+
+.component-dialogue-bar {
+    position: relative;
+    height: 100%;
+    padding-left:50px;
+}
+
+
+
+.component-dialogue-bar .dialogue-item {
+    position: absolute;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: .25s all ease;
+    background-color: #fdfdfd;
+}
+.component-dialogue-bar .dialogue-item::before{
+    content: "";
+    position: absolute;
+    width: 200%;
+    left: 0;
+    top: 0;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    -webkit-transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    background-color: #b7b7b7;
+    height: 1px;
+    z-index: 2;
+}
+.component-dialogue-bar .dialogue-item::after {
+    content: "";
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    border-right: 1px solid #b7b7b7;
+    height: 200%;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    z-index: 2;
+}
+.component-dialogue-bar .dialogue-item.transition-dialogue-down {
+    bottom: -50px;
+}
+
+.left-slide-type {
+    float: left;
+    width: 50px;
+    height: 100%;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    color: #7d7e83;
+    position: relative;
+}
+/*person*/
+.component-dialogue-bar-person {
+    overflow: hidden;
+    padding: 5px 0;
+    height: 100%;
+    flex-grow: 1;
+    flex-basis: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    background-color:#ffffff;
+}
+
+.component-dialogue-bar-person::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    left: 0;
+    top: 0;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    -webkit-transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    background-color: #b7b7b7;
+    height: 1px;
+    z-index: 2;
+}
+
+.component-dialogue-bar .component-dialogue-bar-person::before{
+    display: none;
+}
+.component-dialogue-bar-person .iconfont {
+    color: #7d7e83;
+    flex-basis: 40px;
+    width: 40px;
+    padding: 0 3px;
+    font-size: 30px;
+    flex-grow: 0;
+    vertical-align: middle;
+    line-height: 40px;
+    padding: 0 4px;
+}
+
+.chat-way {
+    vertical-align: middle;
+    padding: 4px 0px;
+    height: 100%;
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+.chat-way .chat-say {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 0 10px;
+    width: 200%;
+    height: 200%;
+    color:#565656;
+    border: 1px solid #7d7e83;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    font-size: 30px;
+}
+.chat-way .chat-say_touched{
+    background-color:#c6c7ca;
+}
+.chat-way .two{
+    display: none;
+}
+.chat-way .chat-say_touched .two{
+    display: block;
+}
+.chat-way .chat-say_touched .one{
+    display: none;
+}
+.chat-way .chat-txt {
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 0 10px;
+    width: 200%;
+    height: 200%;
+    border: 1px solid #7d7e83;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    font-size: 30px;
+}
+/*public公众号*/
+
+.component-dialogue-bar-public{
+    height: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.component-dialogue-bar-public li{
+    padding: 0 2px;
+    overflow: hidden;
+    flex-grow: 1;
+    flex-shrink: 0;
+    line-height: 50px;
+    flex-basis: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.component-dialogue-bar-public li .iconfont{
+    font-size: 12px;
+}
+.component-dialogue-bar-public li:not(:last-child)::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: 0 0;
+    transform: scale(.5);
+    height: 200%;
+    border-right: 1px solid #b7b7b7;
+}

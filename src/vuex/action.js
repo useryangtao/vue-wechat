@@ -24,6 +24,7 @@ export const set_dialogue_id = ({dispatch},id)=>{
     dispatch('DIALOGUE_ID',id)
 }
 export const set_dialogue_type = ({dispatch},type)=>{
+    //设置对话框右侧图标
     dispatch('DIALOGUE_TYPE',type)
 }
 

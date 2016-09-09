@@ -1,25 +1,36 @@
 <template>
     <!--对话框-->
-    <div class="_full_router router-dialogue">
+    <div class="_full_router component-chat-dialogue">
         <div class="_full_inner">
             <top-handle
                 :back-path='backPath'
-                :back-text='"微信"'
+                :back-text='"微信(99+)"'
                 :cur-text='topModel.curText'
                 :next-path='topModel.nextPath'
                 :next-icon='topModel.nextIcon'>
                 <p class="_effect"
                 slot='center'
                 :class="animatiion_out?'_effect--50':''">
-                    <span v-text='topModel.curText'></span>
-                    <span class=" iconfont icon-mute" v-show='topModel.isMute'></span>
+                    <span class="top-title__text _ellipsis" v-text='topModel.curText'></span>
+                    <span class="top-title__num" v-text="'(320)'"></span>
+                    <span class="iconfont icon-mute" v-show='topModel.isMute'></span>
                 </p>
             </top-handle>
             <div class="_cover-content _effect" :class='animatiion_out?"_effect--30":""'>
                 <section class="dialogue-section">
-                    <div style="width:200px;height:200px;background-color:#ffffff;"></div>
+                    <div class="dialogue-section-inner">
+                        <div class="dialogue-item dialogue-item--others">
+                            
+                        </div>
+                        <div class="dialogue-item dialogue-item--time">
+                            
+                        </div>
+                        <div class="dialogue-item dialogue-item--self">
+                            
+                        </div>
+                    </div>
                 </section>
-                <footer class="dialogue-footer _line-fine">
+                <footer class="dialogue-footer">
                     <component :is='dialogue_bar'></component>
                 </footer>
             </div>
@@ -96,17 +107,21 @@ export default {
 }
 </script>
 <style scoped>
-.router-dialogue {
-    z-index: 10;
+.component-chat-dialogue {
 }
 
 .dialogue-section {
     height: calc(100% - 50px);
 }
+.dialogue-section-inner{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    overflow: auto;
+}
 
 .dialogue-footer {
     width: 100%;
-    background-color: #f4f4f6;
     position: fixed;
     bottom: 0;
     left: 0;

@@ -46,7 +46,8 @@ import {
     get_menu_wechat_list,
     set_dialogue_bar,
     set_dialogue_id,
-    set_dialogue_type
+    set_dialogue_type,
+    set_menu_active
     } from '../vuex/action.js'
 
 import searchBar from '../components/search-bar.vue'
@@ -59,7 +60,8 @@ export default {
             get_menu_wechat_list,
             set_dialogue_type,
             set_dialogue_id,
-            set_dialogue_bar
+            set_dialogue_bar,
+            set_menu_active
         }
     },
     mixins:[utils],
@@ -106,6 +108,7 @@ export default {
         }
     },
     compiled(){
+        this.set_menu_active(0)
         this.get_menu_wechat_list()
     },
     components: {
@@ -149,10 +152,10 @@ export default {
                     this.touchSwipe = true;
                     self.$router.go({path:"/chat/dialogue"});
                     self.set_dialogue_id(1)
-                    self.set_dialogue_bar('dialogueBar')
+                    // self.set_dialogue_bar('dialogueBar')
+                    self.set_dialogue_bar('dialogueBarPerson')
                     self.set_dialogue_type('group')
-                    // self.set_dialogue_bar('dialogueBarPerson')
-                    //dialogueBar dialogueBarPerson
+                    //dialogueBarPublic dialogueBarPerson
                     // self.dialogue_chat_bar
                 }
             }

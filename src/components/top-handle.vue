@@ -11,13 +11,13 @@ props
     decline
 或者
 slot
-    <div>
-        <p>
-            <span>小明</span>
-            <span class="personNum">420</span>
-        </p>
-        <span class="_right iconfont icon-mute"></span>
-    </div>
+<p class="_effect"
+slot='center'
+:class="animatiion_out?'_effect--50':''">
+    <span class="top-title__text _ellipsis" v-text='topModel.curText'></span>
+    <span class="top-title__num" v-text="'(320)'"></span>
+    <span class="iconfont icon-mute" v-show='topModel.isMute'></span>
+</p>
 
 右侧
 props
@@ -30,14 +30,14 @@ slot
     </div>
 -->
 <div class="_cover-top">
-    <div class="top-back _left" :title='backPath.path'>
-        <div class="iconfont icon-return-arrow"
+    <div class="top-back _left">
+        <div class="_ellipsis iconfont icon-return-arrow"
             v-link="backPath"
-            v-text="backText">返回</div>
+            v-text="backText"></div>
     </div>
-    <div class="top-other _right">
+    <div class="top-other _right" style="">
         <slot name="right">
-            <div v-link="nextPath">
+            <div class="_right" v-link="nextPath">
                 <span class="iconfont" :class="nextIcon"></span>
             </div>
         </slot>
@@ -97,37 +97,4 @@ export default {
 </script>
 <style scoped>
     
-    .top-back .iconfont{
-        font-size: 16px;
-        font-weight: normal;
-    }
-    .top-back .iconfont:before{
-        font-size:20px;
-        vertical-align: middle;
-    }
-    .top-title{
-        position:absolute;
-        z-index: 0;
-        top: 0;
-        left: 50%;
-        text-align: center;
-        font-size:18px;
-        width: calc(100% - 100px);
-    }
-    .top-title > p{
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    .top-title .icon-mute{
-        font-size: 12px;
-        color: #878689;
-        vertical-align: bottom;
-    }
-    .top-other{
-        height: 100%;
-    }
-    .top-other .iconfont{
-        font-size: 20px;
-    }
 </style>

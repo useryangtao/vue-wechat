@@ -1,8 +1,28 @@
 <template>
     <div class="component-dialogue-bar-person">
-        <span class="iconfont icon-dialogue-jianpan" hidden></span>
-        <span class="iconfont icon-dialogue-voice" ></span>
-        <div class="chat-way"><input type="text"></div>
+        <span class="iconfont icon-dialogue-jianpan"
+        v-show="way==='say'"
+        v-touch:tap="switch_way('txt')"
+        ></span>
+        <span class="iconfont icon-dialogue-voice"
+        v-show="way==='txt'"
+        v-touch:tap="switch_way('say')"></span>
+
+        <!--say-->
+        <div class="chat-way"
+            v-show="way==='say'">
+            <div class="chat-say" 
+                :class="!!state_say?'chat-say_touched':''"
+                v-touch:press="switch_way_say(true)"
+                @touchend="switch_way_say(false)">
+                <span class="one">按住 说话</span>
+                <span class="two">松开 结束</span>
+            </div>
+        </div>
+        <!--txt-->
+        <div class="chat-way" v-show="way==='txt'">
+            <input class="chat-txt" type="text">
+        </div>
         <span class="expression iconfont icon-dialogue-smile"></span>
         <span class="more iconfont icon-dialogue-jia"></span>
     </div>
@@ -16,51 +36,20 @@ export default {
     },
     data() {
         return {
+            way:'txt',
+            state_say:false,//'chat-say_touched'
         }
     },
     methods:{
-        
+        switch_way(way){
+            //say,txt
+            console.log(way)
+            this.way = way;
+        },
+        switch_way_say(boo){
+            this.state_say = boo;
+        }
     }
 }
 </script>
-<style scoped>
-    .component-dialogue-bar-person{
-        padding: 5px 0;
-        height: 100%;
-        flex-grow: 1;
-        flex-basis: 200px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .component-dialogue-bar-person .iconfont{
-        color: #7d7e83;
-        flex-basis:40px;
-        width: 40px;
-        padding: 0 3px;
-        font-size: 30px;
-        flex-grow: 0;
-        vertical-align: middle;
-        line-height: 40px;
-        padding: 0 4px;
-    }
-    .chat-way{
-        vertical-align: middle;
-        padding: 4px 0px;
-        height: 100%;
-        flex-grow: 1;
-        flex-basis: 200px;
-    }
-    .chat-way input{
-        border-radius: 6px;
-        overflow: hidden;
-        padding: 0 10px;
-        width: 200%;
-        height: 200%;
-        border: 1px solid #7d7e83;
-        transform: scale(.5);
-        transform-origin: 0 0; 
-        font-size: 30px;
-    }
-    
-</style>
+

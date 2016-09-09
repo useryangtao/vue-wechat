@@ -98,7 +98,7 @@ export default {
 </script>
 <style scoped>
 .component-chat-detail{
-    z-index: 11;
+    z-index: 5;
 }
     .chat-detail-content{
         width: 100%;

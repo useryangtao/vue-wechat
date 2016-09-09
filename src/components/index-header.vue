@@ -3,7 +3,7 @@
     <div class="other">
         <span class="iconfont icon-tips-jia"
         v-show="$route.path==='/chat'"
-        @click="tips_isOpen=!tips_isOpen"></span>
+        v-touch:tap="tap"></span>
         <span class="iconfont icon-tips-add-friend" v-show="$route.path==='/contact'"></span>
         <ul class="tips-menu" :class="tips_isOpen?'tips-open':'tips-close'">
             <li v-for="item in menuArr" v-link="item._link">
@@ -39,6 +39,11 @@ export default {
     ready(){
     },
     methods:{
+        tap(){
+            console.log('tap')
+            console.log(this.tips_isOpen);
+            this.tips_isOpen=!this.tips_isOpen
+        }
 
     }
 }
