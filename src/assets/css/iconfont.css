@@ -1,0 +1,52 @@
+
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.eot?t=1472541941'); /* IE9*/
+  src: url('../fonts/iconfont.eot?t=1472541941#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff?t=1472541941') format('woff'), /* chrome, firefox */
+  url('../fonts/iconfont.ttf?t=1472541941') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg?t=1472541941#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('http://at.alicdn.com/t/font_1473316944_0904915.eot'); /* IE9*/
+  src: url('http://at.alicdn.com/t/font_1473316944_0904915.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('http://at.alicdn.com/t/font_1473316944_0904915.woff') format('woff'), /* chrome、firefox */
+  url('http://at.alicdn.com/t/font_1473316944_0904915.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('http://at.alicdn.com/t/font_1473316944_0904915.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**/
+.icon-tips-jia::before { content: "\e605"; }
+.icon-return-arrow::before { content: "\e60a"; }
+.icon-tips-add-friend::before { content: "\e606"; }
+.icon-chat-set::before { content: "\e60e"; }
+.icon-mute::before { content: "\e604"; }
+.icon-tips-xiaoxi::before { content: "\e607"; }
+.icon-chat-person::before { content: "\e60c"; }
+.icon-more::before { content: "\e60b"; }
+.icon-tips-saoyisao::before { content: "\e608"; }
+.icon-wechat::before { content: "\e600"; }
+.icon-me::before { content: "\e601"; }
+.icon-dialogue-jia::before { content: "\e615"; }
+.icon-tips-fukuan::before { content: "\e609"; }
+.icon-contact::before { content: "\e610"; }
+.icon-find::before { content: "\e603"; }
+.icon-chat-group::before { content: "\e60d"; }
+.icon-chat-detail-add::before { content: "\e616"; }
+
+.icon-dialogue-voice::before { content: "\e60f"; }
+.icon-dialogue-jianpan::before { content: "\e611"; }
+.icon-dialogue-smile::before { content: "\e612"; }
+.icon-dialogue-bar-jianpan::before{ content: "\e602"; }
+.icon-dialogue-bar-menu::before{ content: "\e613"; }
+

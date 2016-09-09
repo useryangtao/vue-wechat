@@ -1,0 +1,225 @@
+$top-background:linear-gradient(to bottom, #303036, #3c3b40);
+
+a,
+button,
+input,
+textarea {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input:focus{
+    outline: none;
+}
+body{
+    -webkit-overflow-scrolling: touch;
+    line-height: 1;
+    line-height: 1.6;
+}
+
+html,
+body,
+#app {
+    font-family:PingFang SC,Hiragino Sans GB,Arial, Microsoft YaHei,Helvetica;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+.clearfix:before{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+._full {
+    height: 100%;
+    /* background-color: #f0eff5; */
+}
+._ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+._left{
+    float: left;
+}
+._right{
+    float: right;
+}
+._scroll {
+    overflow: auto;
+}
+.margin-top-0{
+    margin-top: 0;
+}
+/*1px线*/
+._line-fine:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    left: 0;
+    top: 0;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    -webkit-transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    background-color: #b7b7b7;
+    height: 1px;
+}
+
+/*消息气泡*/
+._news-count{
+    position: absolute;
+    font-style: initial;
+    right: -9px;
+    top: -5px;
+    padding: 0 4px;
+    width: auto;
+    min-width: 18px;
+    height: 18px;
+    line-height: 18px;
+    z-index:2 ;
+    border-radius: 9px;
+    color: #ffffff;
+    text-align: center;
+    font-size:14px;
+    background-color: #f43531;
+}
+.app-footer ._news-count{
+    left: 100%;
+    margin-left: -10px;
+    right: initial;
+}
+._news-dot{
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    width: 10px;
+    height: 10px;
+    z-index:2;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+    background-color: red;
+    background-color: #f43531;
+}
+/*weui*/
+.weui_cells_only::before{
+    left: 15px;
+}
+
+/*cell 箭头*/
+.weui_select_before .weui_cell_hd::before,
+.weui_panel_access .weui_panel_ft::after,
+.weui_cells_access .weui_cell_ft::after{
+    height: 11px;
+    width: 11px;
+}
+
+/*
+    router-view transition="cover"
+    cover开头的 是router-view过渡切换是公用的样式
+    _cover-* 是会被cover 影响的元素
+*/
+/* transitoin */
+.cover-transition {
+    opacity: 1;
+    transition: .35s opacity linear;
+}
+.cover-enter,
+.cover-leave{
+    opacity: .98;
+}
+
+/*initial*/
+/*1*/
+._cover-top{
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 15px 0 10px;
+    background:$top-background;
+    color: #ffffff;
+    transition: .15s all linear;
+    opacity: 1;
+}
+/*2*/
+._cover-top .top-title{
+    transition: .2s all linear;
+    transform: translate3d(-50%,0,0);
+    /* opacity: 1; */
+}
+/*3*/
+._cover-content{
+    transition: .2s all ease-in-out;
+    opacity: 1;
+    transform: translate3d(0%,0,0);
+    height: calc(100% - 45px);
+    position: relative;
+    background-color: #ebebeb;
+}
+
+
+/*enter ,leaver*/
+/*1*/
+.cover-enter ._cover-top,
+.cover-leave ._cover-top{
+    opacity: 0;
+}
+/*2*/
+.cover-enter ._cover-top .top-title,
+.cover-leave ._cover-top .top-title {
+    transform: translate3d(0%,0,0);
+}
+/*3*/
+.cover-enter ._cover-content{
+    transform: translate3d(80%,0,0);
+}
+.cover-leave ._cover-content {
+    transition: .25s all ease;
+    transform: translate3d(100%,0,0);
+}
+
+
+/*
+    router开头的 是router-view最外层的export组件元素
+*/
+/* 保证next router page 能覆盖住current page */
+._full_inner{
+    position: relative;
+    height: 100%;
+    z-index: 1;
+}
+._full_router{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
+
+/* effect30 */
+.app-header ._effect,
+.app-content ._effect,
+.app-footer ._effect{
+    opacity: 1;
+    transition: .2s all linear;
+}
+._effect--30{
+    transform:translate3d(-30%,0,0);
+}
+._effect--50{
+    opacity: 0;
+    transform:translate3d(-50%,0,0);
+}

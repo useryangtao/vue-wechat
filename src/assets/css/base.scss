@@ -1,0 +1,34 @@
+$top-background:linear-gradient(to bottom, #303036, #3c3b40);
+
+.app-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    height: 45px;
+    line-height: 45px;
+    font-size: 19px;
+    background:$top-background;
+    color: #ffffff;
+    text-align: center;
+    // background: rgba(0, 0, 0,.8);
+}
+
+.app-content {
+    padding-top: 45px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.app-footer{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+}
+
+
