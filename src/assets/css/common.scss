@@ -194,7 +194,7 @@ body,
 ._cover-top .top-title {
     transition: .2s all ease;
     transform: translate3d(0%, 0, 0);
-    /* opacity: 1; */
+    opacity: 1; 
 }
 
 
@@ -226,7 +226,8 @@ body,
 
 .cover-enter ._cover-top .top-title,
 .cover-leave ._cover-top .top-title {
-    transform: translate3d(0%, 0, 0);
+    opacity: 0;
+    transform: translate3d(50%, 0, 0);
 }
 
 
@@ -267,7 +268,7 @@ body,
 ._cover-top .top-title > p {
     display: flex;
     justify-content: center;
-    align-item:center;
+    align-items:center;
 }
 ._cover-top .top-title > p .top-title__text{
     text-align: right;

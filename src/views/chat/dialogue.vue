@@ -41,18 +41,17 @@
 </template>
 <script>
 
-import { destroy_path } from '../../vuex/action.js'
-import dialogueBar from '../../components/dialogue-bar.vue'
-import dialogueBarPerson from '../../components/dialogue-bar-person.vue'
+import { dialogue_id,dialogue_type,dialogue_bar } from 'getters'
+import { destroy_path } from 'actions'
+import dialogueBar from 'components/dialogue-bar.vue'
+import dialogueBarPerson from 'components/dialogue-bar-person.vue'
 import topHandle from 'topHandle'
 export default {
     vuex:{
         getters:{
-            dialogue_id:state=>state.dialogue_id,
-            dialogue_type:state=>state.dialogue_type,
-            dialogue_bar:state=>state.dialogue_bar,
-            backPath:state=>state.back_path,
-            is_back:state=>state.is_back
+            dialogue_id,
+            dialogue_type,
+            dialogue_bar
         },
         actions:{
 

@@ -21,7 +21,9 @@ module.exports = {
             'components': path.resolve(__dirname, '../src/components'),
             'utils':path.resolve(__dirname, '../src/utils.js'),
             'topHandle':path.resolve(__dirname,'../src/components/top-handle.vue'),
-            'action':path.resolve(__dirname,'../src/vuex/action')
+            'store':path.resolve(__dirname,'../src/vuex/store'),
+            'getters':path.resolve(__dirname,'../src/vuex/getters'),
+            'actions':path.resolve(__dirname,'../src/vuex/actions')
         }
     },
     resolveLoader: {

@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <dl v-for="item in menu" v-link="item.path" @click="set_menu_active($index)">
+        <dl v-for="item in index_nav" v-link="item.path" @click="set_menu_active($index)">
             <dt class="iconfont" :class="item.iconClass">
                 <i
                 v-if="item.hint.count"
@@ -15,15 +15,16 @@
 </template>
 <script>
 
-import { get_menu,set_menu_active } from '../vuex/action'
+import { index_nav } from '../vuex/getters'
+import { get_index_nav,set_menu_active } from 'actions'
 
 export default {
     vuex:{
         getters:{
-            menu:state => state.menu
+            index_nav
         },
         actions:{
-            get_menu,
+            get_index_nav,
             set_menu_active
         }
     },
@@ -34,7 +35,7 @@ export default {
         }
     },
     created(){
-        this.get_menu()
+        this.get_index_nav()
     },
     methods:{
     }

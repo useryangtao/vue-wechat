@@ -6,8 +6,7 @@ Vue.use(Vuex)
 //状态
 const state = {
     back_path:'',
-    is_back:false,//是否是下一页
-    menu: [],
+    index_nav: [],
     menu_active:{text:"",index:0},
     wechat_list:[],
     //dialogue
@@ -17,11 +16,12 @@ const state = {
 }
 
 const mutations = {
-    ['SET_MENU'](state,menu){
-        state.menu = menu;
+    ['SET_MENU'](state,index_nav){
+        state.index_nav = index_nav;
     },
+    //底部导航激活
     ['SET_MENU_ACTIVE'](state, _index) {
-        state.menu_active = state.menu[_index]
+        state.menu_active = state.index_nav[_index]
     },
     ['SET_MENU_WECHAT_LIST'](state,list){
         state.wechat_list = list

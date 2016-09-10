@@ -7,14 +7,14 @@ import VueTouch from 'vue-touch'
 import zepto from 'webpack-zepto'
 import fastclick from 'fastclick'
 
-import store from './vuex/store'
+import store from 'store'
 import routerMap from './route-config.js'
 import filters from './filters'
 
 // const configPath = '/src/mock/'
 
 // window.configPath = configPath;
-
+// Vue.config.devtools = true;
 
 Vue.use(Vuex)
 Vue.use(VueRouter)

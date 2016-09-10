@@ -19,11 +19,11 @@
 </div>
 </template>
 <script>
+import { menu_active } from 'getters'
 export default {
     vuex:{
         getters:{
-            // menu:state=>state.menu,
-            menu_active:state=>state.menu_active
+           menu_active
         }
     },
     data () {

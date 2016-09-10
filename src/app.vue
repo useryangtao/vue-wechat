@@ -17,17 +17,17 @@
     </footer>
 </template>
 <script>
-import store from './vuex/store'
-import indexHeader from './components/index-header.vue'
-import indexNav from './components/index-nav.vue'
+import store from 'store'
+import indexHeader from 'components/index-header.vue'
+import indexNav from 'components/index-nav.vue'
 
-require('./assets/css/reset.css')
-require('./assets/css/weui.min.css')
-require('./assets/css/iconfont.css')
-require('./assets/css/common.scss')
-require('./assets/css/dialogue-bar.scss')
-require('./assets/css/contact.scss')
-require('./assets/css/base.scss')
+require('assets/css/reset.css')
+require('assets/css/weui.min.css')
+require('assets/css/iconfont.css')
+require('assets/css/common.scss')
+require('assets/css/dialogue-bar.scss')
+require('assets/css/contact.scss')
+require('assets/css/base.scss')
 
 export default {
     replace: false,

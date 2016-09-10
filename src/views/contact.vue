@@ -45,19 +45,12 @@
     <router-view transition="cover" keep-alive></router-view>
 </template>
 <script>
-import { set_menu_active } from 'action'
+
+import { set_menu_active } from 'actions'
 import searchBar from '../components/search-bar.vue'
 export default {
     route:{
-        // activate(transition){
-        //     console.log("通讯录","激活",transition);
-        //     transition.next()
-        // },
-        // deactivate(transition){
-        //     console.log("通讯录","销毁",transition);
-        //     transition.next();
 
-        // }
     },
     vuex:{
         actions:{
@@ -74,6 +67,8 @@ export default {
     },
     created(){
         this.set_menu_active(1)
+        var mock_contact = require('../mock/contact');
+        console.log(mock_contact);
     },
     events:{
         'route-pipe'(_out){

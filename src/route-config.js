@@ -1,4 +1,4 @@
-import store from './vuex/store'
+import store from 'store'
 export default function(router) {
     //个人资料
     const personInfo = {
@@ -71,6 +71,7 @@ export default function(router) {
             }
         },
         '*':{
+            name:'404',
             component:resolve=>{
                 require(['./views/404.vue'],resolve)
             }

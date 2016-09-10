@@ -42,19 +42,22 @@
 </template>
 <script>
 import utils from 'utils'
+
+import { wechat_list } from 'getters'
 import {
     get_menu_wechat_list,
     set_dialogue_bar,
     set_dialogue_id,
     set_dialogue_type,
     set_menu_active
-    } from '../vuex/action.js'
+    } from '../vuex/actions'
 
-import searchBar from '../components/search-bar.vue'
+import searchBar from 'components/search-bar.vue'
+
 export default {
     vuex:{
         getters:{
-            wechat_list:state=>state.wechat_list
+            wechat_list
         },
         actions:{
             get_menu_wechat_list,

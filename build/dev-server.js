@@ -57,9 +57,10 @@ var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsS
 app.use(staticPath, express.static('./static'))
 
 //服务端路由
-app.post('/message', function(request, response) {
-   response.send({code:1,obj:{name:"yangtao",age:40}});
-})
+// app.get('/message', function(request, response) {
+//   console.log('message')
+//   response.send({code:1,obj:{name:"yangtao",age:40}});
+// })
 module.exports = app.listen(port, function (err) {
   if (err) {
     console.log(err)

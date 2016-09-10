@@ -1,41 +1,4 @@
-const _menu = [{
-    index: 0,
-    path: {
-        path: '/chat'
-    },
-    hint: { type: "count", count: 999 }, //count,dot
-    iconClass: 'icon-wechat',
-    text: '微信'
-}, {
-    index: 1,
-    path: {
-        path: '/contact'
-    },
 
-    hint: { type: "count", count: 999 }, //count,dot
-    iconClass: 'icon-contact',
-    text: '通讯录'
-}, {
-    index: 2,
-    path: {
-        path: '/find'
-    },
-    hint: { type: "dot", count: true }, //count,dot
-    iconClass: 'icon-find',
-    text: '发现'
-}, {
-    index: 3,
-    path: {
-        path: '/me'
-    },
-    hint: { type: null, count: 0 }, //count,dot
-    iconClass: 'icon-me',
-    text: '我'
-}]
-const _contact = [{
-    text: "新的朋友",
-    pic: "../assets/images/contact-new-friends.png"
-}]
 /*
 base.type:[friends:好友/group:群/service:服务号/sub:订阅号]
         关于头像右上角提示
@@ -57,7 +20,7 @@ group : http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n7cawhj202q02qglk.jpg
 service : http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n80l8ij202q02qmx2.jpg
 sub : http://ww4.sinaimg.cn/mw690/d0d07035jw1f7f2n8ruarj202q02qdfp.jpg
 */
-const _wechat_list = [
+module.exports = [
   {
     "base": {
       "id": 1,
@@ -274,16 +237,3 @@ const _wechat_list = [
     "subModel": {}
   }
 ]
-
-
-export default {
-    getMenu(cb) {
-            cb(_menu)
-        },
-        getContact(cb) {
-            cb(_contact)
-        },
-        getWechatList(cb) {
-            cb(_wechat_list)
-        }
-}
