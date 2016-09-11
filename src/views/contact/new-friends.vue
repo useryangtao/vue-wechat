@@ -1,30 +1,41 @@
 <template>
-    <div class="_full_router component-new-friends" class="">
-        <div class="_full_inner">            
+    <div class="_full_router component-xxx">
+        <div class="_full_inner">
             <top-handle
-            :back-path="backPath"
-            :back-text="'返回'"
-            :cur-text="'新的朋友'"
-            :class="animatiion_out?'_effect--50':''"></top-handle>
+                :back-text="topModel.backText"
+                :cur-text="topModel.curText"
+                :decline="decline"
+                :next-path="topModel.nextPath"
+                :next-icon="topModel.nextIcon"
+                >
+            </top-handle>
             <div class="_cover-content _effect"
-            :class='animatiion_out?"_effect--30":""'>
-                
+                :class="{'_effect--30':decline}">
+                <div></div>
             </div>
         </div>
-
-        <router-view></router-view>
+        <!-- router -->
+        <router-view  transition="cover"></router-view>
     </div>
 </template>
 <script>
+// import {} from 'getters'
+// import {} from 'actions'
+
 import topHandle from 'topHandle'
+
 export default {
     vuex:{
         getters:{
-            backPath:state=>state.back_path,
+
+        },
+        actions:{
+
         }
     },
     route:{
         activate({from,to,next}) {
+            //do something...
             this.$parent.$emit('route-pipe',true)
             next()
         },
@@ -35,21 +46,33 @@ export default {
     },
     data() {
         return {
-            
+            decline:false,
+            topModel:{
+                backText:'',
+                curText:'返回',
+                nextPath:{path:''},
+                nextIcon:''
+            }
         }
     },
     methods:{
         
     },
     events:{
-        'route-pipe'(_out){
-            console.log('dialogue pipe-chat')
-            this.animatiion_out = _out
+        'route-pipe'(_decline){
+            this.decline = _decline
+            this.$parent.$emit('route-pipe',_decline)
         }
     },
-    components:{
+    created(){
+
+    },
+    ready(){
+
+    },
+    components: {
         topHandle
-    }
+    },
 }
 </script>
 <style scoped>

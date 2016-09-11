@@ -67,7 +67,12 @@ body,
 ._scroll {
     overflow: auto;
 }
-
+._align-left{
+    text-align: left;
+}
+._align-right{
+    text-align: right;
+}
 .margin-top-0 {
     margin-top: 0;
 }
@@ -193,8 +198,8 @@ body,
 
 ._cover-top .top-title {
     transition: .2s all ease;
-    transform: translate3d(0%, 0, 0);
-    opacity: 1; 
+    // transform: translate3d(0%, 0, 0);
+    // opacity: 1; 
 }
 
 
@@ -247,6 +252,7 @@ body,
 
 ._cover-top .top-back {
     max-width: 85px;
+    float:left;
 }
 
 ._cover-top .top-back .iconfont {}
@@ -290,6 +296,7 @@ body,
 ._cover-top .top-other {
     height: 100%;
     width:50px;
+    float:right;
 }
 
 ._cover-top .top-other .iconfont {
@@ -327,18 +334,13 @@ body,
 
 
 /* effect30 */
-
-._effect,
-._effect,
 ._effect {
     opacity: 1;
     transition: .2s all ease;
 }
-
 ._effect--30 {
     transform: translate3d(-30%, 0, 0);
 }
-
 ._effect--50 {
     opacity: 0;
     transform: translate3d(-50%, 0, 0);

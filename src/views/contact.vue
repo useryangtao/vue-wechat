@@ -1,6 +1,6 @@
 <template>
     <div class="_full_inner _effect" 
-        :class="animatiion_out?'_effect--30':''">
+        :class="{'_effect--30':decline}">
 
         <search-bar :search-id='""'></search-bar>
         <div class="weui_cells_contact-head weui_cells weui_cells_access margin-top-0" style="margin-top:-1px;">
@@ -42,7 +42,7 @@
             </a>
         </div>
     </div>
-    <router-view transition="cover" keep-alive></router-view>
+    <router-view transition="cover" ></router-view>
 </template>
 <script>
 
@@ -59,7 +59,7 @@ export default {
     },
     data() {
         return {
-            animatiion_out:false,
+            decline:false,
         }
     },
     methods:{
@@ -71,9 +71,9 @@ export default {
         console.log(mock_contact);
     },
     events:{
-        'route-pipe'(_out){
-            this.animatiion_out = _out
-            this.$parent.$emit('route-pipe',_out)
+        'route-pipe'(_decline){
+            this.decline = _decline
+            this.$parent.$emit('route-pipe',_decline)
         }
     },
     components:{

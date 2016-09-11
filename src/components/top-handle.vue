@@ -2,18 +2,15 @@
 <!--
 左侧
 props
-    backPath
     backText
-
 中间
 props
     curText
     decline
 或者
 slot
-<p class="_effect"
-slot='center'
-:class="animatiion_out?'_effect--50':''">
+<p
+slot='center'>
     <span class="top-title__text _ellipsis" v-text='topModel.curText'></span>
     <span class="top-title__num" v-text="'(320)'"></span>
     <span class="iconfont icon-mute" v-show='topModel.isMute'></span>
@@ -30,30 +27,31 @@ slot
     </div>
 -->
 <div class="_cover-top">
-    <div class="top-back _left">
+    <div class="top-back">
         <div class="_ellipsis iconfont icon-return-arrow"
             v-link="backPath"
             v-text="backText"></div>
     </div>
-    <div class="top-other _right" style="">
+    <div class="top-other" >
         <slot name="right">
-            <div class="_right" v-link="nextPath">
+            <div class="_align-right" v-link="nextPath">
                 <span class="iconfont" :class="nextIcon"></span>
             </div>
         </slot>
     </div>
-    <div class="top-title">
+    <div class="top-title _effect"
+        :class="{'_effect--50':decline}">
         <slot name="center">
-            <p class="_effect" :class="decline?'_effect--50':''">
+            <p>
                 <span v-text='curText'></span>
             </p>
         </slot>
     </div>
-
 </div>
 </template>
 <script>
 
+import { backPath } from 'getters'
 export default {
     props:{
         //返回路径
@@ -84,6 +82,7 @@ export default {
     },
     vuex:{
         getters:{
+            backPath
         }
     },
     data () {

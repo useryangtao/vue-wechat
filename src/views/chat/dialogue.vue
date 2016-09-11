@@ -3,20 +3,23 @@
     <div class="_full_router component-chat-dialogue">
         <div class="_full_inner">
             <top-handle
-                :back-path='backPath'
                 :back-text='"微信(99+)"'
                 :cur-text='topModel.curText'
                 :next-path='topModel.nextPath'
                 :next-icon='topModel.nextIcon'>
                 <p class="_effect"
                 slot='center'
-                :class="animatiion_out?'_effect--50':''">
+                :class="{'_effect--50':decline}"
+                >
                     <span class="top-title__text _ellipsis" v-text='topModel.curText'></span>
-                    <span class="top-title__num" v-text="'(320)'"></span>
+                    <span class="top-title__num" v-text="'(320)'"
+                    v-show=""></span>
                     <span class="iconfont icon-mute" v-show='topModel.isMute'></span>
                 </p>
             </top-handle>
-            <div class="_cover-content _effect" :class='animatiion_out?"_effect--30":""'>
+            <div class="_cover-content _effect" 
+            :class="{'_effect--30':decline}"
+            >
                 <section class="dialogue-section">
                     <div class="dialogue-section-inner">
                         <div class="dialogue-item dialogue-item--others">
@@ -43,9 +46,9 @@
 
 import { dialogue_id,dialogue_type,dialogue_bar } from 'getters'
 import { destroy_path } from 'actions'
+import topHandle from 'topHandle'
 import dialogueBar from 'components/dialogue-bar.vue'
 import dialogueBarPerson from 'components/dialogue-bar-person.vue'
-import topHandle from 'topHandle'
 export default {
     vuex:{
         getters:{
@@ -69,11 +72,7 @@ export default {
     },
     data() {
         return {
-            isActive:false,
-            backPath: {
-                path: '/chat'
-            },
-            animatiion_out: false,
+            decline: false,
             topModel: {
                 curText: "小明",
                 isMute: true,
@@ -90,9 +89,8 @@ export default {
     },
     methods: {},
     events:{
-        'route-pipe'(_out){
-            console.log('dialogue pipe-chat')
-            this.animatiion_out = _out
+        'route-pipe'(_decline){
+            this.decline = _decline
         }
 
     },

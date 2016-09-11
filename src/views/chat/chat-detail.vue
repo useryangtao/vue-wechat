@@ -2,13 +2,11 @@
     <div class="_full_router component-chat-detail">
         <div class="_full_inner">
             <top-handle
-                :back-path='backPath'
                 :back-text='"返回"'
-                :next-path="topModel.nextPath"
                 >
                 <div slot="center"
                 class="_effect"
-                :class="animatiion_out?'_effect--50':''">
+                :class="{'_effect--50':decline}">
                     <p>
                         <span v-text="topModel.curText"></span>
                         <span class="personNum">420</span>
@@ -16,11 +14,11 @@
                 </div>
             </top-handle>
             <div class="_cover-content _effect"
-                :class="animatiion_out?'_effect--30':''">
+                :class="{'_effect--30':decline}">
                 <div v-link="{path:'chat-info',replace:true}">chat-info</div>
                 <div class="chat-detail-content">
                     <ul class="chat-detail-entry-collect">
-                        <li v-for="i in 8">
+                        <li v-for="i in chat_member">
                             <div class="pic" style="background-image:url(http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg)">
                             </div>
                             <p class="username _ellipsis">杨涛yangtao</p>
@@ -54,16 +52,17 @@
 <script>
 import utils from 'utils'
 import topHandle from 'topHandle'
+import {chat_member} from 'getters'    
 export default {
     mixins:[utils],
     vuex:{
         getters:{
-            backPath:state=>state.back_path,
-            is_next_page:state=>state.is_next_page
+            chat_member
         }
     },
     route:{
         activate({from,to,next}) {
+            console.log(this.chat_member)
             this.$parent.$emit('route-pipe',true)
             next()
         },
@@ -74,21 +73,18 @@ export default {
     },
     data() {
         return {
-            animatiion_out:false,
-            curPath:'',
+            decline:false,
             topModel:{
                 backText:'',
                 curText:'',
-                nextPath:{poth:''}
+                nextPath:{poth:''},
+                nextIcon:''
             }
         }
     },
-    ready(){
-        console.log(this.animatiion_out)
-    },
     events:{
-        'route-pipe'(_out){
-            this.animatiion_out = _out
+        'route-pipe'(_decline){
+            this.decline = _decline
         }
     },
     components:{

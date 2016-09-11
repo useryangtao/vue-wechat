@@ -1,7 +1,7 @@
 <template>
     <header class="app-header">
         <div class="_effect"
-            :class="animatiion_out?'_effect--50':''">
+            :class="{'_effect--50':decline}">
             <index-header></index-header>
         </div>
     </header>
@@ -11,7 +11,8 @@
     </section>
     <footer class="app-footer _line-fine">
         <div class="_effect "
-            :class="animatiion_out?'_effect--50':''">
+            :class="{'_effect--50':decline}"
+            >
             <index-nav></index-nav>
         </div>
     </footer>
@@ -34,12 +35,12 @@ export default {
     store,
     data() {
         return {
-            animatiion_out: false
+            decline: false
         }
     },
     events:{
-        'route-pipe'(_out){
-            this.animatiion_out = _out
+        'route-pipe'(_decline){
+            this.decline = _decline
         }
     },
     components: {

@@ -2,13 +2,11 @@
     <div class="_full_router component-chat-detail">
         <div class="_full_inner">
             <top-handle
-                :back-path='backPath'
                 :back-text='"返回"'
                 :next-path="topModel.nextPath"
+                :next-icon="topModel.nextIcon"
                 >
-                <div slot="center"
-                class="_effect"
-                :class="animatiion_out?'_effect--50':''">
+                <div slot="center">
                     <p>
                         <span v-text="topModel.curText"></span>
                         <span class="personNum">420</span>
@@ -16,8 +14,7 @@
                 </div>
             </top-handle>
             <div class="_cover-content _effect"
-                :class="animatiion_out?'_effect--30':''">
-                <div v-link="{path:'chat-detail',replace:true}">chat-detail</div>
+                :class="{'_effect--30':decline}">
                 <div class="chat-detail-content">
                     <ul class="chat-detail-entry-collect">
                         <li v-for="i in 8">
@@ -53,14 +50,18 @@
 </template>
 <script>
 import utils from 'utils'
+// import {  } from 'getters'
+// import {  } from 'actions'
 import topHandle from 'topHandle'
+
+
 export default {
     mixins:[utils],
     vuex:{
         getters:{
-            backPath:state=>state.back_path,
-            is_next_page:state=>state.is_next_page
-        }
+            
+        },
+        actions:{}
     },
     route:{
         activate({from,to,next}) {
@@ -74,21 +75,20 @@ export default {
     },
     data() {
         return {
-            animatiion_out:false,
-            curPath:'',
+            decline:false,
             topModel:{
                 backText:'',
                 curText:'',
-                nextPath:{poth:''}
+                nextPath:{poth:''},
+                nextIcon:''
             }
         }
     },
     ready(){
-        console.log(this.animatiion_out)
     },
     events:{
-        'route-pipe'(_out){
-            this.animatiion_out = _out
+        'route-pipe'(_decline){
+            this.decline = _decline
         }
     },
     components:{

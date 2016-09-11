@@ -1,56 +1,78 @@
 <template>
-    <div class="_full_router person-info">
+    <div class="_full_router component-xxx">
         <div class="_full_inner">
-            <div class="_cover-top" :title="backPath">
-                <top-handle
-                    :back-path='backPath'
-                    :back-text='topModel.backText'
-                    :cur-text='"详细资料"'
-                    :next-path='topModel.nextPath'
-                    :next-icon='topModel.nextIcon'
-                    >
-                </top-handle>
-            </div>
-            <div class="_cover-content">
-                123
+            <top-handle
+                :back-text="topModel.backText"
+                :cur-text="topModel.curText"
+                :decline="decline"
+                :next-path="topModel.nextPath"
+                :next-icon="topModel.nextIcon"
+                >
+            </top-handle>
+            <div class="_cover-content _effect"
+                :class="{'_effect--30':decline}">
+                <div>详细资料</div>
             </div>
         </div>
-        <router-view transition="cover"></router-view>
+        <!-- router -->
+        <router-view  transition="cover"></router-view>
     </div>
 </template>
 <script>
+// import {} from 'getters'
+
 import topHandle from 'topHandle'
 export default {
-    router:{
-        activate({from,to,next}){
-            // console.log("chat详情","激活",transition);
-            //this.topModel.backPath.path = transition.from.path;
-            console.log('person-info',from)
-            next()
-        },
-    },
     vuex:{
         getters:{
-            backPath:state=>state.back_path
+
+        },
+        action:{
+
+        }
+    },
+    route:{
+        activate({from,to,next}) {
+            //do something...
+            this.$parent.$emit('route-pipe',true)
+            next()
+        },
+        deactivate({from,to,next}){
+            this.$parent.$emit('route-pipe',false)
+            next()
         }
     },
     data() {
         return {
+            decline:false,
             topModel:{
-                backText:'聊天详情'
+                backText:'',
+                curText:'详细资料',
+                nextPath:{poth:''},
+                nextIcon:''
             }
         }
     },
     methods:{
         
     },
-    components:{
+    events:{
+        'route-pipe'(_decline){
+            this.decline = _decline
+            this.$parent.$emit('route-pipe',_decline)
+        }
+    },
+    created(){
+
+    },
+    ready(){
+
+    },
+    components: {
         topHandle
     },
 }
 </script>
 <style scoped>
-    .person-info{
-        z-index: 10;
-    }
+    
 </style>

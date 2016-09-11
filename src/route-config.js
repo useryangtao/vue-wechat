@@ -129,8 +129,4 @@ export default function(router) {
         store.dispatch('BACK_PATH',backPath)
     })
 
-    // router.afterEach(function (transition) {
-    //   console.log("after",transition)
-    //   // transition.next()
-    // })
 }
