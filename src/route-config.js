@@ -70,12 +70,12 @@ export default function(router) {
                 'dialogue': dialogue
             }
         },
-        '*':{
-            name:'404',
-            component:resolve=>{
-                require(['./views/404.vue'],resolve)
-            }
-        },
+        // '*':{
+        //     name:'404',
+        //     component:resolve=>{
+        //         require(['./views/404.vue'],resolve)
+        //     }
+        // },
         '/contact': {
             component: resolve => {
                 require(['./views/contact.vue'], resolve)

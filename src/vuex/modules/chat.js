@@ -1,47 +1,62 @@
-import { SET_MENU_WECHAT_LIST, DIALOGUE_BAR, DIALOGUE_ID, 
-    DIALOGUE_TYPE,
-    DIALOGUE,
-    CHAT_MEMBER,
-    CHAT_CONFIG } from '../mutation-types'
+import {
+    SET_MENU_WECHAT_LIST,
+    CHAT
+} from '../mutation-types'
 
 let state = {
-    wechat_list: [],
+    wechat_list: [{}],
+    //base
+    chat_base:{
+        "id": 1,
+        "name": "",
+        "wxid": "",
+        "qq": "",
+        "email": "",
+        "type": "friends",
+        "iconSrc": "",
+        "qrCode": "",
+        "signature": ""
+    },
     //dialogue
-    dialogue_bar: 'dialogueBar', //dialogueBarPerson dialogueBar
-    dialogue_id: '',
-    dialogue_type: '', //对话框右侧图标
+    dialogue_type: 'group',
     //聊天内容
-    dialogue_content:[],
+    dialogue:[],
+    //聊天bar
+    dialogue_bar:{},
     //聊天人员
     chat_member:[],
     //聊天配置
     chat_config:{
-
+        "chatBackground": null, //背景
+        "groupNotice": "", //群公告
+        "isStick": false, //置顶
+        "newsMute": true, //消息免打扰
+        "contactsSave": false,
+        "showGroupNickname": true, //显示群聊天昵称
     }
 }
 const mutations = {
     [SET_MENU_WECHAT_LIST](state, list) {
         state.wechat_list = list
     },
-    [DIALOGUE_BAR](state, componentName) {
-        state.dialogue_bar = componentName;
-    },
-    [DIALOGUE_ID](state, id) {
-        state.dialogue_id = id;
-    },
-    [DIALOGUE_TYPE](state, type) {
-        state.dialogue_type = type;
-    },
-    [DIALOGUE](state,obj){
-        state.dialogue_content = obj;
-    },
-    [CHAT_MEMBER](state,arr){
-        state.chat_member = arr;
-    },
-    [CHAT_CONFIG](state,obj){
-        state.chat_config = obj;
+    [CHAT](state, {
+            base,
+            // chatBaseModel,
+            chatDialogueModel,
+            chatDialogueBarModel,
+            chatMemberModel,
+            chatConfigModel
+        }) {
+            console.log(base)
+            state.dialogue_type = base.type;
+            state.chat_base = base;
+            state.dialogue = chatDialogueModel
+            state.dialogue_bar = chatDialogueBarModel;
+            state.chat_member = chatMemberModel;
+            state.chat_config = chatConfigModel;
 
-    }
+
+    },
 
 }
 

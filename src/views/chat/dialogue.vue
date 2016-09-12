@@ -3,7 +3,7 @@
     <div class="_full_router component-chat-dialogue">
         <div class="_full_inner">
             <top-handle
-                :back-text='"微信(99+)"'
+                :back-text='"微信"'
                 :cur-text='topModel.curText'
                 :next-path='topModel.nextPath'
                 :next-icon='topModel.nextIcon'>
@@ -12,8 +12,8 @@
                 :class="{'_effect--50':decline}"
                 >
                     <span class="top-title__text _ellipsis" v-text='topModel.curText'></span>
-                    <span class="top-title__num" v-text="'(320)'"
-                    v-show=""></span>
+                    <span class="top-title__num" v-text="'('+chat_member.length+')'"
+                    v-show="dialogue_type==='group'"></span>
                     <span class="iconfont icon-mute" v-show='topModel.isMute'></span>
                 </p>
             </top-handle>
@@ -34,7 +34,7 @@
                     </div>
                 </section>
                 <footer class="dialogue-footer">
-                    <component :is='dialogue_bar'></component>
+                    <component :is='dialogue_bar_type'></component>
                 </footer>
             </div>
             </div>
@@ -44,17 +44,14 @@
 </template>
 <script>
 
-import { dialogue_id,dialogue_type,dialogue_bar } from 'getters'
-import { destroy_path } from 'actions'
+import { chat_base,dialogue_type,dialogue,dialogue_bar,chat_member,chat_config } from 'getters'
 import topHandle from 'topHandle'
 import dialogueBar from 'components/dialogue-bar.vue'
 import dialogueBarPerson from 'components/dialogue-bar-person.vue'
 export default {
     vuex:{
         getters:{
-            dialogue_id,
-            dialogue_type,
-            dialogue_bar
+            chat_base,dialogue_type,dialogue,dialogue_bar,chat_member,chat_config
         },
         actions:{
 
@@ -62,6 +59,17 @@ export default {
     },
     route: {
         activate({from,to,next}) {
+            //icon
+            var cls = this.dialogue_type ==='group'?'group':'person'
+            this.topModel.nextIcon = 'icon-chat-'+ cls
+            this.topModel.curText = this.chat_base.name;
+            //bar
+            this.dialogue_bar_type = this.dialogue_bar.menu.length>0?'dialogueBar':'dialogueBarPerson';
+            this.topModel.isMute = this.chat_config.newsMute 
+            //nextPath
+            let nextLink = this.dialogue_type ==='group'?'chat-detail':'chat-info'
+            
+            
             this.$parent.$emit('route-pipe',true)
             next()
         },
@@ -72,20 +80,21 @@ export default {
     },
     data() {
         return {
+            dialogue_bar_type:'dialogueBarPerson',//dialogueBarPerson dialogueBar
             decline: false,
             topModel: {
-                curText: "小明",
+                curText: "",
                 isMute: true,
                 nextPath: {
-                    path: 'chat-detail',
-                    append: true
+                    path: '/chat/dialogue/chat-info'
                 },
                 nextIcon: "icon-chat-person"
             }
         }
     },
     create(){
-        this.topModel.nextIcon = 'icon-chat-'+this.dialogue_type
+        
+
     },
     methods: {},
     events:{

@@ -13,25 +13,11 @@ export const get_menu_wechat_list = ({ dispatch }) => {
     dispatch('SET_MENU_WECHAT_LIST', list)
 }
 
-export const set_dialogue_bar = ({ dispatch }, componentName) => {
-    dispatch('DIALOGUE_BAR', componentName)
+export const set_chat = ({ dispatch }, model) => {
+    console.log(model);
+    dispatch('CHAT', model)
 }
-export const set_dialogue_id = ({ dispatch }, id) => {
-    dispatch('DIALOGUE_ID', id)
-}
-export const set_dialogue_type = ({ dispatch }, type) => {
-    //设置对话框右侧图标
-    dispatch('DIALOGUE_TYPE', type)
-}
-export const set_dialogue = ({ dispatch }, obj) => {
-    dispatch('DIALOGUE', obj)
-}
-export const set_chat_member = ({ dispatch }, arr) => {
-    dispatch('CHAT_MEMBER', arr)
-}
-export const set_chat_config = ({ dispatch }, obj) => {
-    dispatch('CHAT_CONFIG'.obj)
-}
+
 
 
 

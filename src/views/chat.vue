@@ -1,15 +1,18 @@
 <template>
     <div class="_full_inner _scroll _effect component-chat"
         :class="{'_effect--30':decline}">
-        <search-bar :search-id='"abc"'></search-bar>
+        <search-bar></search-bar>
         <ul class="wechat-list">
-            <li class="item _line-fine" v-for="item in wechat_list">
+            <li class="item _line-fine" v-for="item in menu_list">
                 <div class="info"
                 :class="{
                     'current':currentIndex==$index,
                     'active':activeIndex==$index
                     }"
-                v-touch:swipeleft="item_eLeft($event,$index)"
+                @touchstart="info_touchstart($index)"
+                data-touchend="info_touchend"
+                v-touch:tap="info_tap($index)"
+                v-touch:swipeleft="info_swipeleft($index)"
                 v-touch-options:swipe="{ direction: 'horizontal' }">
 
                     <div class="ico-box">
@@ -49,12 +52,7 @@ import { wechat_list } from 'getters'
 import {
     get_menu_wechat_list,
     set_menu_active,
-    set_dialogue_id,
-    set_dialogue_type,
-    set_dialogue_bar,
-    set_dialogue,
-    set_chat_member,
-    set_chat_config
+    set_chat,
     } from '../vuex/actions'
 
 import searchBar from 'components/search-bar.vue'
@@ -67,17 +65,17 @@ export default {
         actions:{
             get_menu_wechat_list,
             set_menu_active,
-            set_dialogue_id,
-            set_dialogue_type,
-            set_dialogue_bar,
-            set_dialogue,
-            set_chat_member,
-            set_chat_config
+            set_chat
         }
     },
     mixins:[utils],
     route:{
         activate({from,to,next}) {
+            var menuArr = this.wechat_list;
+            if(menuArr[0].base !=='undefined'){
+                menuArr = require('mock/chat')
+            }
+            this.menu_list = menuArr;
             this.set_menu_active(0);
             this.get_menu_wechat_list()
             next()
@@ -85,10 +83,11 @@ export default {
     },
     data() {
         return {
+            menu_list:[],
             decline: false,
             currentIndex:-1,//列表item处在左划状态
             activeIndex:-1,//列表item处在点击状态
-            touchSwipe:false,//验证是否处于左划状态
+            isTouchSwipe:false,//验证是否处于左划状态
             touchInvalid:false//为true的时候touch无效,(touchmove,touchcancel的时候为true)
         }
     },
@@ -99,19 +98,43 @@ export default {
         }
     },
     methods: {
-        item_eLeft: function(e,_index) {
-            $(".item .info").removeClass('active')
+        info_touchstart(_index){
+            this.currentIndex = -1
+            this.touchInvalid = false
+            if(!this.isTouchSwipe){
+                this.activeIndex = _index;
+            }
+        },
+        info_tap(){
+            console.log("tap")
+            var index = this.activeIndex;
+            if(index>=0){
+                this.activeIndex = -1;
+                this.set_chat(this.wechat_list[index])
+                this.$router.go({path:"/chat/dialogue"})
+            }
+            this.isTouchSwipe = false;
+        },
+        info_touchend(){
+            this.activeIndex = -1;
+            console.log("touchend")
+        },
+        info_swipeleft: function(_index) {
+            console.log('swipeleft')
+            this.activeIndex = -1;
             event.stopPropagation()
-            if(!this.touchSwipe){
-                this.touchSwipe = true
+            if(!this.isTouchSwipe){
+                this.isTouchSwipe = true
                 this.currentIndex = _index
             }else{
-                this.touchSwipe = false
+                this.isTouchSwipe = false
             }
+
         }
     },
     filters:{
         f_news:function(obj,attr){
+            var obj = obj || {};
             let newsClass = obj.newsMute?'_news-dot':'_news-count'
             let newsText = !obj.newsMute?obj.newsUnreadCount:''
             let newsShow = (obj.newsUnreadCount>0)
@@ -127,68 +150,7 @@ export default {
         searchBar
     },
     ready(){
-        console.log(this.wechat_list);
-        let self = this
-        /*
-        手势:touchend  之前没有 touchmove,touchmove 的时候 router.go
-        手势:swipeLeft .current
-        状态:已左划 的时候载 执行左划或者touch(start,end)事件都不生效只会恢复默认
-        状态:touchstart,但touchend不在当前元素会不进行跳转
 
-        缺点:不好的交互,多手指touchstart会造成不好的交互
-
-        */
-        $(".wechat-list").on("touchstart",".item .info",function(){
-            var index = $(this).index();
-                self.currentIndex = -1
-                self.touchInvalid = false
-                if($(".tips-menu").hasClass('tips-open')){
-                    self.touchSwipe = true
-                    $(".tips-menu").removeClass('tips-open')
-                } 
-                if(!self.touchSwipe){
-                    self.activeIndex = index;
-                    // $(this).addClass('active')
-                }
-        })
-        $(".wechat-list").on("touchmove",".item .info",function(){
-            self.touchInvalid = true
-        })
-        $(".wechat-list").on("touchcancel",".item .info",function(){
-            // $(this).removeClass('active')
-            self.activeIndex = -1;
-            self.touchInvalid = true
-        })
-        $(".wechat-list").on("touchend",".item .info",function(){
-            // $(this).removeClass('active')
-            self.activeIndex = -1;
-            if(!!self.touchSwipe){
-                self.touchSwipe = false
-            }else{
-                if(!self.touchInvalid){
-                    this.touchSwipe = true;
-                    var index = $(this).index();
-                    var obj = self.wechat_list[index];
-                    var id = self.wechat_list[index].base.id;
-                    
-                    self.set_dialogue_id(id)
-                    // self.set_dialogue_bar('dialogueBar')
-                    self.set_dialogue_bar('dialogueBarPerson')
-                    self.set_dialogue_type(obj.base.type)
-                    self.set_dialogue(obj.chatDialogueModel)
-                    console.log(obj.chatMemberModel)
-                    self.set_chat_member(obj.chatMemberModel)
-                    if(obj.base.type==='friends'){
-                        self.set_chat_config(obj.chatConfigPersonModel)
-                    }else if(obj.base.type==='group'){
-                        self.set_chat_config(obj.chatConfigGroupModel)
-                    }
-
-                    self.$router.go({path:"/chat/dialogue"})
-
-                }
-            }
-        })
     }
 }
 

@@ -23,7 +23,8 @@ module.exports = {
             'topHandle':path.resolve(__dirname,'../src/components/top-handle.vue'),
             'store':path.resolve(__dirname,'../src/vuex/store'),
             'getters':path.resolve(__dirname,'../src/vuex/getters'),
-            'actions':path.resolve(__dirname,'../src/vuex/actions')
+            'actions':path.resolve(__dirname,'../src/vuex/actions'),
+            'mock':path.resolve(__dirname,'../src/mock'),
         }
     },
     resolveLoader: {

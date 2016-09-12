@@ -9,7 +9,7 @@
                 <div slot="center">
                     <p>
                         <span v-text="topModel.curText"></span>
-                        <span class="personNum">420</span>
+                        <span class="personNum" v-text="chat_member.length"></span>
                     </p>
                 </div>
             </top-handle>
@@ -17,10 +17,11 @@
                 :class="{'_effect--30':decline}">
                 <div class="chat-detail-content">
                     <ul class="chat-detail-entry-collect">
-                        <li v-for="i in 8">
-                            <div class="pic" style="background-image:url(http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg)">
+                        <li v-for="item in chat_member"
+                        v-touch:tap="go_Info(item.id)">
+                            <div class="pic" :style="{backgroundImage:'url('+item.iconSrc+')'}">
                             </div>
-                            <p class="username _ellipsis">杨涛yangtao</p>
+                            <p class="username _ellipsis" v-text="item.name">杨涛yangtao</p>
                         </li>
                         <li>
                             <div class="pic">
@@ -50,7 +51,7 @@
 </template>
 <script>
 import utils from 'utils'
-// import {  } from 'getters'
+import { chat_member } from 'getters'
 // import {  } from 'actions'
 import topHandle from 'topHandle'
 
@@ -59,7 +60,7 @@ export default {
     mixins:[utils],
     vuex:{
         getters:{
-            
+            chat_member
         },
         actions:{}
     },
@@ -78,8 +79,8 @@ export default {
             decline:false,
             topModel:{
                 backText:'',
-                curText:'',
-                nextPath:{poth:''},
+                curText:'聊天信息',
+                nextPath:{path:''},
                 nextIcon:''
             }
         }
@@ -89,6 +90,11 @@ export default {
     events:{
         'route-pipe'(_decline){
             this.decline = _decline
+        }
+    },
+    methods:{
+        go_Info(){
+            this.$router.go({path:'person-info',append:true})
         }
     },
     components:{

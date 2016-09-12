@@ -10,15 +10,35 @@ var list = [{
         "qrCode": "",
         "signature": "个性签名"
     },
+    //对话列表基本项
     "chatBaseModel": {
         "newsUnreadCount": 1,
         "endTimeStr": 1472632586443,
         "endChatAuth": "杨涛",
         "endChatTxt": "晚上打球",
     },
+    //对话框底部菜单
+    "chatDialogueBarModel":{
+        menu:[{
+            title:'',
+            link:'',
+            subMenu:[{
+                title:'',
+                link:''
+            },{
+                title:'',
+                link:''
+            }]
+        }]
+    },
     "chatDialogueModel": [],
-    "chatMemberModel": [{},{},{},{}],
-    "chatConfigGroupModel": {
+    "chatMemberModel": [
+    {"id": 1,iconSrc:"http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",name:"yangtao01"},
+    {"id": 1,iconSrc:"http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",name:"yangtao01"},
+    {"id": 1,iconSrc:"http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",name:"yangtao01"},
+    {"id": 1,iconSrc:"http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",name:"yangtao01"},
+    {"id": 1,iconSrc:"http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",name:"yangtao01"}],
+    "chatConfigModel": {
         "chatBackground": null, //背景
         "groupNotice": "", //群公告
         "isStick": false, //置顶
@@ -44,9 +64,28 @@ var list = [{
         "endChatAuth": "杨涛",
         "endChatTxt": "晚上打球",
     },
+    //对话框底部菜单
+    "chatDialogueBarModel":{
+        menu:[{
+            title:'',
+            link:'',
+            subMenu:[{
+                title:'',
+                link:''
+            },{
+                title:'',
+                link:''
+            }]
+        }]
+    },
     "chatDialogueModel": [],
-    "chatMemberModel": [{},{},{},{}],
-    "chatConfigPersonModel": {
+    "chatMemberModel": [
+    {"id": 1,iconSrc:"http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",name:"yangtao01"},
+    {"id": 1,iconSrc:"http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",name:"yangtao01"},
+    {"id": 1,iconSrc:"http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",name:"yangtao01"},
+    {"id": 1,iconSrc:"http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",name:"yangtao01"},
+    {"id": 1,iconSrc:"http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",name:"yangtao01"}],
+    "chatConfigModel": {
         "isStick": false,//置顶
         "newsMute":true,//消息免打扰
         "starFriends":false,//标星
