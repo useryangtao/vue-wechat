@@ -4,7 +4,32 @@ import {
 } from '../mutation-types'
 
 let state = {
-    wechat_list: [{}],
+    wechat_list: [{
+    "base": {
+        "id": 0,
+        "name": "",
+        "wxid": "",
+        "qq": "",
+        "email": "",
+        "type": "firends",
+        "iconSrc": "",
+        "qrCode": "",
+        "signature": ""
+    },
+    "chatBaseModel": {
+        "newsUnreadCount":null ,
+        "endTimeStr":null ,
+        "endChatAuth": "",
+        "endChatTxt": "",
+    },
+    "chatConfigModel":{
+        "chatBackground": null, //背景
+        "groupNotice": null, //群公告
+        "isStick": null, //置顶
+        "newsMute": null, //消息免打扰
+        "contactsSave": null,
+        "showGroupNickname": null //显示群聊天昵称
+    }}],
     //base
     chat_base:{
         "id": 1,

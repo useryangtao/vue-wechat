@@ -16,6 +16,9 @@
             <index-nav></index-nav>
         </div>
     </footer>
+    <section class="welcome"
+    v-show="welcome" 
+    transition="welcome">欢迎界面</section>
 </template>
 <script>
 import store from 'store'
@@ -33,10 +36,26 @@ require('assets/css/base.scss')
 export default {
     replace: false,
     store,
+    route:{
+        activate({from,to,next}) {
+
+            next()
+        }
+    },
     data() {
         return {
+            welcome:false,
             decline: false
         }
+    },
+    ready(){
+        if(this.$route.matched.length===1){
+            this.welcome = true;
+        }
+        setTimeout(()=>{
+            // this.$router.go({path:'/chat'})
+            this.welcome = false;
+        },3000)
     },
     events:{
         'route-pipe'(_decline){
@@ -48,6 +67,20 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
+.welcome{
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: .25s all linear;
+    background: url(./assets/images/launchimage.png) no-repeat center center;
+    background-size: cover;
+}
+.welcome-leave {
+    opacity: 0;
+}
 
 </style>

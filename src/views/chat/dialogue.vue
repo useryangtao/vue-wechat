@@ -62,9 +62,9 @@ export default {
             //icon
             var cls = this.dialogue_type ==='group'?'group':'person'
             this.topModel.nextIcon = 'icon-chat-'+ cls
-            this.topModel.curText = this.chat_base.name;
+            this.topModel.curText = this.chat_base.name
             //bar
-            this.dialogue_bar_type = this.dialogue_bar.menu.length>0?'dialogueBar':'dialogueBarPerson';
+            this.dialogue_bar_type = this.dialogue_bar.menu.length>0?'dialogueBar':'dialogueBarPerson'
             this.topModel.isMute = this.chat_config.newsMute 
             //nextPath
             let nextLink = this.dialogue_type ==='group'?'chat-detail':'chat-info'

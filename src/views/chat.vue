@@ -3,7 +3,7 @@
         :class="{'_effect--30':decline}">
         <search-bar></search-bar>
         <ul class="wechat-list">
-            <li class="item _line-fine" v-for="item in menu_list">
+            <li class="item _line-fine" v-for="item in wechat_list">
                 <div class="info"
                 :class="{
                     'current':currentIndex==$index,
@@ -71,19 +71,15 @@ export default {
     mixins:[utils],
     route:{
         activate({from,to,next}) {
-            var menuArr = this.wechat_list;
-            if(menuArr[0].base !=='undefined'){
-                menuArr = require('mock/chat')
-            }
-            this.menu_list = menuArr;
-            this.set_menu_active(0);
+            console.log(this.wechat_list)   
+
+            this.set_menu_active(0)
             this.get_menu_wechat_list()
             next()
         }
     },
     data() {
         return {
-            menu_list:[],
             decline: false,
             currentIndex:-1,//列表item处在左划状态
             activeIndex:-1,//列表item处在点击状态
@@ -102,26 +98,26 @@ export default {
             this.currentIndex = -1
             this.touchInvalid = false
             if(!this.isTouchSwipe){
-                this.activeIndex = _index;
+                this.activeIndex = _index
             }
         },
         info_tap(){
             console.log("tap")
-            var index = this.activeIndex;
+            var index = this.activeIndex
             if(index>=0){
-                this.activeIndex = -1;
+                this.activeIndex = -1
                 this.set_chat(this.wechat_list[index])
                 this.$router.go({path:"/chat/dialogue"})
             }
-            this.isTouchSwipe = false;
+            this.isTouchSwipe = false
         },
         info_touchend(){
-            this.activeIndex = -1;
+            this.activeIndex = -1
             console.log("touchend")
         },
         info_swipeleft: function(_index) {
             console.log('swipeleft')
-            this.activeIndex = -1;
+            this.activeIndex = -1
             event.stopPropagation()
             if(!this.isTouchSwipe){
                 this.isTouchSwipe = true
@@ -134,7 +130,7 @@ export default {
     },
     filters:{
         f_news:function(obj,attr){
-            var obj = obj || {};
+            var obj = obj || {}
             let newsClass = obj.newsMute?'_news-dot':'_news-count'
             let newsText = !obj.newsMute?obj.newsUnreadCount:''
             let newsShow = (obj.newsUnreadCount>0)
