@@ -18,7 +18,7 @@
     </footer>
     <section class="welcome"
     v-show="welcome" 
-    transition="welcome">欢迎界面</section>
+    transition="welcome"></section>
 </template>
 <script>
 import store from 'store'
