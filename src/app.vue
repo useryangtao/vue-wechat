@@ -53,9 +53,8 @@ export default {
             this.welcome = true;
         }
         setTimeout(()=>{
-            // this.$router.go({path:'/chat'})
             this.welcome = false;
-        },3000)
+        },2500)
     },
     events:{
         'route-pipe'(_decline){
