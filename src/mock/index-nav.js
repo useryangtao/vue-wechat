@@ -4,7 +4,7 @@ module.exports = [{
     path: {
         path: '/chat'
     },
-    hint: { type: "count", count: 999 }, //count,dot
+    hint: { type: "count", count: 0 }, //count,dot
     iconClass: 'icon-wechat',
     text: '微信'
 }, {
@@ -13,7 +13,7 @@ module.exports = [{
         path: '/contact'
     },
 
-    hint: { type: "count", count: 999 }, //count,dot
+    hint: { type: "count", count: 0 },
     iconClass: 'icon-contact',
     text: '通讯录'
 }, {
@@ -21,7 +21,7 @@ module.exports = [{
     path: {
         path: '/find'
     },
-    hint: { type: "dot", count: true }, //count,dot
+    hint: { type: "dot", count: 99 },
     iconClass: 'icon-find',
     text: '发现'
 }, {
@@ -29,7 +29,7 @@ module.exports = [{
     path: {
         path: '/me'
     },
-    hint: { type: null, count: 0 }, //count,dot
+    hint: { type: null, count: '' },
     iconClass: 'icon-me',
     text: '我'
 }]

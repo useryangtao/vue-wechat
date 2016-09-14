@@ -17,7 +17,7 @@
         </div>
     </footer>
     <section class="welcome"
-    v-show="welcome" 
+    v-show="welcome"
     transition="welcome"></section>
 </template>
 <script>
@@ -48,9 +48,9 @@ export default {
             decline: false
         }
     },
-    ready(){
+    created(){
         if(this.$route.matched.length===1){
-            this.welcome = true;
+            // this.welcome = true;
         }
         setTimeout(()=>{
             this.welcome = false;

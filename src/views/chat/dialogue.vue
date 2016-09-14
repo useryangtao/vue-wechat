@@ -23,13 +23,11 @@
                 <section class="dialogue-section">
                     <div class="dialogue-section-inner">
                         <div class="dialogue-item dialogue-item--others">
-                            
                         </div>
                         <div class="dialogue-item dialogue-item--time">
-                            
                         </div>
                         <div class="dialogue-item dialogue-item--self">
-                            
+
                         </div>
                     </div>
                 </section>
@@ -65,11 +63,11 @@ export default {
             this.topModel.curText = this.chat_base.name
             //bar
             this.dialogue_bar_type = this.dialogue_bar.menu.length>0?'dialogueBar':'dialogueBarPerson'
-            this.topModel.isMute = this.chat_config.newsMute 
+            this.topModel.isMute = this.chat_config.newsMute
             //nextPath
-            let nextLink = this.dialogue_type ==='group'?'chat-detail':'chat-info'
-            
-            
+            // console.log(dialogue_type)
+            let nextPath = this.dialogue_type ==='group'?'/chat/dialogue/chat-info':'/chat/dialogue/chat-detail'
+            this.topModel.nextPath = nextPath
             this.$parent.$emit('route-pipe',true)
             next()
         },
@@ -86,7 +84,7 @@ export default {
                 curText: "",
                 isMute: true,
                 nextPath: {
-                    path: '/chat/dialogue/chat-info'
+                    path: '/chat/dialogue/chat-detail'
                 },
                 nextIcon: "icon-chat-person"
             }

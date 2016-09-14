@@ -11,7 +11,7 @@
                 <div v-text="item.text"></div>
             </li>
         </ul>
-        <a class="tips-masker" v-show="tips_isOpen"></a>
+        <div class="tips-masker" v-show="tips_isOpen"></div>
     </div>
     <div class="center">
         {{menu_active.text}}
@@ -37,9 +37,18 @@ export default {
         }
     },
     ready(){
+        var self = this;
+        $('body').on('touchend',function(){
+            setTimeout(()=>{
+                self.tips_isOpen = false;
+            },0)
+        })
+        // $('.tips-menu').addClass('a')
+        console.log()
     },
     methods:{
         tap(){
+            event.stopPropagation();
             console.log('tap')
             console.log(this.tips_isOpen);
             this.tips_isOpen=!this.tips_isOpen

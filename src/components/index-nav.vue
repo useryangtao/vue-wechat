@@ -4,8 +4,8 @@
             <dt class="iconfont" :class="item.iconClass">
                 <i
                 v-if="item.hint.count"
-                v-text="item.hint.type==='count'?item.hint.count:''"
-                :class="item.hint.type?'_news-'+item.hint.type:''"
+                v-text="item.hint | get_prompt "
+                :class="'_news-'+item.hint.type"
                 ></i>
             </dt>
             <dd v-text="item.text"></dd>
@@ -33,6 +33,12 @@ export default {
     data () {
         return {
         }
+    },
+    filters:{
+        get_prompt(hint){
+            return hint.count
+        }
+
     },
     created(){
         this.get_index_nav()

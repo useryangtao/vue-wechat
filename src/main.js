@@ -2,8 +2,8 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import VueRouter from 'vue-router'
 import { sync } from 'vuex-router-sync'
-// import VueResource from 'vue-resource'
 import VueTouch from 'vue-touch'
+import VueAnimatedList from 'vue-animated-list'
 import zepto from 'webpack-zepto'
 import fastclick from 'fastclick'
 
@@ -11,15 +11,14 @@ import store from 'store'
 import routerMap from './route-config.js'
 import filters from './filters'
 
-// const configPath = '/src/mock/'
 
 // window.configPath = configPath;
 // Vue.config.devtools = true;
 
 Vue.use(Vuex)
 Vue.use(VueRouter)
-// Vue.use(VueResource)
 Vue.use(VueTouch)
+Vue.use(VueAnimatedList)
 
 const router = new VueRouter({
     history: true,

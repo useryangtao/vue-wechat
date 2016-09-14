@@ -46,14 +46,25 @@ body,
 }
 
 ._full {
+    width: 100%;
     height: 100%;
-    /* background-color: #f0eff5; */
+}
+._scroll {
+    overflow: auto;
 }
 
 ._ellipsis {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+._ellipsis-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 ._left {
@@ -64,20 +75,25 @@ body,
     float: right;
 }
 
-._scroll {
-    overflow: auto;
+._align-middle {
+    vertical-align: middle;
 }
-._align-left{
+
+
+._align-left {
     text-align: left;
 }
-._align-right{
+
+._align-right {
     text-align: right;
 }
+
 .margin-top-0 {
     margin-top: 0;
 }
-.border-top-0{
-    border-top:0;
+
+.border-top-0 {
+    border-top: 0;
 }
 
 
@@ -95,7 +111,7 @@ body,
     -webkit-transform-origin: 0 0;
     background-color: #b7b7b7;
     height: 1px;
-    z-index:2;
+    z-index: 2;
 }
 
 
@@ -104,6 +120,7 @@ body,
 ._news-count {
     position: absolute;
     font-style: initial;
+    font-family: PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica;
     right: -9px;
     top: -5px;
     padding: 0 4px;
@@ -137,6 +154,7 @@ body,
     text-align: center;
     background-color: red;
     background-color: #f43531;
+    font-size: 0;
 }
 
 
@@ -144,6 +162,10 @@ body,
 
 .weui_cells_only::before {
     left: 15px;
+}
+
+.weui_cells_access .weui_cell_ft:after {
+    top: 2px;
 }
 
 
@@ -212,7 +234,7 @@ body,
     height: calc(100% - 45px);
     position: relative;
     background-color: #ebebeb;
-    background-color:#efeff4;
+    background-color: #efeff4;
 }
 
 
@@ -252,7 +274,7 @@ body,
 
 ._cover-top .top-back {
     max-width: 85px;
-    float:left;
+    float: left;
 }
 
 ._cover-top .top-back .iconfont {}
@@ -263,28 +285,31 @@ body,
 }
 
 ._cover-top .top-title {
-    padding:0 8px;
+    padding: 0 8px;
     text-align: center;
     overflow: hidden;
     font-size: 18px;
-    justify-content:center;
+    justify-content: center;
     text-align: center;
 }
 
 ._cover-top .top-title > p {
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
-._cover-top .top-title > p .top-title__text{
+
+._cover-top .top-title > p .top-title__text {
     text-align: right;
-    overflow:hidden;
+    overflow: hidden;
 }
-._cover-top .top-title > p .top-title__num{
-    flex-shrink:0;
+
+._cover-top .top-title > p .top-title__num {
+    flex-shrink: 0;
 }
-._cover-top .top-title > p .icon-mute{
-    flex-basis:18px;
+
+._cover-top .top-title > p .icon-mute {
+    flex-basis: 18px;
 }
 
 ._cover-top .top-title .icon-mute {
@@ -295,8 +320,8 @@ body,
 
 ._cover-top .top-other {
     height: 100%;
-    width:50px;
-    float:right;
+    width: 50px;
+    float: right;
 }
 
 ._cover-top .top-other .iconfont {
@@ -304,16 +329,103 @@ body,
 }
 
 
+/*聊天详情*/
+
+.chat-dialogue-entry-collect {
+    background-color: #ffffff;
+    position: relative;
+    padding: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    color: #464646;
+    font-size: 14px;
+}
+
+.chat-dialogue-entry-collect li {
+    float: left;
+    flex-grow: 1;
+    flex-basis: 25%;
+    max-width: 25%;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.chat-dialogue-entry-collect li div.pic {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 55px;
+    height: 55px;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.chat-dialogue-entry-collect li p.username {
+    padding-top: 5px;
+}
+
+.chat-dialogue-entry-collect li:last-child div.pic {
+    border-radius: 0;
+}
+
+.chat-dialogue-entry-collect li:last-child div.pic div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 200%;
+    border: 1px solid #bbb;
+    border-radius: 12px;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-dialogue-entry-collect li:last-child div.pic span.iconfont {
+    font-size: 70px;
+    color: #bbbbbb;
+}
+
+.component-chat-detail .chat-dialogue-entry-collect::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    left: 0;
+    bottom: 0;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    -webkit-transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    background-color: #b7b7b7;
+    height: 1px;
+    z-index: 2;
+}
+
+.parentheses{
+}
+.parentheses:before{
+    content: "(";
+}
+.parentheses:after{
+    content:")";
+}
+
 /*
     component- 开头的 是router-view最外层的export组件元素
 */
-[class*="component-"]{
-    
-}
-[class*="router-second"]{
+
+[class*="component-"] {}
+
+[class*="router-second"] {
     position: relative;
     z-index: 2;
 }
+
 
 /* 保证next router page 能覆盖住current page */
 
@@ -334,15 +446,17 @@ body,
 
 
 /* effect30 */
+
 ._effect {
     opacity: 1;
     transition: .2s all ease;
 }
+
 ._effect--30 {
     transform: translate3d(-30%, 0, 0);
 }
+
 ._effect--50 {
     opacity: 0;
     transform: translate3d(-50%, 0, 0);
 }
-
