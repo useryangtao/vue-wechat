@@ -212,7 +212,10 @@ body,
     background: $top-background;
     opacity: 1;
     color: #ffffff;
+    user-select: none;
+    -webkit-user-select: none;
     transition: .18s all ease;
+    transition: .22s all ease;
 }
 
 
@@ -276,7 +279,9 @@ body,
     max-width: 85px;
     float: left;
 }
-
+._cover-top .top-back:active {
+    color: #bbbbbb;
+}
 ._cover-top .top-back .iconfont {}
 
 ._cover-top .top-back .iconfont:before {

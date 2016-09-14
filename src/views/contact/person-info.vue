@@ -19,13 +19,13 @@
     </div>
 </template>
 <script>
-// import {} from 'getters'
+import {person_info} from 'getters'
 
 import topHandle from 'topHandle'
 export default {
     vuex:{
         getters:{
-
+            person_info
         },
         action:{
 
@@ -33,7 +33,6 @@ export default {
     },
     route:{
         activate({from,to,next}) {
-            //do something...
             this.$parent.$emit('route-pipe',true)
             next()
         },
@@ -46,15 +45,15 @@ export default {
         return {
             decline:false,
             topModel:{
-                backText:'',
+                backText:'返回',
                 curText:'详细资料',
-                nextPath:{poth:''},
-                nextIcon:''
+                nextPath:{path:'person-info-set',append:true},
+                nextIcon:'icon-more'
             }
         }
     },
     methods:{
-        
+
     },
     events:{
         'route-pipe'(_decline){
@@ -63,7 +62,7 @@ export default {
         }
     },
     created(){
-
+        console.log(this.person_info);
     },
     ready(){
 

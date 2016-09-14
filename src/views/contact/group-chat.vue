@@ -56,7 +56,6 @@ export default {
         }
     },
     methods:{
-        
     },
     events:{
         'route-pipe'(_decline){

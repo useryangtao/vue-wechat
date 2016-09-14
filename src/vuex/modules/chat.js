@@ -91,9 +91,7 @@ const mutations = {
         state.chat_base = base;
         state.dialogue = chatDialogueModel
         state.dialogue_bar = chatDialogueBarModel;
-        console.log(chatMemberModel)
         state.chat_member = chatMemberModel;
-        console.log(state.chat_member)
         state.chat_config = chatConfigModel;
     },
     [SET_NEWS_STATE](state,index,val){

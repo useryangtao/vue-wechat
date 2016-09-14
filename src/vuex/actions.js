@@ -10,24 +10,36 @@ export const set_chat_count = ({ dispatch }, count) => {
     //设置导航的消息数目
     dispatch('SET_CHAT_COUNT', count)
 }
-export const set_news_state = ({ dispatch }, index,val,fn) => {
+
+//chat
+export const set_news_state = ({ dispatch }, index, val, fn) => {
     dispatch('SET_NEWS_STATE', index, val)
-    fn();
+    fn()
 }
-export const delete_news = ({ dispatch }, index,fn) => {
+export const delete_news = ({ dispatch }, index, fn) => {
     dispatch('DELETE_NEWS', index)
-    fn();
+    fn()
 }
-//
-export const get_menu_wechat_list = ({ dispatch },fn) => {
-    let list = require('../mock/chat');
+export const get_menu_wechat_list = ({ dispatch }, fn) => {
+    let list = require('../mock/chat')
     dispatch('SET_MENU_WECHAT_LIST', list)
     fn()
 }
-
 export const set_chat = ({ dispatch }, model) => {
     dispatch('CHAT', model)
 }
+
+//contact
+export const get_person_info = ({ dispatch }, id) => {
+    let info = require('../mock/person-info-1')
+    dispatch('PERSON_INFO', info)
+    console.log(info)
+
+}
+// export const set_person_info = ({ dispatch }, id) => {
+//     dispatch('PERSON_ID', id)
+// }
+
 
 
 

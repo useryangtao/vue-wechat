@@ -3,6 +3,7 @@
         <div class="_full_inner">
             <top-handle
                 :back-text='"返回"'
+                :decline="decline"
                 :cur-text='topModel.curText'
                 >
             </top-handle>
@@ -11,7 +12,7 @@
                 <div class="_full _scroll">
                     <ul class="chat-dialogue-entry-collect ">
                         <li v-for="item in chat_member"
-                        v-touch:tap="go_Info(item.id)">
+                        v-touch:tap="go_personInfo(item.id)">
                             <div class="pic" :style="{backgroundImage:'url('+item.iconSrc+')'}">
                             </div>
                             <p class="username _ellipsis" v-text="item.name"></p>
@@ -97,16 +98,20 @@
 import utils from 'utils'
 import topHandle from 'topHandle'
 import {chat_member} from 'getters'
+import {get_person_info} from 'actions'
+
 export default {
     mixins:[utils],
     vuex:{
         getters:{
             chat_member
+        },
+        actions:{
+            get_person_info
         }
     },
     route:{
         activate({from,to,next}) {
-            // console.log(this.chat_member)
             this.$parent.$emit('route-pipe',true)
             next()
         },
@@ -129,6 +134,14 @@ export default {
     events:{
         'route-pipe'(_decline){
             this.decline = _decline
+        }
+    },
+    methods:{
+        go_personInfo(id){
+            this.get_person_info(id)
+            this.$router.go({path:"person-info",append:true})
+
+
         }
     },
     components:{
