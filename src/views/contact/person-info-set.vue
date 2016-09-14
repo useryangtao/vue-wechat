@@ -33,7 +33,6 @@ export default {
     },
     route:{
         activate({from,to,next}) {
-            //do something...
             this.$parent.$emit('route-pipe',true)
             next()
         },
@@ -59,7 +58,6 @@ export default {
     events:{
         'route-pipe'(_decline){
             this.decline = _decline
-            this.$parent.$emit('route-pipe',_decline)
         }
     },
     created(){

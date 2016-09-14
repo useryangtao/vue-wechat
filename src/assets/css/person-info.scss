@@ -1,0 +1,37 @@
+.component-person-info .card_pic{
+    width: 55px;
+    height: 55px;
+    border-radius: 6px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.component-person-info .card_line{
+
+}
+.component-person-info .card_line .gender{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 4px;
+    margin-top: -2px;
+}
+.component-person-info .card_line .gender-man{
+    background-image:url(../images/contact_male.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.component-person-info .card_line .remark{
+    font-size: 18px;
+    color: #4f4f4f;
+}
+
+.component-person-info .card_line p{
+    font-size: 14px;
+    color: #888888;
+}
+.component-person-info .card_line p span:first-child{
+    margin-right: 5px;
+}

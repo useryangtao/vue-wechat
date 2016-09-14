@@ -29,9 +29,11 @@ require('assets/css/reset.css')
 require('assets/css/weui.min.css')
 require('assets/css/iconfont.css')
 require('assets/css/common.scss')
-require('assets/css/dialogue-bar.scss')
-require('assets/css/contact.scss')
 require('assets/css/base.scss')
+
+require('assets/css/dialogue-bar.scss')
+require('assets/css/person-info.scss')
+require('assets/css/contact.scss')
 
 export default {
     replace: false,
@@ -54,7 +56,7 @@ export default {
         }
         setTimeout(()=>{
             this.welcome = false;
-        },2500)
+        },500)
     },
     events:{
         'route-pipe'(_decline){

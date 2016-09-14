@@ -3,6 +3,7 @@
         <div class="_full_inner">
             <top-handle
                 :back-text='"返回"'
+                :decline="decline"
                 :next-path="topModel.nextPath"
                 :next-icon="topModel.nextIcon"
                 >
