@@ -36,21 +36,18 @@ export default {
             {_link:{path:'receipt-payment-money'},text:'收付款',iconClass:'icon-tips-fukuan'}]
         }
     },
-    ready(){
+    created(){
         var self = this;
+        // console.log($);
         $('body').on('touchend',function(){
             setTimeout(()=>{
                 self.tips_isOpen = false;
             },0)
         })
-        // $('.tips-menu').addClass('a')
-        console.log()
     },
     methods:{
         tap(){
             event.stopPropagation();
-            console.log('tap')
-            console.log(this.tips_isOpen);
             this.tips_isOpen=!this.tips_isOpen
         }
 

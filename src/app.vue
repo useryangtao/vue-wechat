@@ -50,7 +50,7 @@ export default {
     },
     created(){
         if(this.$route.matched.length===1){
-            // this.welcome = true;
+            this.welcome = true;
         }
         setTimeout(()=>{
             this.welcome = false;

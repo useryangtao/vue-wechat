@@ -111,13 +111,6 @@ export default {
             this.currentIndex = -1
         },
         info_touchend(){
-            // console.log('touchend')
-            if(this.currentIndex===-1){
-            }else{
-                this.currentIndex = -1
-                this.isTouchSwipe = false
-                // this.isTouchSwipe = true
-            }
         },
         info_tap(_index){
             var index = _index;
@@ -129,7 +122,7 @@ export default {
             this.isTouchSwipe = false
         },
         info_swipeleft(_index) {
-            console.log('swipeleft')
+            // console.log('swipeleft')
             event.stopPropagation()
             if(!this.isTouchSwipe){
                 this.isTouchSwipe = true
@@ -146,7 +139,6 @@ export default {
                     let count = chatBaseModel.newsUnreadCount
                     sum += count
                 }
-                // console.log(count)
             })
             this.set_chat_count(sum)
         },

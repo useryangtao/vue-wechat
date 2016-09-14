@@ -58,6 +58,11 @@ var webpackConfig = merge(baseWebpackConfig, {
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency'
     }),
+    new webpack.ProvidePlugin({
+      "$":'webpack-zepto',
+      "zepto":"zepto",
+      "window.zepto":"webpack-zepto"
+    }),
     // split vendor js into its own file
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',

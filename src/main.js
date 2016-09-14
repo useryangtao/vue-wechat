@@ -12,8 +12,7 @@ import routerMap from './route-config.js'
 import filters from './filters'
 
 
-// window.configPath = configPath;
-// Vue.config.devtools = true;
+Vue.config.devtools = true;
 
 Vue.use(Vuex)
 Vue.use(VueRouter)
@@ -30,9 +29,6 @@ routerMap(router)
 
 sync(store, router)
 
-// Vue.http.options.headers = {
-//     'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8'
-// }
 filters(Vue)
 
 fastclick.attach(document.body)
