@@ -97,7 +97,7 @@
                         </div>
                         <div class="weui_cell weui_cell_switch">
                             <div class="weui_cell_hd weui_cell_primary">显示群成员昵称</div>
-                            <div class="weui_cell_ft">
+                            <div class="">
                                 <input class="weui_switch _align-middle" type="checkbox" checked>
                             </div>
                         </div>

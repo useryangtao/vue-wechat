@@ -304,7 +304,6 @@ export default {
     float: right;
     color: #b8b8b8;
     font-size: 14px;
-    color: #d9d9d9;
 }
 
 .wechat-list .info.active .desc-mute {

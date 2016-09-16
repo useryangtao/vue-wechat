@@ -138,8 +138,10 @@ export default {
     },
     methods:{
         go_personInfo(id){
-            this.get_person_info(id)
-            this.$router.go({path:"person-info",append:true})
+            console.log(this.chat_member)
+            this.get_person_info(id,()=>{
+                this.$router.go({path:"person-info",append:true})
+            })
 
 
         }

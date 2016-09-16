@@ -21,15 +21,15 @@
  */
 module.exports = {
     "base": {
-        "id": 1,
-        "name": "杨涛",
-        "nickname": "杨涛",
-        "remark":"阿涛",
-        "wxid": "wxid_yangtao",
-        "qq": "00001",
-        "email": "00001@qq.com",
+        "id": 11,
+        "name":"小明",
+        "nickname": "小明",
+        "remark":"小明",
+        "wxid": "wxid_xiaoming",
+        "qq": "000011",
+        "email": "00002@qq.com",
         "type": "firends",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
+        "iconSrc": "http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/09/05/6b1ad2c8552daf8f6669aa4d085cc674.jpg",
         "qrCode": "",
         "telphone":18812345678,
         "signature": "个性签名",
@@ -37,7 +37,7 @@ module.exports = {
         "selfPhotos":[{imgSrc:""}]
     },
     "chatPrevivw": {
-        "newsUnreadCount": 1, //未读
+        "newsUnreadCount": 11, //未读
         "endTimeStr": 1472632586443,
         "endChatAuth": "杨涛",
         "endChatTxt": "晚上打球",

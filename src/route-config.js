@@ -62,11 +62,6 @@ export default function(router) {
         }
         //
     router.map({
-        // '/':{
-        //     component: resolve => {
-        //         require(['./views/chat.vue'], resolve)
-        //     }
-        // },
         '/chat': {
             component: resolve => {
                 require(['./views/chat.vue'], resolve)

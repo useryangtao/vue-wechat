@@ -30,12 +30,18 @@ export const set_chat = ({ dispatch }, model) => {
 }
 
 //contact
-export const get_person_info = ({ dispatch }, id) => {
-    let info = require('../mock/person-info-1')
+export const get_person_info = ({ dispatch }, id, fn) => {
+    let info = require('../mock/person-info-'+id)
     dispatch('PERSON_INFO', info)
-    console.log(info)
-
+    fn()
 }
+export const get_friends_list = ({ dispatch }, id) => {
+    let friends = require('../mock/contact')
+    dispatch('CONTACT_FRIENDS', friends)
+    console.log(friends)
+}
+
+
 // export const set_person_info = ({ dispatch }, id) => {
 //     dispatch('PERSON_ID', id)
 // }

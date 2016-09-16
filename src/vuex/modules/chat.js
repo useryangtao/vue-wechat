@@ -63,7 +63,7 @@ let state = {
         }]
     },
     //聊天人员
-    chat_member: [{"id": 1,iconSrc:"http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",name:"yangtao01"}],
+    chat_member: [{"id": 1,iconSrc:"",name:""}],
     //聊天配置
     chat_config: {
         "chatBackground": null, //背景

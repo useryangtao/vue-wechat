@@ -15,14 +15,17 @@
                     <!-- flag -->
                     <div class="weui_cells">
                         <div class="weui_cell">
-                            <div class="card_pic _left" style="background-image:url(//shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)">
+                            <div class="card_pic _left" :style="{backgroundImage:'url('+person_info.base.iconSrc+')'}">
                             </div>
                             <div class="card_line">
                                 <div class="remark">
-                                    <span>志强</span><span class="gender gender-man"></span>
+                                    <span v-text="person_info.base.remark"></span><span class="gender gender-man"></span>
                                 </div>
-                                <p class="wxid"><span>微信号:</span><span>zheng313328009</span></p>
-                                <p class="nickname"><span>昵称:</span><span>郑志强</span></p>
+                                <p class="wxid"><span>微信号:</span><span v-text="person_info.base.wxid"></span></p>
+                                <p class="nickname">
+                                    <span>昵称:</span>
+                                    <span v-text="person_info.base.nickname"></span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -39,7 +42,10 @@
                             <div class="weui_cell_bd weui_cell_primary">
                                 <div>
                                     <span>电话号码</span>&nbsp;&nbsp;
-                                    <a href="tel:18812345678">18812345678</a>
+                                    <a
+                                    href="tel:18812345678"
+                                    v-text="person_info.base.telphone" 
+                                    :href="'tel:'+person_info.base.telphone"></a>
                                 </div>
                             </div>
                         </div>

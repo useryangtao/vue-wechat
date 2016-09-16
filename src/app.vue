@@ -1,24 +1,24 @@
 <template>
-    <header class="app-header">
+    <section class="welcome"
+    v-show="welcome"
+    transition="welcome"></section>
+    <header class="app-header" style="display:none;" v-show="appload">
         <div class="_effect"
             :class="{'_effect--50':decline}">
             <index-header></index-header>
         </div>
     </header>
-    <section class="app-content">
+    <section class="app-content" style="display:none;" v-show="appload">
         <!-- index router -->
         <router-view keep-alive></router-view>
     </section>
-    <footer class="app-footer _line-fine">
+    <footer class="app-footer _line-fine" style="display:none;" v-show="appload">
         <div class="_effect "
             :class="{'_effect--50':decline}"
             >
             <index-nav></index-nav>
         </div>
     </footer>
-    <section class="welcome"
-    v-show="welcome"
-    transition="welcome"></section>
 </template>
 <script>
 import store from 'store'
@@ -34,6 +34,7 @@ require('assets/css/base.scss')
 require('assets/css/dialogue-bar.scss')
 require('assets/css/person-info.scss')
 require('assets/css/contact.scss')
+require('assets/css/find.scss')
 
 export default {
     replace: false,
@@ -46,6 +47,7 @@ export default {
     },
     data() {
         return {
+            appload:false,
             welcome:false,
             decline: false
         }
@@ -54,6 +56,7 @@ export default {
         if(this.$route.matched.length===1){
             this.welcome = true;
         }
+        this.appload = true;
         setTimeout(()=>{
             this.welcome = false;
         },500)
