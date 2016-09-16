@@ -1,9 +1,13 @@
-.component-find-content{
-    padding-top:1px;
-    background-color:#f0eff5;
-    user-select:none;
-    -webkit-user-select:none;
+.component-find-content {
+    overflow: auto;
+    padding-top: 1px;
+    background-color: #f0eff5;
+    user-select: none;
+    -webkit-user-select: none;
 }
-.component-find-content .weui_cells .weui_cell_hd img{
-    width:20px;margin-right:10px;display:block
+
+.component-find-content .weui_cells .weui_cell_hd img {
+    width: 20px;
+    margin-right: 10px;
+    display: block
 }
