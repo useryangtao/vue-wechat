@@ -87,7 +87,9 @@ body,
 ._align-right {
     text-align: right;
 }
-
+._align-center{
+    text-align: center;
+}
 .margin-top-0 {
     margin-top: 0;
 }
@@ -326,7 +328,9 @@ body,
 
 ._cover-top .top-other {
     height: 100%;
-    width: 50px;
+    max-width: 75px;
+    min-width: 50px;
+    width: auto;
     float: right;
 }
 

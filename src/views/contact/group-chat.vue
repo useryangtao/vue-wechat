@@ -1,5 +1,5 @@
 <template>
-    <div class="_full_router component-xxx">
+    <div class="_full_router component-group-chat">
         <div class="_full_inner">
             <top-handle
                 :back-text="topModel.backText"
@@ -11,7 +11,29 @@
             </top-handle>
             <div class="_cover-content _effect"
                 :class="{'_effect--30':decline}">
-                <div></div>
+                <div style="margin-top:-1px;">
+                    <search-bar></search-bar>
+                </div>
+                    <div class="weui_cells group-list">
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd"><img src="http://ww1.sinaimg.cn/thumb300/d0d07035jw1f7f2n7cawhj202q02qglk.jpg" alt=""></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>iWeb学院沙龙</p>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd"><img src="http://ww1.sinaimg.cn/thumb300/d0d07035jw1f7f2n7cawhj202q02qglk.jpg" alt=""></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>web前端交流群——北京</p>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd"><img src="http://ww1.sinaimg.cn/thumb300/d0d07035jw1f7f2n7cawhj202q02qglk.jpg" alt=""></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>web前端交流群——北京web前端交流群——北京</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- router -->
@@ -21,6 +43,7 @@
 <script>
 // import {} from 'getters'
 // import {} from 'actions'
+import searchBar from 'components/search-bar.vue'
 
 import topHandle from 'topHandle'
 
@@ -48,8 +71,8 @@ export default {
         return {
             decline:false,
             topModel:{
-                backText:'',
-                curText:'返回',
+                backText:'通讯录',
+                curText:'群聊',
                 nextPath:{path:''},
                 nextIcon:''
             }
@@ -70,10 +93,22 @@ export default {
 
     },
     components: {
-        topHandle
+        topHandle,
+        searchBar
     },
 }
 </script>
 <style scoped>
-    
+.component-group-chat .group-list{
+    margin-top: -1px;
+}
+.component-group-chat .group-list .weui_cell_hd img{
+    width: 35px;
+    border: 0;
+    margin-right: 10px;
+    display: block;
+}
+.component-group-chat .group-list .weui_cell_bd{
+    font-size:16px;
+}
 </style>

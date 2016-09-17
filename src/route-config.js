@@ -86,6 +86,13 @@ export default function(router) {
                 'new-friends': {
                     component:resolve => {
                         require(['./views/contact/new-friends.vue'], resolve)
+                    },
+                    subRoutes:{
+                        'add-friends':{
+                            component:resolve=>{
+                                require(['./views/contact/add-friends.vue'], resolve)
+                            }
+                        }
                     }
                 },
                 'group-chat': {
