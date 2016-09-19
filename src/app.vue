@@ -49,7 +49,7 @@ export default {
         this.appload = true;
         setTimeout(() => {
             this.welcome = false;
-        }, 500)
+        }, 2500)
     },
     events: {
         'route-pipe' (_decline) {
