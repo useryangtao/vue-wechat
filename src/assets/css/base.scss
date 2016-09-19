@@ -1,8 +1,11 @@
-@import 'chat.scss';
+/* 组件 */
 @import 'dialogue-bar.scss';
 @import 'person-info.scss';
+
+@import 'chat.scss';
 @import 'contact.scss';
 @import 'find.scss';
+@import 'me.scss';
 .app-header {
     position: absolute;
     left: 0;

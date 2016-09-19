@@ -99,12 +99,10 @@ export default {
         }
     },
     methods:{
-        
     },
     events:{
         'route-pipe'(_decline){
             this.decline = _decline
-            this.$parent.$emit('route-pipe',_decline)
         }
     },
     created(){

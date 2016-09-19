@@ -177,6 +177,7 @@ body,
 .weui_cells_access .weui_cell_ft::after {
     height: 11px;
     width: 11px;
+    vertical-align: middle;
 }
 
 /*weui end*/
@@ -200,7 +201,7 @@ body,
 }
 
 
-/*1*/
+/*initial route transition 1*/
 
 ._cover-top {
     position: relative;
@@ -212,19 +213,18 @@ body,
     color: #ffffff;
     user-select: none;
     -webkit-user-select: none;
-    transition: .18s all ease;
     transition: .22s all ease;
 }
 
 
-/*2*/
+/*initial route transition 2*/
 
 ._cover-top .top-title {
     transition: .2s all ease;
 }
 
 
-/*3*/
+/*initial route transition 3*/
 
 ._cover-content {
     padding-top: 1px;
@@ -233,15 +233,15 @@ body,
     transform: translate3d(0%, 0, 0);
     height: calc(100% - 45px);
     position: relative;
-    background-color: #ebebeb;
     background-color: #efeff4;
+    box-shadow: 0px 0 41px rgba(0,0,0,.1);
 }
 
 
 /*enter ,leaver*/
 
 
-/*1*/
+/*route transition 1*/
 
 .cover-enter ._cover-top,
 .cover-leave ._cover-top {
@@ -249,7 +249,7 @@ body,
 }
 
 
-/*2*/
+/*route transition 2*/
 
 .cover-enter ._cover-top .top-title,
 .cover-leave ._cover-top .top-title {
@@ -258,7 +258,7 @@ body,
 }
 
 
-/*3*/
+/*route transition 3*/
 
 .cover-enter ._cover-content {
     transform: translate3d(80%, 0, 0);
@@ -269,6 +269,52 @@ body,
     transform: translate3d(100%, 0, 0);
 }
 
+
+
+/*
+    component- 开头的 是router-view最外层的组件元素
+*/
+
+[class*="component-"] {}
+
+
+
+/* 保证next page 能覆盖住 current page */
+
+._full_inner {
+    position: relative;
+    height: 100%;
+    z-index: 5;
+}
+
+._full_router {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* 子路由被激活后应用的样式 */
+
+._effect {
+    opacity: 1;
+    transition: .3s all ease;
+}
+
+._effect--30 {
+    transform: translate3d(-30%, 0, 0);
+}
+
+._effect--50 {
+    opacity: 0;
+    transform: translate3d(-50%, 0, 0);
+}
+
+
+/* components */
 
 /*top-handle.vue*/
 
@@ -331,52 +377,5 @@ body,
 }
 
 ._cover-top .top-other .iconfont {
-    font-size: 20px;
-}
-
-
-/*
-    component- 开头的 是router-view最外层的export组件元素
-*/
-
-[class*="component-"] {}
-
-[class*="router-second"] {
-    position: relative;
-    z-index: 2;
-}
-
-
-/* 保证next router page 能覆盖住current page */
-
-._full_inner {
-    position: relative;
-    height: 100%;
-    z-index: 5;
-}
-
-._full_router {
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
-
-/* effect30 */
-
-._effect {
-    opacity: 1;
-    transition: .2s all ease;
-}
-
-._effect--30 {
-    transform: translate3d(-30%, 0, 0);
-}
-
-._effect--50 {
-    opacity: 0;
-    transform: translate3d(-50%, 0, 0);
+    font-size: 24px;
 }

@@ -104,12 +104,10 @@ export default {
         }
     },
     methods:{
-        
     },
     events:{
         'route-pipe'(_decline){
             this.decline = _decline
-            this.$parent.$emit('route-pipe',_decline)
         }
     },
     created(){
@@ -144,6 +142,7 @@ export default {
     height: 100%;
     border: 0;
     outline: none;
+    vertical-align: middle;
 }
 .add-friends-options img{
     width: 35px;
