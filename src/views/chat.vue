@@ -96,7 +96,6 @@ export default {
         info_touchend() {},
         info_tap(_index) {
             var index = _index;
-            // console.log("tap")
             if (index >= 0 && !this.isTouchSwipe) {
                 this.set_chat(this.wechat_list[index])
                 this.$router.go({
@@ -165,5 +164,4 @@ export default {
 }
 </script>
 <style scoped>
-
 </style>
