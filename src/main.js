@@ -21,7 +21,7 @@ Vue.use(VueAnimatedList)
 
 const router = new VueRouter({
     history: true,
-    abstract:false,
+    abstract: false,
     saveScrollPosition: true
 })
 
@@ -41,4 +41,3 @@ router.start(App, '#app')
 window.router = router
 window.Vue = Vue
 window.$ = zepto
-

@@ -1,10 +1,7 @@
 <template>
-    <section class="welcome"
-    v-show="welcome"
-    transition="welcome"></section>
+    <section class="welcome" v-show="welcome" transition="welcome"></section>
     <header class="app-header" style="display:none;" v-show="appload">
-        <div class="_effect"
-            :class="{'_effect--50':decline}">
+        <div class="_effect" :class="{'_effect--50':decline}">
             <index-header></index-header>
         </div>
     </header>
@@ -13,9 +10,7 @@
         <router-view keep-alive></router-view>
     </section>
     <footer class="app-footer _line-fine" style="display:none;" v-show="appload">
-        <div class="_effect "
-            :class="{'_effect--50':decline}"
-            >
+        <div class="_effect " :class="{'_effect--50':decline}">
             <index-nav></index-nav>
         </div>
     </footer>
@@ -25,54 +20,50 @@ import store from 'store'
 import indexHeader from 'components/index-header.vue'
 import indexNav from 'components/index-nav.vue'
 
-require('assets/css/reset.css')
-require('assets/css/weui.min.css')
-require('assets/css/iconfont.css')
 require('assets/css/common.scss')
 require('assets/css/base.scss')
-
-require('assets/css/dialogue-bar.scss')
-require('assets/css/person-info.scss')
-require('assets/css/contact.scss')
-require('assets/css/find.scss')
 
 export default {
     replace: false,
     store,
-    route:{
-        activate({from,to,next}) {
-
+    route: {
+        activate({
+            from,
+            to,
+            next
+        }) {
             next()
         }
     },
     data() {
         return {
-            appload:false,
-            welcome:false,
+            appload: false,
+            welcome: false,
             decline: false
         }
     },
-    created(){
-        if(this.$route.matched.length===1){
+    created() {
+        if (this.$route.matched.length === 1) {
             this.welcome = true;
         }
         this.appload = true;
-        setTimeout(()=>{
+        setTimeout(() => {
             this.welcome = false;
-        },500)
+        }, 500)
     },
-    events:{
-        'route-pipe'(_decline){
+    events: {
+        'route-pipe' (_decline) {
             this.decline = _decline
         }
     },
     components: {
-        indexHeader,indexNav
+        indexHeader,
+        indexNav
     }
 }
 </script>
 <style scoped>
-.welcome{
+.welcome {
     width: 100%;
     height: 100%;
     z-index: 1000;
@@ -83,8 +74,8 @@ export default {
     background: url(./assets/images/launchimage.png) no-repeat center center;
     background-size: cover;
 }
+
 .welcome-leave {
     opacity: 0;
 }
-
 </style>

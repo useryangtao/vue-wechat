@@ -1,5 +1,7 @@
-$top-background:linear-gradient(to bottom, #303036, #3c3b40);
-
+@import 'dialogue-bar.scss';
+@import 'person-info.scss';
+@import 'contact.scss';
+@import 'find.scss';
 .app-header {
     position: absolute;
     left: 0;
@@ -9,10 +11,9 @@ $top-background:linear-gradient(to bottom, #303036, #3c3b40);
     height: 45px;
     line-height: 45px;
     font-size: 19px;
-    background:$top-background;
+    background: linear-gradient(to bottom, #303036, #3c3b40);
     color: #ffffff;
     text-align: center;
-    // background: rgba(0, 0, 0,.8);
 }
 
 .app-content {
@@ -22,17 +23,15 @@ $top-background:linear-gradient(to bottom, #303036, #3c3b40);
     position: relative;
     height: 100%;
 }
-.app-content ._full_inner{
-    z-index: 2;
 
+.app-content ._full_inner {
+    z-index: 2;
 }
 
-.app-footer{
+.app-footer {
     bottom: 0;
     left: 0;
     width: 100%;
     position: absolute;
     z-index: 3;
 }
-
-

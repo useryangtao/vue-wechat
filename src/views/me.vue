@@ -1,23 +1,21 @@
 <template>
-    <div class="_full_inner _effect component-me" 
-        :class="{'_effect--30':decline}">
+    <div class="_full_inner _effect component-me" :class="{'_effect--30':decline}">
         <div class="weui_cells weui_cells_access me-line">
             <a class="weui_cell " href="javascript:;">
                 <div class="weui_cell_hd">
-                <img src="http://ww4.sinaimg.cn/thumb300/d0d07035jw1f7plp6jxklj20qo0qojv0.jpg">
+                    <img src="http://ww4.sinaimg.cn/thumb300/d0d07035jw1f7plp6jxklj20qo0qojv0.jpg">
                 </div>
                 <div class="weui_cell_bd weui_cell_primary">
                     <p>yangtao</p>
                     <p><span>微信号:&nbsp;&nbsp;</span><span>wxid_yangtao</span></p>
                 </div>
                 <div class="weui_cell_ft">
-                <img class="_align-middle" style="height:25px;" src="../assets/images/chat-info-qr.png">
+                    <img class="_align-middle" style="height:25px;" src="../assets/images/chat-info-qr.png">
                 </div>
             </a>
         </div>
         <!-- flag -->
         <div class="weui_cells weui_cells_access">
-
             <a class="weui_cell" href="javascript:;">
                 <div class="weui_cell_hd"><img src="../assets/images/me_more-my-album.png" alt="" style="width:20px;margin-right:5px;display:block"></div>
                 <div class="weui_cell_bd weui_cell_primary">
@@ -68,28 +66,26 @@
             </a>
         </div>
     </div>
-    <router-view transition="cover" ></router-view>
+    <router-view transition="cover"></router-view>
 </template>
-
 <script>
 export default {
     data() {
-        return {
-            decline:false
+            return {
+                decline: false
+            }
+        },
+        events: {
+            'route-pipe' (_decline) {
+                this.decline = _decline
+                this.$parent.$emit('route-pipe', _decline)
+            }
         }
-    },
-    events:{
-        'route-pipe'(_decline){
-            this.decline = _decline
-            this.$parent.$emit('route-pipe',_decline)
-        }
-    }
 }
 </script>
-
 <style scoped>
-.component-me{
-    padding-top:1px;
+.component-me {
+    padding-top: 1px;
     background-color: #efeff4;
 }
 </style>

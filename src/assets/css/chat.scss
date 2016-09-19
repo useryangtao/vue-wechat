@@ -1,0 +1,233 @@
+
+.component-chat .wechat-list {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.component-chat .wechat-list .info {
+    transition: .2s all linear;
+}
+
+.component-chat .wechat-list .item .info.current {
+    transform: translate3d(-156px, 0, 0);
+    -webkit-transform: translate3d(-156px, 0, 0);
+}
+
+.component-chat .wechat-list .item .info:active {
+    background-color: #d9d9d9;
+}
+
+.component-chat .wechat-list .item {
+    position: relative;
+}
+
+.component-chat .wechat-list .item:last-child:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    left: 0;
+    z-index: 2;
+    left: 8px;
+    bottom: 0;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    -webkit-transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    background-color: #b7b7b7;
+    height: 1px;
+}
+
+.component-chat .wechat-list .info {
+    position: relative;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    padding: 8px;
+    background-color: #ffffff;
+    transition: .2s transform linear;
+}
+
+.component-chat .wechat-list .info--stick {
+    background-color: #f2f2f6;
+}
+
+.component-chat .wechat-list .info .ico-box {
+    position: relative;
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    /* background: #d6d5d3; */
+}
+
+.component-chat .wechat-list .info .ico {
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.component-chat .wechat-list .info .ico img {
+    width: 100%;
+    border: 0;
+}
+
+.component-chat .wechat-list .info .desc {
+    overflow: hidden;
+}
+
+.component-chat .wechat-list .info .desc-time {
+    float: right;
+    color: #b2b2b2;
+}
+
+.component-chat .wechat-list .item .handle {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    right: 0;
+    top: 0;
+    display: flex;
+}
+
+.component-chat .wechat-list .item .handle>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c7c7cc;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 0 12px;
+}
+
+.component-chat .wechat-list .item .handle .handle-del {
+    background-color: #ff3b30;
+}
+
+.component-chat .wechat-list .desc-title {
+    height: 25px;
+    line-height: 25px;
+    font-size: 18px;
+    color: #000;
+}
+
+.component-chat .wechat-list .desc-message {
+    height: 23px;
+    line-height: 23px;
+    font-size: 14px;
+    color: #888888;
+}
+
+.component-chat .wechat-list .info .desc-mute {
+    float: right;
+    color: #b8b8b8;
+    font-size: 14px;
+}
+
+.component-chat .wechat-list .info.active .desc-mute {
+    color: #b9b9b9;
+}
+
+.component-chat ._line-fine:before {
+    z-index: 3;
+    left: 8px;
+}
+
+.component-chat .chat-item-transition {
+    height: 64px;
+    transition: .3s height ease;
+}
+
+.component-chat .chat-item-leave {
+    height: 0;
+    overflow: hidden;
+}
+
+
+
+
+/*聊天详情*/
+
+.chat-dialogue-entry-collect {
+    background-color: #ffffff;
+    position: relative;
+    padding: 15px 10px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    color: #464646;
+    font-size: 14px;
+}
+
+.chat-dialogue-entry-collect li {
+    float: left;
+    flex-grow: 1;
+    flex-basis: 25%;
+    max-width: 25%;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.chat-dialogue-entry-collect li div.pic {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 55px;
+    height: 55px;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.chat-dialogue-entry-collect li p.username {
+    padding-top: 5px;
+}
+
+.chat-dialogue-entry-collect li:last-child div.pic {
+    border-radius: 0;
+}
+
+.chat-dialogue-entry-collect li:last-child div.pic div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 200%;
+    border: 1px solid #bbb;
+    border-radius: 12px;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-dialogue-entry-collect li:last-child div.pic span.iconfont {
+    font-size: 70px;
+    color: #bbbbbb;
+}
+
+.component-chat-detail .chat-dialogue-entry-collect::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    left: 0;
+    bottom: 0;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    -webkit-transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    background-color: #b7b7b7;
+    height: 1px;
+    z-index: 2;
+}
+
+.parentheses {}
+
+.parentheses:before {
+    content: "(";
+}
+
+.parentheses:after {
+    content: ")";
+}

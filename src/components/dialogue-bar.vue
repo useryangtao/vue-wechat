@@ -1,48 +1,43 @@
 <template>
     <div class="component-dialogue-bar">
-    <div class="dialogue-item" :class="dialogue_bar_type!=='dialogueBarPerson'?'transition-dialogue-down':''">
-        <div class="left-slide-type iconfont icon-dialogue-bar-jianpan"
-        v-touch:tap='switch_bar("dialogueBarPublic")'></div>
+        <div class="dialogue-item" :class="dialogue_bar_type!=='dialogueBarPerson'?'transition-dialogue-down':''">
+            <div class="left-slide-type iconfont icon-dialogue-bar-jianpan" v-touch:tap='switch_bar("dialogueBarPublic")'></div>
             <dialogue-bar-public></dialogue-bar-public>
+        </div>
+        <div class="dialogue-item" :class="dialogue_bar_type!=='dialogueBarPublic'?'transition-dialogue-down':''">
+            <div class="left-slide-type iconfont icon-dialogue-bar-menu" v-touch:tap='switch_bar("dialogueBarPerson")'></div>
+            <dialogue-bar-person></dialogue-bar-person>
+        </div>
     </div>
-    <div class="dialogue-item" :class="dialogue_bar_type!=='dialogueBarPublic'?'transition-dialogue-down':''">
-        <div class="left-slide-type iconfont icon-dialogue-bar-menu"
-        v-touch:tap='switch_bar("dialogueBarPerson")'></div>
-        <dialogue-bar-person></dialogue-bar-person>
-    </div>
-
-    </div>
-
 </template>
 <script>
 import dialogueBarPerson from './dialogue-bar-person.vue'
 import dialogueBarPublic from './dialogue-bar-public.vue'
 export default {
-    vuex:{
-        getters:{
+    vuex: {
+        getters: {
 
         },
-        actions:{
+        actions: {
 
         }
     },
-    props:{
-    },
+    props: {},
     data() {
         return {
-            dialogue_bar_type:'dialogueBarPublic'
+            dialogue_bar_type: 'dialogueBarPublic'
         }
     },
-    methods:{
-        switch_bar(name){
+    methods: {
+        switch_bar(name) {
             console.log(name);
             this.dialogue_bar_type = name
         }
     },
-    create(){
-    },
-    components:{
-        dialogueBarPerson,dialogueBarPublic
+    create() {},
+    components: {
+        dialogueBarPerson,
+        dialogueBarPublic
     }
 }
 </script>

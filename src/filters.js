@@ -11,7 +11,7 @@
 const _filters = {
 
 }
-_filters.fmtDate = function(_date, fmt) { 
+_filters.fmtDate = function(_date, fmt) {
     var date = new Date(_date)
     var o = {
         "M+": date.getMonth() + 1, //月份 
@@ -30,9 +30,9 @@ _filters.fmtDate = function(_date, fmt) {
     return fmt;
 }
 
-export default (Vue) =>{
-    Object.keys(_filters).forEach(key=>{
-        Vue.filter(key,_filters[key])
-    })
-    // _filters[]
+export default (Vue) => {
+    Object.keys(_filters).forEach(key => {
+            Vue.filter(key, _filters[key])
+        })
+        // _filters[]
 }

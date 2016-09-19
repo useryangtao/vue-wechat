@@ -70,46 +70,47 @@ export default function(router) {
                 'dialogue': dialogue
             }
         },
-        '*':{
-            name:'404',
-            component:resolve=>{
-                require(['./views/404.vue'],resolve)
+        '*': {
+            name: '404',
+            component: resolve => {
+                require(['./views/404.vue'], resolve)
             }
         },
         '/contact': {
             component: resolve => {
                 require(['./views/contact.vue'], resolve)
             },
-            subRoutes:{
+            subRoutes: {
                 //个人资料
                 'person-info': personInfo,
                 'new-friends': {
-                    component:resolve => {
+                    component: resolve => {
                         require(['./views/contact/new-friends.vue'], resolve)
                     },
-                    subRoutes:{
-                        'add-friends':{
-                            component:resolve=>{
+                    subRoutes: {
+                        'add-friends': {
+                            component: resolve => {
                                 require(['./views/contact/add-friends.vue'], resolve)
                             }
                         }
                     }
                 },
                 'group-chat': {
-                    component:resolve => {
+                    component: resolve => {
                         require(['./views/contact/group-chat.vue'], resolve)
                     }
                 },
                 'tag': {
-                    component:resolve => {
+                    component: resolve => {
                         require(['./views/contact/tag.vue'], resolve)
                     }
                 },
-                'public':{
-                    component:resolve => {
+                'public': {
+                    component: resolve => {
                         require(['./views/contact/public.vue'], resolve)
-                    
-                    }}
+
+                    }
+                }
 
             }
         },
@@ -129,12 +130,12 @@ export default function(router) {
         '/': '/chat'
     })
 
-    router.afterEach(function({from,to}) {
+    router.afterEach(function({ from, to }) {
         let fromPath = from.path || '/';
         let toPath = to.path;
         let toPath_end = toPath.lastIndexOf('/');
-        let backPath = toPath.slice(0,toPath_end);
-        store.dispatch('BACK_PATH',backPath)
+        let backPath = toPath.slice(0, toPath_end);
+        store.dispatch('BACK_PATH', backPath)
     })
 
 }

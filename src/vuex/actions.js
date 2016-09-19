@@ -31,7 +31,7 @@ export const set_chat = ({ dispatch }, model) => {
 
 //contact
 export const get_person_info = ({ dispatch }, id, fn) => {
-    let info = require('../mock/person-info-'+id)
+    let info = require('../mock/person-info-' + id)
     dispatch('PERSON_INFO', info)
     fn()
 }

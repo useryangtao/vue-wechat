@@ -95,13 +95,11 @@
     </div>
 </template>
 <script>
-import utils from 'utils'
 import topHandle from 'topHandle'
 import {chat_member} from 'getters'
 import {get_person_info} from 'actions'
 
 export default {
-    mixins:[utils],
     vuex:{
         getters:{
             chat_member

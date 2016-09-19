@@ -154,14 +154,12 @@
     </div>
 </template>
 <script>
-import utils from 'utils'
 import { chat_base,chat_member } from 'getters'
 // import {  } from 'actions'
 import topHandle from 'topHandle'
 
 
 export default {
-    mixins:[utils],
     vuex:{
         getters:{
             chat_base,

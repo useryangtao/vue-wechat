@@ -1,5 +1,5 @@
 <template>
-<!--
+    <!--
 左侧
 props
     backText
@@ -26,74 +26,73 @@ slot
         <span class="iconfont icon-chat-person"></span>
     </div>
 -->
-<div class="_cover-top">
-    <div class="top-back">
-        <div class="_ellipsis iconfont icon-return-arrow"
-            v-link="backPath"
-            v-text="backText"></div>
+    <div class="_cover-top">
+        <!-- left -->
+        <div class="top-back">
+            <div class="_ellipsis iconfont icon-return-arrow" v-link="backPath" v-text="backText"></div>
+        </div>
+        <!-- right -->
+        <div class="top-other">
+            <slot name="right">
+                <div class="_align-right" v-link="nextPath">
+                    <span class="iconfont" :class="nextIcon"></span>
+                </div>
+            </slot>
+        </div>
+        <!-- center -->
+        <div class="top-title _effect" :class="{'_effect--50':decline}">
+            <slot name="center">
+                <p>
+                    <span v-text='curText'></span>
+                </p>
+            </slot>
+        </div>
     </div>
-    <div class="top-other" >
-        <slot name="right">
-            <div class="_align-right" v-link="nextPath">
-                <span class="iconfont" :class="nextIcon"></span>
-            </div>
-        </slot>
-    </div>
-    <div class="top-title _effect"
-        :class="{'_effect--50':decline}">
-        <slot name="center">
-            <p>
-                <span v-text='curText'></span>
-            </p>
-        </slot>
-    </div>
-</div>
 </template>
 <script>
-
-import { backPath } from 'getters'
+import {
+    backPath
+} from 'getters'
 export default {
-    props:{
+    props: {
         //返回路径
-        'backPath':{
-            type:Object
+        'backPath': {
+            type: Object
         },
         //返回文本
-        'backText':{
-            type:String,
-            default:'返回'
+        'backText': {
+            type: String,
+            default: '返回'
         },
         //衰退:cur是否变更为prev页
-        'decline':{
-            default:false
+        'decline': {
+            default: false
         },
         //当前文本
-        'curText':{
+        'curText': {
             //type:String
         },
         //右侧按钮下一页
-        'nextPath':{
+        'nextPath': {
             // type:Object
         },
         //右侧按钮class
-        'nextIcon':{
-            type:String
+        'nextIcon': {
+            type: String
         }
     },
-    vuex:{
-        getters:{
+    vuex: {
+        getters: {
             backPath
         }
     },
-    data () {
+    data() {
         return {
 
         }
     },
-    methods:{
-    }
+    methods: {}
 }
 </script>
 <style scoped>
-    
 </style>

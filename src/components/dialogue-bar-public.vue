@@ -19,20 +19,15 @@
             </div>
         </li>
     </ul>
-
 </template>
 <script>
 export default {
-    replace:true,
-    props:{
-    },
+    replace: true,
+    props: {},
     data() {
-        return {
-        }
+        return {}
     },
-    methods:{
-    },
-    components:{
-    }
+    methods: {},
+    components: {}
 }
 </script>

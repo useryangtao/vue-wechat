@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-//基本
+//基本通用
 import base from './modules/base'
 //聊天
 import chat from './modules/chat'
@@ -12,8 +12,8 @@ Vue.use(Vuex)
 
 
 export default new Vuex.Store({
-    modules:{
-        base,       
+    modules: {
+        base,
         chat,
         contacts
     },
