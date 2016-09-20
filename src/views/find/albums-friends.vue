@@ -5,8 +5,8 @@
             </top-handle>
             <div class="_cover-content _effect" :class="{'_effect--30':decline}">
                 <div class="drag-reflash" :style="reflashPosition"></div>
-                <div class="drag-wrap" id="drag-wrap" @touchstart="startDrag" @touchmove="onDrag" @touchend="stopDrag" @touchcancel="stopDrag">
-                    <div class="drag-inner" id="drag-inner" :style="contentPosition">
+                <div class="drag-wrap" id="drag-wrap">
+                    <div class="drag-inner" id="drag-inner" :style="contentPosition"  @touchstart="startDrag" @touchmove="onDrag" @touchend="stopDrag" @touchcancel="stopDrag">
                         <header class="home-pic">
                             <div class="home-pic-base">
                                 <div class="top-pic">
@@ -90,40 +90,37 @@ export default {
     },
     methods: {
         startDrag: function(e) {
-            e = e.changedTouches ? e.changedTouches[0] : e
-            this.isDragging = document.getElementById("drag-wrap").scrollTop === 0
-            if (this.isDragging) {
-                // this.start.x = e.pageX
-                this.dragging = true
-                this.start.y = e.pageY
-                console.log('start', this.start.y)
-            }
+            // e = e.changedTouches ? e.changedTouches[0] : e
+            // this.isDragging = document.getElementById("drag-wrap").scrollTop === 0
+            // if (this.isDragging) {
+            //     this.dragging = true
+            //     this.start.y = e.pageY
+            //     console.log('start', this.start.y)
+            // }
         },
         onDrag: function(e) {
-            e = e.changedTouches ? e.changedTouches[0] : e
-                // console.log('dragging,onDrag',this.isDragging)
-            if (!this.isDragging) {
-                this.isDragging = document.getElementById("drag-wrap").scrollTop === 0;
-                if (this.isDragging) {
-                    this.dragging = true
-                    this.start.y = e.pageY
-                }
-            }
-            if (this.isDragging) {
-                this.c.y = (e.pageY - this.start.y) / 3
-            }
+            // e = e.changedTouches ? e.changedTouches[0] : e
+            // if (!this.isDragging) {
+            //     this.isDragging = document.getElementById("drag-wrap").scrollTop === 0;
+            //     if (this.isDragging) {
+            //         this.dragging = true
+            //         this.start.y = e.pageY
+            //     }
+            // }
+            // if (this.isDragging) {
+            //     this.c.y = (e.pageY - this.start.y) / 3
+            // }
         },
         stopDrag: function() {
-            if (this.dragging) {
-                this.dragging = false
-                dynamics.animate(this.c, {
-                    y: 0
-                }, {
-                    type: dynamics.easeOut,
-                    duration: 350,
-                })
-            }
-
+            // if (this.dragging) {
+            //     this.dragging = false
+            //     dynamics.animate(this.c, {
+            //         y: 0
+            //     }, {
+            //         type: dynamics.easeOut,
+            //         duration: 350,
+            //     })
+            // }
         }
     },
     computed: {
@@ -136,7 +133,6 @@ export default {
             }
         },
         contentPosition: function() {
-            // var c.y = this.c.y
             var cy = this.c.y;
             this.c.y = cy > 0 ? cy : 0
             return {
