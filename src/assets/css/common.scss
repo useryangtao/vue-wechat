@@ -205,6 +205,8 @@ body,
 
 ._cover-top {
     position: relative;
+    z-index: 2;
+    overflow: hidden;
     height: 45px;
     padding: 0 15px 0 10px;
     line-height: 45px;
@@ -227,12 +229,13 @@ body,
 /*initial route transition 3*/
 
 ._cover-content {
+    position: relative;
+    z-index: 1;
     padding-top: 1px;
     transition: .2s all ease-in-out;
     opacity: 1;
     transform: translate3d(0%, 0, 0);
     height: calc(100% - 45px);
-    position: relative;
     background-color: #efeff4;
     box-shadow: 0px 0 41px rgba(0,0,0,.1);
 }

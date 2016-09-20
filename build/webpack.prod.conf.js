@@ -61,7 +61,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     new webpack.ProvidePlugin({
       "$":'webpack-zepto',
       "zepto":"zepto",
-      "window.zepto":"webpack-zepto"
+      "window.zepto":"webpack-zepto",
     }),
     // split vendor js into its own file
     new webpack.optimize.CommonsChunkPlugin({

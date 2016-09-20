@@ -16,22 +16,22 @@ export default function(router) {
             }
         }
         //个人相册
-    const photos = {
+    const albums = {
         component: resolve => {
-            require(['./views/find/photos.vue'], resolve)
+            require(['./views/find/albums-friends.vue'], resolve)
         },
         subRoutes: {
-            //预览
-            'preview': {
-                component: resolve => {
-                    require(['./views/find/photos-preview.vue'], resolve)
-                }
-            },
+            // //预览
+            // 'preview': {
+            //     component: resolve => {
+            //         require(['./views/find/albums-friends-preview.vue'], resolve)
+            //     }
+            // },
             //个人资料
             'person-info': personInfo
         }
     }
-    personInfo.photos = photos
+    personInfo.albums = albums
 
     //对话框
     const dialogue = {
@@ -117,6 +117,9 @@ export default function(router) {
         '/find': {
             component: resolve => {
                 require(['./views/find.vue'], resolve)
+            },
+            subRoutes: {
+                'albums-friends': albums
             }
         },
         '/me': {

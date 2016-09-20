@@ -2,7 +2,7 @@
     <div class="_full_inner _effect component-find" :class="{'_effect--30':decline}">
         <div class="_full component-find-content">
             <div class="weui_cells weui_cells_access">
-                <div class="weui_cell" href="javascript:;">
+                <div class="weui_cell" href="javascript:;" v-link='{path:"albums-friends",append:true}'>
                     <div class="weui_cell_hd"><img src="../assets/images/find_icon-circle.png"></div>
                     <div class="weui_cell_bd weui_cell_primary">
                         <p>朋友圈</p>

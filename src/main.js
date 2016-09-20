@@ -41,3 +41,4 @@ router.start(App, '#app')
 window.router = router
 window.Vue = Vue
 window.$ = zepto
+// window.dynamics = dynamics
