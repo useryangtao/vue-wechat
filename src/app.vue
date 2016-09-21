@@ -2,7 +2,7 @@
     <section class="welcome" v-show="welcome" transition="welcome"></section>
     <header class="app-header" style="display:none;" v-show="appload">
         <div class="_effect" :class="{'_effect--50':decline}">
-            <index-header></index-header>
+            <index-header style="overflow:visible;"></index-header>
         </div>
     </header>
     <section class="app-content" style="display:none;" v-show="appload">

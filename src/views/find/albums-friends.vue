@@ -1,6 +1,6 @@
 <template>
     <div class="_full_router component-xxx" @touchmove.prevent="">
-        <div class="_full_inner">
+        <div class="_full_inner" @touchmove.stop="">
             <top-handle :back-text="topModel.backText" :cur-text="topModel.curText" :decline="decline" :next-path="topModel.nextPath" :next-icon="topModel.nextIcon">
             </top-handle>
             <div class="_cover-content _effect" :class="{'_effect--30':decline}">
@@ -90,37 +90,38 @@ export default {
     },
     methods: {
         startDrag: function(e) {
-            // e = e.changedTouches ? e.changedTouches[0] : e
-            // this.isDragging = document.getElementById("drag-wrap").scrollTop === 0
-            // if (this.isDragging) {
-            //     this.dragging = true
-            //     this.start.y = e.pageY
-            //     console.log('start', this.start.y)
-            // }
+            e = e.changedTouches ? e.changedTouches[0] : e
+            this.isDragging = document.getElementById("drag-wrap").scrollTop === 0
+            if (this.isDragging) {
+                this.dragging = true
+                this.start.y = e.pageY
+                // console.log('start', this.start.y)
+            }
         },
         onDrag: function(e) {
-            // e = e.changedTouches ? e.changedTouches[0] : e
-            // if (!this.isDragging) {
-            //     this.isDragging = document.getElementById("drag-wrap").scrollTop === 0;
-            //     if (this.isDragging) {
-            //         this.dragging = true
-            //         this.start.y = e.pageY
-            //     }
-            // }
-            // if (this.isDragging) {
-            //     this.c.y = (e.pageY - this.start.y) / 3
-            // }
+            e = e.changedTouches ? e.changedTouches[0] : e
+            if (!this.isDragging) {
+                this.isDragging = document.getElementById("drag-wrap").scrollTop === 0;
+                if (this.isDragging) {
+                    this.dragging = true
+                    this.start.y = e.pageY
+                }
+            }
+            if (this.isDragging) {
+                this.c.y = (e.pageY - this.start.y) / 3
+            }
         },
         stopDrag: function() {
-            // if (this.dragging) {
-            //     this.dragging = false
-            //     dynamics.animate(this.c, {
-            //         y: 0
-            //     }, {
-            //         type: dynamics.easeOut,
-            //         duration: 350,
-            //     })
-            // }
+            // e.cancelable = false;
+            if (this.dragging) {
+                this.dragging = false
+                dynamics.animate(this.c, {
+                    y: 0
+                }, {
+                    type: dynamics.easeOut,
+                    duration: 350,
+                })
+            }
         }
     },
     computed: {

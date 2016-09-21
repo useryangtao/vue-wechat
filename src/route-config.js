@@ -119,7 +119,12 @@ export default function(router) {
                 require(['./views/find.vue'], resolve)
             },
             subRoutes: {
-                'albums-friends': albums
+                'albums-friends': albums,
+                'sao-yi-sao':{
+                    component: resolve => {
+                        require(['./views/find/sao-yi-sao.vue'], resolve)
+                    }
+                }
             }
         },
         '/me': {

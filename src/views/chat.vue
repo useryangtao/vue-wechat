@@ -1,5 +1,5 @@
 <template>
-    <div class="_full_inner _scroll _effect component-chat" :class="{'_effect--30':decline}">
+    <div class="_full_inner _scroll _effect component-chat" :class="{'_effect--30':decline}" @touchmove.stop="">
         <search-bar></search-bar>
         <ul class="wechat-list">
             <li class="item _line-fine" v-for="item in wechat_list" transition="chat-item">
@@ -17,7 +17,7 @@
                         <div class="desc-title" v-text="item.base.name"></div>
                         <div class="desc-message">
                             <div class="desc-mute iconfont icon-mute" :title="item.chatConfigModel.newsMute | json" v-show="item.chatConfigModel.newsMute"></div>
-                            <span :title="item.base.type" v-show="item.base.type!=='friends'" v-text="item.chatBaseModel.endChatAuth+':'"></span>
+                            <span :title="item.base.type" v-show="item.base.type==='friends'" v-text="item.chatBaseModel.endChatAuth+':'"></span>
                             <span v-text="item.chatBaseModel.endChatTxt"></span>
                         </div>
                     </div>

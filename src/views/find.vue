@@ -15,7 +15,7 @@
             </div>
             <!-- flag -->
             <div class="weui_cells weui_cells_access">
-                <div class="weui_cell" href="javascript:;">
+                <div class="weui_cell" href="javascript:;" v-link='{path:"sao-yi-sao",append:true}'>
                     <div class="weui_cell_hd"><img src="../assets/images/find_icon-qrcode.png"></div>
                     <div class="weui_cell_bd weui_cell_primary">
                         <p>扫一扫</p>
@@ -84,7 +84,7 @@
             </div>
         </div>
     </div>
-    <router-view transition="cover" keep-alive></router-view>
+    <router-view transition="cover" ></router-view>
 </template>
 <script>
 // import {} from 'getters'
@@ -116,14 +116,6 @@ export default {
     data() {
         return {
             decline: false,
-            topModel: {
-                backText: '返回',
-                curText: 'new Page',
-                nextPath: {
-                    path: ''
-                },
-                nextIcon: ''
-            }
         }
     },
     methods: {
