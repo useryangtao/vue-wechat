@@ -1,7 +1,15 @@
 import { SET_MENU , SET_MENU_ACTIVE ,BACK_PATH ,SET_CHAT_COUNT} from '../mutation-types'
 let state = {
     backPath:'',
-    index_nav: [],
+    index_nav: [{
+        index: 0,
+        path: {
+            path: '/chat'
+        },
+        hint: { type: "count", count: 0 }, //count,dot
+        iconClass: 'icon-wechat',
+        text: '微信'
+    }],
     menu_active:{text:"",index:0},
 }
 const mutations = {

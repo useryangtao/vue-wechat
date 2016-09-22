@@ -25,7 +25,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="weui_cell" href="javascript:;">
+                <div class="weui_cell" href="javascript:;" v-link='{path:"yao-yi-yao",append:true}'>
                     <div class="weui_cell_hd"><img src="../assets/images/find_icon-shake.png"></div>
                     <div class="weui_cell_bd weui_cell_primary">
                         <p>摇一摇</p>
@@ -38,17 +38,7 @@
             </div>
             <!-- flag -->
             <div class="weui_cells weui_cells_access">
-                <div class="weui_cell" href="javascript:;">
-                    <div class="weui_cell_hd"><img src="../assets/images/find_icon-locationservice.png"></div>
-                    <div class="weui_cell_bd weui_cell_primary">
-                        <p>附近的人</p>
-                    </div>
-                    <div class="weui_cell_ft">
-                        <div class="find-circle-cell">
-                        </div>
-                    </div>
-                </div>
-                <div class="weui_cell" href="javascript:;">
+                <div class="weui_cell" href="javascript:;" v-link='{path:"drift-bottle",append:true}'>
                     <div class="weui_cell_hd"><img src="../assets/images/find_icon-bottle.png"></div>
                     <div class="weui_cell_bd weui_cell_primary">
                         <p>漂流瓶</p>

@@ -2,14 +2,16 @@
     <div class="_full_router component-xxx">
         <div class="_full_inner">
             <top-handle
-                :back-text="topModel.backText"
-                :cur-text="topModel.curText"
-                :decline="decline"
-                >
+            :back-text=""
+            :cur-text=""
+            :decline="decline"
+            :next-path=""
+            :next-icon=""
+            >
             </top-handle>
             <div class="_cover-content _effect"
                 :class="{'_effect--30':decline}">
-                <div><div v-link="{path:'/'}">返回首页</div></div>
+                <div></div>
             </div>
         </div>
         <!-- router -->
@@ -21,21 +23,23 @@
 // import {} from 'actions'
 
 import topHandle from 'topHandle'
-
 export default {
     vuex:{
         getters:{
 
         },
-        actions:{
+        action:{
 
         }
     },
     route:{
         activate({from,to,next}) {
+            //do something...
+            this.$parent.$emit('route-pipe',true)
             next()
         },
         deactivate({from,to,next}){
+            this.$parent.$emit('route-pipe',false)
             next()
         }
     },
@@ -43,14 +47,15 @@ export default {
         return {
             decline:false,
             topModel:{
-                backText:'返回',
-                curText:'404',
-                nextPath:{path:''},
+                backText:'',
+                curText:'',
+                nextPath:{poth:''},
                 nextIcon:''
             }
         }
     },
     methods:{
+        
     },
     events:{
         'route-pipe'(_decline){
@@ -72,6 +77,3 @@ export default {
 <style scoped>
     
 </style>
-
-
-        

@@ -9,7 +9,7 @@ module.exports = [{
         "qq": "00001",
         "email": "00001@qq.com",
         "type": "friends",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
+        "iconSrc": "//ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
         "qrCode": "",
         "signature": "个性签名"
     }]
@@ -24,7 +24,7 @@ module.exports = [{
         "qq": "00001",
         "email": "00001@qq.com",
         "type": "friends",
-        "iconSrc": "http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/09/08/d0d193ade7c1e1de28cbfa5b4472011b.jpg",
+        "iconSrc": "//pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/09/08/d0d193ade7c1e1de28cbfa5b4472011b.jpg",
         "qrCode": "",
         "signature": "个性签名"
     }]
@@ -39,7 +39,7 @@ module.exports = [{
         "qq": "00011",
         "email": "00011@qq.com",
         "type": "firends",
-        "iconSrc": "http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/09/05/6b1ad2c8552daf8f6669aa4d085cc674.jpg",
+        "iconSrc": "//pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/09/05/6b1ad2c8552daf8f6669aa4d085cc674.jpg",
         "qrCode": "",
         "telphone":18812345678,
         "signature": "个性签名",
@@ -54,7 +54,7 @@ module.exports = [{
         "qq": "00011",
         "email": "00011@qq.com",
         "type": "firends",
-        "iconSrc": "http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/09/08/483f844c17afeca3fd0aae42c76e88df.jpg",
+        "iconSrc": "//pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/09/08/483f844c17afeca3fd0aae42c76e88df.jpg",
         "qrCode": "",
         "telphone":18812345678,
         "signature": "个性签名",

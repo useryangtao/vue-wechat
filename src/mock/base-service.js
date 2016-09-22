@@ -25,7 +25,7 @@
         "qq": "00003",
         "email": "00003@qq.com",
         "type": "service",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n80l8ij202q02qmx2.jpg",
+        "iconSrc": "//ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n80l8ij202q02qmx2.jpg",
         "qrCode": null,
         "signature": "我是服务号",
     },

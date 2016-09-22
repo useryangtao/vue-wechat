@@ -336,6 +336,7 @@ export default {
     height: 40px;
     margin-bottom: 5px;
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .sao-yi-sao-footer li.current p {
@@ -372,5 +373,9 @@ export default {
 
 .sao-yi-sao-footer li.scan-word.current div {
     background-image: url(../../assets/images/sao-yi-sao/scan-word_hl.png);
+}
+
+.sao-yi-sao-footer li.scan-word .frame .green-line{
+    display: none;
 }
 </style>

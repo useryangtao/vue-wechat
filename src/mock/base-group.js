@@ -25,7 +25,7 @@ module.exports = {
         "qq": "00002",
         "email": null,
         "type": "group",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n7cawhj202q02qglk.jpg",
+        "iconSrc": "//ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n7cawhj202q02qglk.jpg",
         "qrCode": "",
         "signature": "个性签名",
     },

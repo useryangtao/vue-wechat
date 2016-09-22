@@ -26,7 +26,7 @@ module.exports = {
         "qq": "00004",
         "email": "0004@qq.com",
         "type": "sub", //关系:朋友
-        "iconSrc": "http://ww4.sinaimg.cn/mw690/d0d07035jw1f7f2n8ruarj202q02qdfp.jpg",
+        "iconSrc": "//ww4.sinaimg.cn/mw690/d0d07035jw1f7f2n8ruarj202q02qdfp.jpg",
         "qrCode": null,
         "signature": "订阅号签名",
     },

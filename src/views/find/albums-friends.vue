@@ -10,7 +10,7 @@
                         <header class="home-pic">
                             <div class="home-pic-base">
                                 <div class="top-pic">
-                                    <div class="top-pic-inner" style="background-image:url(http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg) ">
+                                    <div class="top-pic-inner" style="background-image:url(//images2015.cnblogs.com/blog/528573/201609/528573-20160922181803449-1753077357.jpg) ">
                                     </div>
                                 </div>
                                 <div class="top-name _ellipsis">yangtao</div>

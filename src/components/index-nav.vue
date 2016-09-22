@@ -11,7 +11,7 @@
 <script>
 import {
     index_nav
-} from '../vuex/getters'
+} from 'getters'
 import {
     get_index_nav,
     set_menu_active

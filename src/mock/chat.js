@@ -8,7 +8,7 @@ var list = [{
         "qq": "00001",
         "email": "00001@qq.com",
         "type": "friends",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
+        "iconSrc": "//ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
         "qrCode": "",
         "signature": "个性签名",
         "telphone": 18812345678,
@@ -29,7 +29,7 @@ var list = [{
     "chatDialogueModel": [],
     "chatMemberModel": [{
         "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
+        "iconSrc": "//ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
         "name": "杨涛",
         "nickname": "nick_杨涛",
         "remark": "remark_杨涛",
@@ -52,7 +52,7 @@ var list = [{
         "qq": "00002",
         "email": null,
         "type": "group",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n7cawhj202q02qglk.jpg",
+        "iconSrc": "//images2015.cnblogs.com/blog/528573/201609/528573-20160922181803449-1753077357.jpg",
 
         "qrCode": "",
         "signature": "个性签名",
@@ -70,31 +70,13 @@ var list = [{
     "chatDialogueModel": [],
     "chatMemberModel": [{
         "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
+        "iconSrc": "//images2015.cnblogs.com/blog/528573/201609/528573-20160922181803449-1753077357.jpg",
         "name": "yangtao01",
         "nickname": "nick_微信群01",
         "remark": "remark_微信群01",
     }, {
         "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "name": "yangtao01",
-        "nickname": "nick_微信群01",
-        "remark": "remark_微信群01",
-    }, {
-        "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "name": "yangtao01",
-        "nickname": "nick_微信群01",
-        "remark": "remark_微信群01",
-    }, {
-        "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "name": "yangtao01",
-        "nickname": "nick_微信群01",
-        "remark": "remark_微信群01",
-    }, {
-        "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
+        "iconSrc": "//images2015.cnblogs.com/blog/528573/201609/528573-20160922181803449-1753077357.jpg",
         "name": "yangtao01",
         "nickname": "nick_微信群01",
         "remark": "remark_微信群01"
@@ -107,146 +89,17 @@ var list = [{
         "contactsSave": false,
         "showGroupNickname": true, //显示群聊天昵称
     }
-}, {
-    "base": {
-        "id": 2,
-        "name": "微信群01",
-        "nickname": "nick_微信群01",
-        "remark": "remark_微信群01",
-        "wxid": "wxid_group01",
-        "qq": "00002",
-        "email": null,
-        "type": "group",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n7cawhj202q02qglk.jpg",
-        "qrCode": "",
-        "signature": "个性签名",
-    },
-    "chatBaseModel": {
-        "newsUnreadCount": 1,
-        "endTimeStr": 1472632586443,
-        "endChatAuth": "领导",
-        "endChatTxt": "大家下班的时候记得锁好门",
-    },
-    //对话框底部菜单
-    "chatDialogueBarModel": {
-        menu: []
-    },
-    "chatDialogueModel": [],
-    "chatMemberModel": [{
-        "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "name": "yangtao01",
-        "nickname": "nick_微信群01",
-        "remark": "remark_微信群01",
-    }, {
-        "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "name": "yangtao01",
-        "nickname": "nick_微信群01",
-        "remark": "remark_微信群01",
-    }, {
-        "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "name": "yangtao01",
-        "nickname": "nick_微信群01",
-        "remark": "remark_微信群01",
-    }, {
-        "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "name": "yangtao01",
-        "nickname": "nick_微信群01",
-        "remark": "remark_微信群01",
-    }, {
-        "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "name": "yangtao01",
-        "nickname": "nick_微信群01",
-        "remark": "remark_微信群01"
-    }],
-    "chatConfigModel": {
-        "chatBackground": null, //背景
-        "groupNotice": "", //群公告
-        "isStick": false, //置顶
-        "newsMute": true, //消息免打扰
-        "contactsSave": false,
-        "showGroupNickname": true, //显示群聊天昵称
-    }
-}, {
+},{
     "base": {
         "id": 1,
-        "name": "小明",
-        "nickname": "nick_小明",
-        "remark": "remark_小明",
-        "wxid": "wxid_xiaoming",
-        "qq": "000011",
-        "email": "000011@qq.com",
-        "type": "friends",
-        "iconSrc": "http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/09/05/6b1ad2c8552daf8f6669aa4d085cc674.jpg",
-        "qrCode": "",
-        "signature": "个性签名",
-        "telphone": 18812345678,
-        "area": ["中国", "北京", "海淀"],
-        "selfPhotos": [{ imgSrc: "" }]
-    },
-    //对话列表基本项
-    "chatBaseModel": {
-        "newsUnreadCount": 0,
-        "endTimeStr": 1472632586443,
-        "endChatAuth": "a",
-        "endChatTxt": "中秋节快乐",
-    },
-    //对话框底部菜单
-    "chatDialogueBarModel": {
-        menu: []
-    },
-    "chatDialogueModel": [{
-        "id": 11,
-        "name": "小明",
-        "nickname": "nick_小明",
-        "remark": "remark_小明",
-        "wxid": "wxid_xiaoming",
-        "qq": "000011",
-        "email": "000011@qq.com",
-        "type": "friends",
-        "iconSrc": "http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/09/05/6b1ad2c8552daf8f6669aa4d085cc674.jpg",
-        "qrCode": "",
-        "signature": "个性签名",
-        "telphone": 18812345678,
-        "area": ["中国", "北京", "海淀"],
-        "selfPhotos": [{ imgSrc: "" }]
-    }],
-    "chatMemberModel": [{
-        "id": 11,
-        "name": "小明",
-        "nickname": "nick_小明",
-        "remark": "remark_小明",
-        "wxid": "wxid_xiaoming",
-        "qq": "000011",
-        "email": "000011@qq.com",
-        "type": "friends",
-        "iconSrc": "http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/09/05/6b1ad2c8552daf8f6669aa4d085cc674.jpg",
-        "qrCode": "",
-        "signature": "个性签名"
-    }],
-    "chatConfigModel": {
-        "isStick": false, //置顶
-        "newsMute": false, //消息免打扰
-        "starFriends": false, //标星
-        "lookMePhotos": true,
-        "lookHisPhotos": true,
-        "blacklist": false, //"黑名单"
-    }
-}, {
-    "base": {
-        "id": 1,
-        "name": "京东",
-        "nickname": "京东",
-        "remark": "京东",
-        "wxid": "wxid_jingdong",
-        "qq": "000021",
-        "email": "000021@qq.com",
+        "name": "稀土圈",
+        "nickname": "稀土圈",
+        "remark": "稀土圈",
+        "wxid": "iloveleme",
+        "qq": "00000",
+        "email": "000000@qq.com",
         "type": "service",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n80l8ij202q02qmx2.jpg",
+        "iconSrc": "http://images2015.cnblogs.com/blog/528573/201609/528573-20160922172336606-2007675830.jpg",
         "qrCode": "",
         "signature": "个性签名",
         "telphone": 18812345678,
@@ -258,73 +111,60 @@ var list = [{
         "newsUnreadCount": 0,
         "endTimeStr": 1472632586443,
         "endChatAuth": "",
-        "endChatTxt": "Plus特价",
+        "endChatTxt": "挖掘最优质的互联网技术",
     },
     //对话框底部菜单
     "chatDialogueBarModel": {
         menu: [{
-            title: '',
-            link: '',
-            subMenu: [{
-                title: '',
-                link: ''
-            }, {
-                title: '',
-                link: ''
-            }]
+            title: '翻译计划',
+            link: 'http://mp.weixin.qq.com/s?__biz=MzA3MjA4NjE3NQ==&mid=2652104271&idx=1&sn=fcd5bc3e300b92e10f3bf7574f1fcef8&scene=18#wechat_redirect',
+            subMenu: []
+        }, {
+            title: '绝密试卷',
+            link: 'http://p.memoe.cn/',
+            subMenu: []
+        }, {
+            title: '稀土掘金',
+            link: '//gold.xitu.io',
+            subMenu: []
         }]
     },
     "chatDialogueModel": [{
         "id": 1,
-        "name": "京东",
-        "nickname": "京东",
-        "remark": "京东",
+        "name": "稀土圈",
+        "nickname": "稀土圈",
+        "remark": "稀土圈",
         "wxid": "wxid_jingdong",
         "qq": "000021",
         "email": "000021@qq.com",
         "type": "service",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n80l8ij202q02qmx2.jpg",
+        "iconSrc": "http://image0.weixinla.com/weixin/avatar/20160626/846fd84845f92ab3c763bcc30c5ecd7cdcae25c7.jpg",
         "qrCode": "",
         "signature": "个性签名",
         "telphone": 18812345678,
         "area": ["中国", "北京", "海淀"],
         "selfPhotos": [{ imgSrc: "" }]
     }],
-    "chatMemberModel": [{
+    "chatMemberModel": [],
+    "chatConfigModel": {
+        "isStick": false, //置顶
+        "newsMute": false, //消息免打扰
+        "starFriends": false, //标星
+        "lookMePhotos": true,
+        "lookHisPhotos": true,
+        "blacklist": false, //"黑名单"
+    }
+}, {
+    "base": {
         "id": 1,
-        "name": "京东",
-        "nickname": "京东",
-        "remark": "京东",
-        "wxid": "wxid_jingdong",
-        "qq": "000021",
-        "email": "000021@qq.com",
+        "name": "饿了么",
+        "nickname": "饿了么",
+        "remark": "饿了么",
+        "wxid": "iloveleme",
+        "qq": "00000",
+        "email": "000000@qq.com",
         "type": "service",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n80l8ij202q02qmx2.jpg",
-        "qrCode": "",
-        "signature": "个性签名",
-        "telphone": 18812345678,
-        "area": ["中国", "北京", "海淀"],
-        "selfPhotos": [{ imgSrc: "" }]
-    }],
-    "chatConfigModel": {
-        "isStick": false, //置顶
-        "newsMute": false, //消息免打扰
-        "starFriends": false, //标星
-        "lookMePhotos": true,
-        "lookHisPhotos": true,
-        "blacklist": false, //"黑名单"
-    }
-}, {
-    "base": {
-        "id": 1,
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-        "wxid": "wxid_yangtao",
-        "qq": "00001",
-        "email": "00001@qq.com",
-        "type": "friends",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
+        "iconSrc": "//tb1.bdstatic.com/tb/cms/ngmis/file_1453447545023.jpg",
         "qrCode": "",
         "signature": "个性签名",
         "telphone": 18812345678,
@@ -333,419 +173,44 @@ var list = [{
     },
     //对话列表基本项
     "chatBaseModel": {
-        "newsUnreadCount": 1,
+        "newsUnreadCount": 0,
         "endTimeStr": 1472632586443,
-        "endChatAuth": "杨涛",
-        "endChatTxt": "晚上打球?",
+        "endChatAuth": "",
+        "endChatTxt": "饿了么网上订餐平台",
     },
     //对话框底部菜单
     "chatDialogueBarModel": {
-        menu: []
+        menu: [{
+            title: '我要订餐',
+            link: '//m.ele.me/',
+            subMenu: []
+        }, {
+            title: '关注必读',
+            link: '//mp.weixin.qq.com/mp/homepage?__biz=MzA3NDM1NTY0Nw==&hid=1&sn=5574694ffc2ac18f84873bd901630d2e#wechat_redirect',
+            subMenu: []
+        }, {
+            title: '联系我们',
+            link: '//m.ele.me/',
+            subMenu: []
+        }]
     },
-    "chatDialogueModel": [],
-    "chatMemberModel": [{
+    "chatDialogueModel": [{
         "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-    }],
-    "chatConfigModel": {
-        "isStick": false, //置顶
-        "newsMute": false, //消息免打扰
-        "starFriends": false, //标星
-        "lookMePhotos": true,
-        "lookHisPhotos": true,
-        "blacklist": false, //"黑名单"
-    }
-}, {
-    "base": {
-        "id": 1,
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-        "wxid": "wxid_yangtao",
-        "qq": "00001",
-        "email": "00001@qq.com",
-        "type": "friends",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
+        "name": "饿了么",
+        "nickname": "饿了么",
+        "remark": "饿了么",
+        "wxid": "iloveleme",
+        "qq": "00000",
+        "email": "00000@qq.com",
+        "type": "service",
+        "iconSrc": "",
         "qrCode": "",
         "signature": "个性签名",
         "telphone": 18812345678,
         "area": ["中国", "北京", "海淀"],
         "selfPhotos": [{ imgSrc: "" }]
-    },
-    //对话列表基本项
-    "chatBaseModel": {
-        "newsUnreadCount": 1,
-        "endTimeStr": 1472632586443,
-        "endChatAuth": "杨涛",
-        "endChatTxt": "晚上打球?",
-    },
-    //对话框底部菜单
-    "chatDialogueBarModel": {
-        menu: []
-    },
-    "chatDialogueModel": [],
-    "chatMemberModel": [{
-        "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
     }],
-    "chatConfigModel": {
-        "isStick": false, //置顶
-        "newsMute": false, //消息免打扰
-        "starFriends": false, //标星
-        "lookMePhotos": true,
-        "lookHisPhotos": true,
-        "blacklist": false, //"黑名单"
-    }
-}, {
-    "base": {
-        "id": 1,
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-        "wxid": "wxid_yangtao",
-        "qq": "00001",
-        "email": "00001@qq.com",
-        "type": "friends",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "qrCode": "",
-        "signature": "个性签名",
-        "telphone": 18812345678,
-        "area": ["中国", "北京", "海淀"],
-        "selfPhotos": [{ imgSrc: "" }]
-    },
-    //对话列表基本项
-    "chatBaseModel": {
-        "newsUnreadCount": 1,
-        "endTimeStr": 1472632586443,
-        "endChatAuth": "杨涛",
-        "endChatTxt": "晚上打球?",
-    },
-    //对话框底部菜单
-    "chatDialogueBarModel": {
-        menu: []
-    },
-    "chatDialogueModel": [],
-    "chatMemberModel": [{
-        "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-    }],
-    "chatConfigModel": {
-        "isStick": false, //置顶
-        "newsMute": false, //消息免打扰
-        "starFriends": false, //标星
-        "lookMePhotos": true,
-        "lookHisPhotos": true,
-        "blacklist": false, //"黑名单"
-    }
-}, {
-    "base": {
-        "id": 1,
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-        "wxid": "wxid_yangtao",
-        "qq": "00001",
-        "email": "00001@qq.com",
-        "type": "friends",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "qrCode": "",
-        "signature": "个性签名",
-        "telphone": 18812345678,
-        "area": ["中国", "北京", "海淀"],
-        "selfPhotos": [{ imgSrc: "" }]
-    },
-    //对话列表基本项
-    "chatBaseModel": {
-        "newsUnreadCount": 1,
-        "endTimeStr": 1472632586443,
-        "endChatAuth": "杨涛",
-        "endChatTxt": "晚上打球?",
-    },
-    //对话框底部菜单
-    "chatDialogueBarModel": {
-        menu: []
-    },
-    "chatDialogueModel": [],
-    "chatMemberModel": [{
-        "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-    }],
-    "chatConfigModel": {
-        "isStick": false, //置顶
-        "newsMute": false, //消息免打扰
-        "starFriends": false, //标星
-        "lookMePhotos": true,
-        "lookHisPhotos": true,
-        "blacklist": false, //"黑名单"
-    }
-}, {
-    "base": {
-        "id": 1,
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-        "wxid": "wxid_yangtao",
-        "qq": "00001",
-        "email": "00001@qq.com",
-        "type": "friends",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "qrCode": "",
-        "signature": "个性签名",
-        "telphone": 18812345678,
-        "area": ["中国", "北京", "海淀"],
-        "selfPhotos": [{ imgSrc: "" }]
-    },
-    //对话列表基本项
-    "chatBaseModel": {
-        "newsUnreadCount": 1,
-        "endTimeStr": 1472632586443,
-        "endChatAuth": "杨涛",
-        "endChatTxt": "晚上打球?",
-    },
-    //对话框底部菜单
-    "chatDialogueBarModel": {
-        menu: []
-    },
-    "chatDialogueModel": [],
-    "chatMemberModel": [{
-        "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-    }],
-    "chatConfigModel": {
-        "isStick": false, //置顶
-        "newsMute": false, //消息免打扰
-        "starFriends": false, //标星
-        "lookMePhotos": true,
-        "lookHisPhotos": true,
-        "blacklist": false, //"黑名单"
-    }
-}, {
-    "base": {
-        "id": 1,
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-        "wxid": "wxid_yangtao",
-        "qq": "00001",
-        "email": "00001@qq.com",
-        "type": "friends",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "qrCode": "",
-        "signature": "个性签名",
-        "telphone": 18812345678,
-        "area": ["中国", "北京", "海淀"],
-        "selfPhotos": [{ imgSrc: "" }]
-    },
-    //对话列表基本项
-    "chatBaseModel": {
-        "newsUnreadCount": 1,
-        "endTimeStr": 1472632586443,
-        "endChatAuth": "杨涛",
-        "endChatTxt": "晚上打球?",
-    },
-    //对话框底部菜单
-    "chatDialogueBarModel": {
-        menu: []
-    },
-    "chatDialogueModel": [],
-    "chatMemberModel": [{
-        "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-    }],
-    "chatConfigModel": {
-        "isStick": false, //置顶
-        "newsMute": false, //消息免打扰
-        "starFriends": false, //标星
-        "lookMePhotos": true,
-        "lookHisPhotos": true,
-        "blacklist": false, //"黑名单"
-    }
-}, {
-    "base": {
-        "id": 1,
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-        "wxid": "wxid_yangtao",
-        "qq": "00001",
-        "email": "00001@qq.com",
-        "type": "friends",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "qrCode": "",
-        "signature": "个性签名",
-        "telphone": 18812345678,
-        "area": ["中国", "北京", "海淀"],
-        "selfPhotos": [{ imgSrc: "" }]
-    },
-    //对话列表基本项
-    "chatBaseModel": {
-        "newsUnreadCount": 1,
-        "endTimeStr": 1472632586443,
-        "endChatAuth": "杨涛",
-        "endChatTxt": "晚上打球?",
-    },
-    //对话框底部菜单
-    "chatDialogueBarModel": {
-        menu: []
-    },
-    "chatDialogueModel": [],
-    "chatMemberModel": [{
-        "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-    }],
-    "chatConfigModel": {
-        "isStick": false, //置顶
-        "newsMute": false, //消息免打扰
-        "starFriends": false, //标星
-        "lookMePhotos": true,
-        "lookHisPhotos": true,
-        "blacklist": false, //"黑名单"
-    }
-}, {
-    "base": {
-        "id": 1,
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-        "wxid": "wxid_yangtao",
-        "qq": "00001",
-        "email": "00001@qq.com",
-        "type": "friends",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "qrCode": "",
-        "signature": "个性签名",
-        "telphone": 18812345678,
-        "area": ["中国", "北京", "海淀"],
-        "selfPhotos": [{ imgSrc: "" }]
-    },
-    //对话列表基本项
-    "chatBaseModel": {
-        "newsUnreadCount": 1,
-        "endTimeStr": 1472632586443,
-        "endChatAuth": "杨涛",
-        "endChatTxt": "晚上打球?",
-    },
-    //对话框底部菜单
-    "chatDialogueBarModel": {
-        menu: []
-    },
-    "chatDialogueModel": [],
-    "chatMemberModel": [{
-        "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-    }],
-    "chatConfigModel": {
-        "isStick": false, //置顶
-        "newsMute": false, //消息免打扰
-        "starFriends": false, //标星
-        "lookMePhotos": true,
-        "lookHisPhotos": true,
-        "blacklist": false, //"黑名单"
-    }
-}, {
-    "base": {
-        "id": 1,
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-        "wxid": "wxid_yangtao",
-        "qq": "00001",
-        "email": "00001@qq.com",
-        "type": "friends",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "qrCode": "",
-        "signature": "个性签名",
-        "telphone": 18812345678,
-        "area": ["中国", "北京", "海淀"],
-        "selfPhotos": [{ imgSrc: "" }]
-    },
-    //对话列表基本项
-    "chatBaseModel": {
-        "newsUnreadCount": 1,
-        "endTimeStr": 1472632586443,
-        "endChatAuth": "杨涛",
-        "endChatTxt": "晚上打球?",
-    },
-    //对话框底部菜单
-    "chatDialogueBarModel": {
-        menu: []
-    },
-    "chatDialogueModel": [],
-    "chatMemberModel": [{
-        "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-    }],
-    "chatConfigModel": {
-        "isStick": false, //置顶
-        "newsMute": false, //消息免打扰
-        "starFriends": false, //标星
-        "lookMePhotos": true,
-        "lookHisPhotos": true,
-        "blacklist": false, //"黑名单"
-    }
-}, {
-    "base": {
-        "id": 1,
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-        "wxid": "wxid_yangtao",
-        "qq": "00001",
-        "email": "00001@qq.com",
-        "type": "friends",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "qrCode": "",
-        "signature": "个性签名",
-        "telphone": 18812345678,
-        "area": ["中国", "北京", "海淀"],
-        "selfPhotos": [{ imgSrc: "" }]
-    },
-    //对话列表基本项
-    "chatBaseModel": {
-        "newsUnreadCount": 1,
-        "endTimeStr": 1472632586443,
-        "endChatAuth": "杨涛",
-        "endChatTxt": "晚上打球?",
-    },
-    //对话框底部菜单
-    "chatDialogueBarModel": {
-        menu: []
-    },
-    "chatDialogueModel": [],
-    "chatMemberModel": [{
-        "id": 1,
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-    }],
+    "chatMemberModel": [],
     "chatConfigModel": {
         "isStick": false, //置顶
         "newsMute": false, //消息免打扰

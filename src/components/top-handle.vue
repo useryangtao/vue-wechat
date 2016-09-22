@@ -56,9 +56,9 @@ import {
 export default {
     props: {
         //返回路径
-        'backPath': {
-            type: Object
-        },
+        // 'backPath': {
+        //     type: Object
+        // },
         //返回文本
         'backText': {
             type: String,

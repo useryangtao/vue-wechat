@@ -5,15 +5,16 @@
                 :back-text="topModel.backText"
                 :cur-text="topModel.curText"
                 :decline="decline"
+                :next-path="topModel.nextPath"
+                :next-icon="topModel.nextIcon"
                 >
             </top-handle>
             <div class="_cover-content _effect"
                 :class="{'_effect--30':decline}">
-                <div><div v-link="{path:'/'}">返回首页</div></div>
+                <div></div>
             </div>
         </div>
-        <!-- router -->
-        <router-view  transition="cover"></router-view>
+        <iframe src="" frameborder="0"></iframe>
     </div>
 </template>
 <script>
@@ -33,9 +34,12 @@ export default {
     },
     route:{
         activate({from,to,next}) {
+            //do something...
+            this.$parent.$emit('route-pipe',true)
             next()
         },
         deactivate({from,to,next}){
+            this.$parent.$emit('route-pipe',false)
             next()
         }
     },
@@ -44,13 +48,14 @@ export default {
             decline:false,
             topModel:{
                 backText:'返回',
-                curText:'404',
+                curText:'new Page',
                 nextPath:{path:''},
                 nextIcon:''
             }
         }
     },
     methods:{
+        
     },
     events:{
         'route-pipe'(_decline){
@@ -72,6 +77,3 @@ export default {
 <style scoped>
     
 </style>
-
-
-        

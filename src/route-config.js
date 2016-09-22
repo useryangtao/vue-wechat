@@ -67,7 +67,22 @@ export default function(router) {
                 require(['./views/chat.vue'], resolve)
             },
             subRoutes: {
-                'dialogue': dialogue
+                'dialogue': dialogue,
+                'add-friends': {
+                    component: resolve => {
+                        require(['./views/contact/add-friends.vue'], resolve)
+                    }
+                },
+                'sao-yi-sao': {
+                    component: resolve => {
+                        require(['./views/find/sao-yi-sao.vue'], resolve)
+                    }
+                },
+                'group-chat': {
+                    component: resolve => {
+                        require(['./views/contact/group-chat.vue'], resolve)
+                    }
+                }
             }
         },
         '*': {
@@ -83,6 +98,11 @@ export default function(router) {
             subRoutes: {
                 //个人资料
                 'person-info': personInfo,
+                'public-info': {
+                    component: resolve => {
+                        require(['./views/contact/public-info.vue'], resolve)
+                    }
+                },
                 'new-friends': {
                     component: resolve => {
                         require(['./views/contact/new-friends.vue'], resolve)
@@ -93,6 +113,11 @@ export default function(router) {
                                 require(['./views/contact/add-friends.vue'], resolve)
                             }
                         }
+                    }
+                },
+                'add-friends': {
+                    component: resolve => {
+                        require(['./views/contact/add-friends.vue'], resolve)
                     }
                 },
                 'group-chat': {
@@ -120,9 +145,19 @@ export default function(router) {
             },
             subRoutes: {
                 'albums-friends': albums,
-                'sao-yi-sao':{
+                'sao-yi-sao': {
                     component: resolve => {
                         require(['./views/find/sao-yi-sao.vue'], resolve)
+                    }
+                },
+                'yao-yi-yao': {
+                    component: resolve => {
+                        require(['./views/find/yao-yi-yao.vue'], resolve)
+                    }
+                },
+                'drift-bottle': {
+                    component: resolve => {
+                        require(['./views/find/drift-bottle.vue'], resolve)
                     }
                 }
             }

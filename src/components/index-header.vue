@@ -2,7 +2,7 @@
     <div class="_cover-top">
         <div class="other">
             <span class="iconfont icon-tips-jia" v-show="$route.path==='/chat'" v-touch:tap="tap"></span>
-            <span class="iconfont icon-tips-add-friend" v-show="$route.path==='/contact'"></span>
+            <span class="iconfont icon-tips-add-friend" v-show="$route.path==='/contact'" v-link='{path:"/contact/add-friends"}'></span>
             <ul class="tips-menu" :class="tips_isOpen?'tips-open':'tips-close'">
                 <li v-for="item in menuArr" v-link="item._link">
                     <span class="iconfont" :class="item.iconClass"></span>
@@ -13,16 +13,19 @@
         </div>
         <div class="center">
             {{menu_active.text}}
+            <span class="parentheses" v-show='chatCount' v-text="index_nav[0].hint.count"></span>
         </div>
     </div>
 </template>
 <script>
 import {
-    menu_active
+    menu_active,
+    index_nav
 } from 'getters'
 export default {
     vuex: {
         getters: {
+            index_nav,
             menu_active
         }
     },
@@ -31,34 +34,42 @@ export default {
             tips_isOpen: false,
             menuArr: [{
                 _link: {
-                    path: 'create-group-chat'
+                    path: 'group-chat', //create-group-chat
+                    append:true
                 },
                 text: '发起群聊',
                 iconClass: 'icon-tips-xiaoxi'
             }, {
                 _link: {
-                    path: 'add-friends'
+                    path: 'add-friends',
+                    append:true
                 },
                 text: '添加朋友',
                 iconClass: 'icon-tips-add-friend'
             }, {
                 _link: {
-                    path: 'sao-yi-sao'
+                    path: 'sao-yi-sao',
+                    append:true
                 },
                 text: '扫一扫',
                 iconClass: 'icon-tips-saoyisao'
             }, {
                 _link: {
-                    path: 'receipt-payment-money'
+                    path: 'receipt-payment-money',
+                    append:true
                 },
                 text: '收付款',
                 iconClass: 'icon-tips-fukuan'
             }]
         }
     },
+    computed:{
+        chatCount(){
+            return  this.menu_active.text==="微信" && this.index_nav[0].hint.count > 0
+        }
+    },
     created() {
         var self = this;
-        // console.log($);
         $('body').on('touchend', function() {
             setTimeout(() => {
                 self.tips_isOpen = false;

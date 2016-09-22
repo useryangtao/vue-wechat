@@ -29,7 +29,7 @@ module.exports = {
         "qq": "00001",
         "email": "00001@qq.com",
         "type": "firends",
-        "iconSrc": "http://ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
+        "iconSrc": "//ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
         "qrCode": "",
         "telphone":18812345678,
         "signature": "个性签名",

@@ -3,10 +3,8 @@
 .component-dialogue-bar {
     position: relative;
     height: 100%;
-    padding-left:50px;
+    padding-left: 50px;
 }
-
-
 
 .component-dialogue-bar .dialogue-item {
     position: absolute;
@@ -17,7 +15,8 @@
     transition: .25s all ease;
     background-color: #fdfdfd;
 }
-.component-dialogue-bar .dialogue-item::before{
+
+.component-dialogue-bar .dialogue-item::before {
     content: "";
     position: absolute;
     width: 200%;
@@ -31,6 +30,7 @@
     height: 1px;
     z-index: 2;
 }
+
 .component-dialogue-bar .dialogue-item::after {
     content: "";
     position: absolute;
@@ -42,6 +42,7 @@
     transform-origin: 0 0;
     z-index: 2;
 }
+
 .component-dialogue-bar .dialogue-item.transition-dialogue-down {
     bottom: -50px;
 }
@@ -57,7 +58,10 @@
     color: #7d7e83;
     position: relative;
 }
+
+
 /*person*/
+
 .component-dialogue-bar-person {
     overflow: hidden;
     padding: 5px 0;
@@ -68,7 +72,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     position: relative;
-    background-color:#ffffff;
+    background-color: #ffffff;
 }
 
 .component-dialogue-bar-person::before {
@@ -86,9 +90,10 @@
     z-index: 2;
 }
 
-.component-dialogue-bar .component-dialogue-bar-person::before{
+.component-dialogue-bar .component-dialogue-bar-person::before {
     display: none;
 }
+
 .component-dialogue-bar-person .iconfont {
     color: #7d7e83;
     flex-basis: 40px;
@@ -108,33 +113,39 @@
     flex-grow: 1;
     flex-basis: 200px;
 }
+
 .chat-way .chat-say {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     border-radius: 6px;
     overflow: hidden;
     padding: 0 10px;
     width: 200%;
     height: 200%;
-    color:#565656;
+    color: #565656;
     border: 1px solid #7d7e83;
     transform: scale(.5);
     transform-origin: 0 0;
     font-size: 30px;
 }
-.chat-way .chat-say_touched{
-    background-color:#c6c7ca;
+
+.chat-way .chat-say_touched {
+    background-color: #c6c7ca;
 }
-.chat-way .two{
+
+.chat-way .two {
     display: none;
 }
-.chat-way .chat-say_touched .two{
+
+.chat-way .chat-say_touched .two {
     display: block;
 }
-.chat-way .chat-say_touched .one{
+
+.chat-way .chat-say_touched .one {
     display: none;
 }
+
 .chat-way .chat-txt {
     border-radius: 6px;
     overflow: hidden;
@@ -146,16 +157,18 @@
     transform-origin: 0 0;
     font-size: 30px;
 }
+
+
 /*public公众号*/
 
-.component-dialogue-bar-public{
+.component-dialogue-bar-public {
     height: 100%;
     display: flex;
     position: relative;
     overflow: hidden;
 }
 
-.component-dialogue-bar-public li{
+.component-dialogue-bar-public li {
     padding: 0 2px;
     overflow: hidden;
     flex-grow: 1;
@@ -167,10 +180,12 @@
     align-items: center;
     position: relative;
 }
-.component-dialogue-bar-public li .iconfont{
+
+.component-dialogue-bar-public li .iconfont {
     font-size: 12px;
 }
-.component-dialogue-bar-public li:not(:last-child)::before{
+
+.component-dialogue-bar-public li:not(:last-child)::before {
     content: "";
     position: absolute;
     right: 0;
@@ -179,4 +194,233 @@
     transform: scale(.5);
     height: 200%;
     border-right: 1px solid #b7b7b7;
+}
+
+
+/*tips*/
+
+.recording {
+    position: fixed;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 140px;
+    height: 140px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.recording-voice {
+    // display: none;
+}
+
+.recording-voice .voice-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+
+.voice-inner .voice-icon {
+    width: 55px;
+    height: 90px;
+    background: url(../images/recording-bkg.png) no-repeat center center;
+    background-size: contain;
+}
+
+.voice-inner .voice-volume {
+    width: 30px;
+    height: 55px;
+}
+
+.voice-inner .voice-volume span {
+    background-color: #e4e4e5;
+    height: 2px;
+    margin-top: 4px;
+    min-width: 8px;
+    display: block;
+    float: left;
+    clear: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2000ms;
+    visibility: hidden;
+}
+
+
+.voice-inner .voice-volume span:nth-child(1) {
+    width: 24px;
+    animation-name: alpha9;
+}
+
+.voice-inner .voice-volume span:nth-child(2) {
+    width: 22px;
+    animation-name: alpha8;
+}
+
+.voice-inner .voice-volume span:nth-child(3) {
+    width: 20px;
+    animation-name: alpha7;
+}
+
+.voice-inner .voice-volume span:nth-child(4) {
+    width: 18px;
+    animation-name: alpha6;
+}
+
+.voice-inner .voice-volume span:nth-child(5) {
+    width: 16px;
+    animation-name: alpha5;
+}
+
+.voice-inner .voice-volume span:nth-child(6) {
+    width: 14px;
+    animation-name: alpha4;
+}
+
+.voice-inner .voice-volume span:nth-child(7) {
+    width: 12px;
+    animation-name: alpha3;
+}
+
+.voice-inner .voice-volume span:nth-child(8) {
+    width: 10px;
+    animation-name: alpha2;
+}
+
+.voice-inner .voice-volume span:nth-child(9) {
+    width: 8px;
+    animation-name: alpha1;
+}
+
+@keyframes alpha1 {
+    0% {
+        visibility: hidden;
+    }
+    ,
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes alpha2 {
+    0% {
+        visibility: hidden;
+    }
+    ,
+    10% {
+        visibility: hidden;
+    }
+    ,
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes alpha3 {
+    0% {
+        visibility: hidden;
+    }
+    ,
+    20% {
+        visibility: hidden;
+    }
+    ,
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes alpha4 {
+    0% {
+        visibility: hidden;
+    }
+    ,
+    30% {
+        visibility: hidden;
+    }
+    ,
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes alpha5 {
+    0% {
+        visibility: hidden;
+    }
+    ,
+    40% {
+        visibility: hidden;
+    }
+    ,
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes alpha6 {
+    0% {
+        visibility: hidden;
+    }
+    ,
+    50% {
+        visibility: hidden;
+    }
+    ,
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes alpha7 {
+    0% {
+        visibility: hidden;
+    }
+    ,
+    60% {
+        visibility: hidden;
+    }
+    ,
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes alpha8 {
+    0% {
+        visibility: hidden;
+    }
+    ,
+    70% {
+        visibility: hidden;
+    }
+    ,
+    100% {
+        visibility: visible;
+    }
+}
+
+
+/**/
+
+.recording-cancel {
+    // display: none;
+}
+.recording-cancel p{
+    border-radius:3px;
+    background-color:#9d383e;
+}
+.cancel-inner{
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    background-image:url(../images/record-cancel.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
 }
