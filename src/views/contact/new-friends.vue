@@ -27,27 +27,27 @@
                 <div class="weui_cells message-list">
                     <div class="weui_cell">
                         <div class="weui_cell_hd">
-                            <img src="http://ww4.sinaimg.cn/mw690/8fb58bcajw1f7nkyidkwqj20f90faq62.jpg" alt="" style="width:40px;margin-right:5px;display:block">
+                            <img src="//images2015.cnblogs.com/blog/528573/201609/528573-20160922181544949-1515459394.jpg" alt="" style="width:40px;margin-right:5px;display:block">
                         </div>
                         <div class="weui_cell_bd weui_cell_primary">
-                            <p><b>了了</b></p>
-                            <p><span>我是群聊""的</span><span>了了</span></p>
+                            <p><b>陌生人</b></p>
+                            <p><span>我是群聊""的</span><span>陌生人</span></p>
                         </div>
                         <div class="weui_cell_ft">已添加</div>
                     </div>
                     <div class="weui_cell">
-                        <div class="weui_cell_hd"><img src="http://ww4.sinaimg.cn/mw690/8fb58bcajw1f7nkyidkwqj20f90faq62.jpg" alt="" style="width:40px;margin-right:5px;display:block"></div>
+                        <div class="weui_cell_hd"><img src="//images2015.cnblogs.com/blog/528573/201609/528573-20160922181544949-1515459394.jpg" alt="" style="width:40px;margin-right:5px;display:block"></div>
                         <div class="weui_cell_bd weui_cell_primary">
-                            <p><b>了了</b></p>
-                            <p><span>我是群聊""的</span><span>了了</span></p>
+                            <p><b>陌生人</b></p>
+                            <p><span>我是群聊""的</span><span>陌生人</span></p>
                         </div>
                         <div class="weui_cell_ft">已拒绝</div>
                     </div>
                     <div class="weui_cell">
-                        <div class="weui_cell_hd"><img src="http://ww4.sinaimg.cn/mw690/8fb58bcajw1f7nkyidkwqj20f90faq62.jpg" alt="" style="width:40px;margin-right:5px;display:block"></div>
+                        <div class="weui_cell_hd"><img src="//images2015.cnblogs.com/blog/528573/201609/528573-20160922181544949-1515459394.jpg" alt="" style="width:40px;margin-right:5px;display:block"></div>
                         <div class="weui_cell_bd weui_cell_primary">
-                            <p><b>了了</b></p>
-                            <p><span>我是群聊""的</span><span>了了</span></p>
+                            <p><b>陌生人</b></p>
+                            <p><span>我是群聊""的</span><span>陌生人</span></p>
                         </div>
                         <div class="weui_cell_ft">
                             <a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_primary">接受</a>

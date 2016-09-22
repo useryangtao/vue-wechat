@@ -117,15 +117,15 @@ var list = [{
     "chatDialogueBarModel": {
         menu: [{
             title: '翻译计划',
-            link: 'http://mp.weixin.qq.com/s?__biz=MzA3MjA4NjE3NQ==&mid=2652104271&idx=1&sn=fcd5bc3e300b92e10f3bf7574f1fcef8&scene=18#wechat_redirect',
+            url: 'http://mp.weixin.qq.com/s?__biz=MzA3MjA4NjE3NQ==&mid=2652104271&idx=1&sn=fcd5bc3e300b92e10f3bf7574f1fcef8&scene=18#wechat_redirect',
             subMenu: []
         }, {
             title: '绝密试卷',
-            link: 'http://p.memoe.cn/',
+            url: 'http://p.memoe.cn/',
             subMenu: []
         }, {
             title: '稀土掘金',
-            link: '//gold.xitu.io',
+            url: '//gold.xitu.io',
             subMenu: []
         }]
     },
@@ -182,15 +182,15 @@ var list = [{
     "chatDialogueBarModel": {
         menu: [{
             title: '我要订餐',
-            link: '//m.ele.me/',
+            url: '//m.ele.me/',
             subMenu: []
         }, {
             title: '关注必读',
-            link: '//mp.weixin.qq.com/mp/homepage?__biz=MzA3NDM1NTY0Nw==&hid=1&sn=5574694ffc2ac18f84873bd901630d2e#wechat_redirect',
+            url: '//mp.weixin.qq.com/mp/homepage?__biz=MzA3NDM1NTY0Nw==&hid=1&sn=5574694ffc2ac18f84873bd901630d2e#wechat_redirect',
             subMenu: []
         }, {
             title: '联系我们',
-            link: '//m.ele.me/',
+            url: '//m.ele.me/',
             subMenu: []
         }]
     },

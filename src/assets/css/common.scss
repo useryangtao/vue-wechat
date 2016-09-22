@@ -102,6 +102,9 @@ body,
     border-top: 0;
 }
 
+.padding-top-1{
+    padding-top: 1px;
+}
 
 /*1px线*/
 
@@ -234,7 +237,6 @@ body,
     height: 100%;
     overflow: hidden;
     z-index: 1;
-    padding-top: 1px;
     transition: .2s all ease-in-out;
     opacity: 1;
     transform: translate3d(0%, 0, 0);

@@ -35,7 +35,7 @@ fastclick.attach(document.body)
 
 const App = Vue.extend(require('./app.vue'))
 
-router.start(App, '#app')
+router.start(App, 'body')
 
 
 window.router = router

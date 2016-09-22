@@ -1,4 +1,5 @@
 <template>
+<div id="app">  
     <section class="welcome" v-show="welcome" transition="welcome"></section>
     <section class="mobile-tips" style="dislay:none;" v-show="isnotMobile">
         <div class="mobile-tips-inner">
@@ -23,6 +24,7 @@
             <index-nav></index-nav>
         </div>
     </footer>
+</div>
 </template>
 <script>
 import store from 'store'

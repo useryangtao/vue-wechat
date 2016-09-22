@@ -1,31 +1,40 @@
 <template>
-    <div class="_full_router component-xxx">
+    <div class="_full_router component-iframe">
         <div class="_full_inner">
             <top-handle
                 :back-text="topModel.backText"
-                :cur-text="topModel.curText"
+                :cur-text="iframe_title"
                 :decline="decline"
                 :next-path="topModel.nextPath"
                 :next-icon="topModel.nextIcon"
                 >
             </top-handle>
             <div class="_cover-content _effect"
-                :class="{'_effect--30':decline}">
-                <div></div>
+                :class="{'_effect--30':decline}" >
+                <div class="_full" style="overflow:hidden;">
+                    <iframe class="iframe-wrap _full" style="overflow:hidden;" :src='iframe_url' frameborder="0"></iframe>
+                </div>
+                    
             </div>
         </div>
-        <iframe src="" frameborder="0"></iframe>
     </div>
 </template>
 <script>
-// import {} from 'getters'
+import {
+    iframe_url,
+    iframe_title
+} from 'getters'
+
 // import {} from 'actions'
 
 import topHandle from 'topHandle'
 
+
 export default {
     vuex:{
         getters:{
+            iframe_url,
+            iframe_title
 
         },
         actions:{
@@ -64,7 +73,6 @@ export default {
         }
     },
     created(){
-
     },
     ready(){
 
@@ -75,5 +83,6 @@ export default {
 }
 </script>
 <style scoped>
-    
+    .iframe-wrap{
+    }
 </style>

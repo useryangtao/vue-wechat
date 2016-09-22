@@ -36,9 +36,14 @@ export const get_person_info = ({ dispatch }, id, fn) => {
     fn()
 }
 export const get_friends_list = ({ dispatch }, id) => {
-    let friends = require('../mock/contact')
-    dispatch('CONTACT_FRIENDS', friends)
-    console.log(friends)
+        let friends = require('../mock/contact')
+        dispatch('CONTACT_FRIENDS', friends)
+        console.log(friends)
+    }
+    //find
+export const set_iframe_url = ({ dispatch }, urlObj, fn) => {
+    dispatch('SET_IFRAME_URL', urlObj)
+    !!fn && fn()
 }
 
 

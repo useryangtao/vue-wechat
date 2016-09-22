@@ -1,5 +1,5 @@
 <template>
-    <div class="_full_inner _scroll _effect component-chat" :class="{'_effect--30':decline}" @touchmove.stop="">
+    <div class="_full_inner _scroll _effect component-chat" :class="{'_effect--30':decline}">
         <search-bar></search-bar>
         <ul class="wechat-list">
             <li class="item _line-fine" v-for="item in wechat_list" transition="chat-item">

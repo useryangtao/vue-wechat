@@ -56,6 +56,11 @@ export default function(router) {
                     subRoutes: {
                         'person-info': personInfo
                     }
+                },
+                'link':{
+                    component: resolve => {
+                        require(['./components/iframe.vue'], resolve)
+                    }
                 }
                 //other
             }
@@ -158,6 +163,11 @@ export default function(router) {
                 'drift-bottle': {
                     component: resolve => {
                         require(['./views/find/drift-bottle.vue'], resolve)
+                    }
+                },
+                'shopping':{
+                    component: resolve => {
+                        require(['./components/iframe.vue'], resolve)
                     }
                 }
             }
