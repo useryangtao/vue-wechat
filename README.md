@@ -86,3 +86,8 @@ npm run build
   [vue-mobile-qq](https://github.com/hilongjw/vue-mobile-qq)
 
   [vue-shopping](https://github.com/andylei18/vue-shopping)
+
+### 关于作者
+
+
+  微博:[Water杨涛](http://weibo.com/u/3503321141)
