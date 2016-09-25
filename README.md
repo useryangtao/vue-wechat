@@ -31,7 +31,6 @@ npm run build
   - zepto
   - fastclick
 
-  ###为了减少图片加载,图标使用的iconfont,
 
 ###手机预览(QR)
 
@@ -69,6 +68,8 @@ npm run build
   ![](./src/assets/images/readme/view-wechat-find-sao-yi-sao.gif)
   
   图标-iconfont
+  
+  ###为了减少图片加载,图标使用的iconfont
 
   ![](./src/assets/images/readme/font.png)
  
