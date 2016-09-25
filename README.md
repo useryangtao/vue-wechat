@@ -20,9 +20,9 @@
 
 ![](./src/assets/images/readme/qr-vue-wechat.png)
 
-#####微信貌似屏蔽githubt.io;
-#####如微信扫码，请 点击右上角-> 浏览器 打开
-#####加载略慢
+微信貌似屏蔽githubt.io;
+如微信扫码，请 点击右上角-> 浏览器 打开
+加载略慢
 
 
 ### 安装
