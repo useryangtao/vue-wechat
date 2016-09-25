@@ -1,5 +1,7 @@
 # vue-wechat
   用vue.js开发微信app(ios版)界面的demo
+  线上地址:[vue-wechat.github.io](https://vue-wechat.github.io)
+
 
 ### 安装
 
@@ -32,9 +34,7 @@ npm run build
 
     ![](./src/assets/images/readme/qr-vue-wechat.png)
 
-    微信貌似屏蔽githubt.io;
-
-    如微信扫码，请 点击右上角-> 浏览器 打开
+    如微信扫码浏览空白，请 点击右上角-> 浏览器 打开
 
     加载略慢,建议clone本地预览
 
