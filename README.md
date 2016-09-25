@@ -2,19 +2,19 @@
 > 用vue.js开发微信app(ios版)界面的demo
 
 # 技术栈
-> vue 
->vuex 
->vue-cli
->vue-router 
->vue-toutch 
->vue-animated-list
+##此demo在技术使用上以下技术的部分语法
+- vue 
+- vuex 
+- vue-cli
+- vue-router 
+- vue-toutch 
+- vue-animated-list
 
->weui
->zepto
->fastclick
+- weui
+- zepto
+- fastclick
 
->为了减少图片加载,图标使用的iconfont,
->
+> 为了减少图片加载,图标使用的iconfont,
 
 ###手机预览(QR)
 
