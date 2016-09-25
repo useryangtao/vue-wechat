@@ -72,7 +72,7 @@ export default {
                 //nextPath
             let nextPath = '';
             let roleType = this.dialogue_type;
-            console.log(roleType)
+            // console.log(roleType)
             if (roleType === 'group') {
                 nextPath = '/chat/dialogue/chat-info'
             } else if (roleType === 'friends') {
