@@ -1,23 +1,17 @@
 # vue-wechat
 > 用vue.js开发微信app(ios版)界面的demo
 
-vue 
+# 技术栈
+> vue 
+>vuex 
+>vue-cli
+>vue-router 
+>vue-toutch 
+>vue-animated-list
 
-vuex 
-
-vue-cli
-
-vue-router 
-
-vue-toutch 
-
-vue-animated-list
-
-weui
-
-zepto
-
-fastclick
+>weui
+>zepto
+>fastclick
 
 
 
