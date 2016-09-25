@@ -1,5 +1,6 @@
 # vue-wechat
   用vue.js开发微信app(ios版)界面的demo
+
   线上地址:[vue-wechat.github.io](https://vue-wechat.github.io)
 
 
@@ -41,6 +42,7 @@ npm run build
 
 ### 基本操作
   chat 页
+  
   ![](./src/assets/images/readme/view-chat.png)
 
   页面切换,动画过渡
