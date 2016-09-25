@@ -129,6 +129,7 @@ export default {
             this.set_chat_count(sum)
         },
         increase_newsState(index, val) {
+            this.isTouchSwipe = false;
             //改变已读未读状态并回调计算未读总和
             this.set_news_state(index, val, () => {
                 this.currentIndex = -1
