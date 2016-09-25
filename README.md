@@ -9,7 +9,6 @@
 - vue-router
 - vue-toutch
 - vue-animated-list
-
 - weui
 - zepto
 - fastclick
@@ -56,13 +55,7 @@ npm run build
 
 ### 开发约定
 ``` bash
-所有变量名 统一小写
-所有方法   统一驼峰
-常量    全部大写+下划线
 所有组件.vue名 都统一 《短横线》 命名
-引入时,components选项改为驼峰
-减少使用分号( ; )  大括号后面不加,var 命名要加,return 要加
-单引号优先
 css内下划线( _ )开始的为通用类
 js中内下划线( _ )开头的为私有属性
 所有events均使用短横线 命名
