@@ -70,7 +70,7 @@ export default {
         this.appload = true;
         setTimeout(() => {
             this.welcome = false;
-        }, 500)
+        }, 2000)
         if(isMobile){
 
         }else{
