@@ -238,173 +238,56 @@
 }
 
 .voice-inner .voice-volume span {
-    background-color: #e4e4e5;
+    display: block;
     height: 2px;
     margin-top: 4px;
     min-width: 8px;
-    display: block;
     float: left;
     clear: both;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-duration: 2000ms;
-    visibility: hidden;
+    background-color: #e4e4e5;
+    /* opacity: 0 ; */
 }
 
 
 .voice-inner .voice-volume span:nth-child(1) {
     width: 24px;
-    animation-name: alpha9;
+    visibility: hidden;
 }
 
 .voice-inner .voice-volume span:nth-child(2) {
     width: 22px;
-    animation-name: alpha8;
 }
 
 .voice-inner .voice-volume span:nth-child(3) {
     width: 20px;
-    animation-name: alpha7;
 }
 
 .voice-inner .voice-volume span:nth-child(4) {
     width: 18px;
-    animation-name: alpha6;
 }
 
 .voice-inner .voice-volume span:nth-child(5) {
     width: 16px;
-    animation-name: alpha5;
 }
 
 .voice-inner .voice-volume span:nth-child(6) {
     width: 14px;
-    animation-name: alpha4;
 }
 
 .voice-inner .voice-volume span:nth-child(7) {
     width: 12px;
-    animation-name: alpha3;
 }
 
 .voice-inner .voice-volume span:nth-child(8) {
     width: 10px;
-    animation-name: alpha2;
 }
 
 .voice-inner .voice-volume span:nth-child(9) {
     width: 8px;
-    animation-name: alpha1;
 }
-
-@keyframes alpha1 {
-    0% {
-        visibility: hidden;
-    }
-    ,
-    100% {
-        visibility: visible;
-    }
-}
-
-@keyframes alpha2 {
-    0% {
-        visibility: hidden;
-    }
-    ,
-    10% {
-        visibility: hidden;
-    }
-    ,
-    100% {
-        visibility: visible;
-    }
-}
-
-@keyframes alpha3 {
-    0% {
-        visibility: hidden;
-    }
-    ,
-    20% {
-        visibility: hidden;
-    }
-    ,
-    100% {
-        visibility: visible;
-    }
-}
-
-@keyframes alpha4 {
-    0% {
-        visibility: hidden;
-    }
-    ,
-    30% {
-        visibility: hidden;
-    }
-    ,
-    100% {
-        visibility: visible;
-    }
-}
-
-@keyframes alpha5 {
-    0% {
-        visibility: hidden;
-    }
-    ,
-    40% {
-        visibility: hidden;
-    }
-    ,
-    100% {
-        visibility: visible;
-    }
-}
-
-@keyframes alpha6 {
-    0% {
-        visibility: hidden;
-    }
-    ,
-    50% {
-        visibility: hidden;
-    }
-    ,
-    100% {
-        visibility: visible;
-    }
-}
-
-@keyframes alpha7 {
-    0% {
-        visibility: hidden;
-    }
-    ,
-    60% {
-        visibility: hidden;
-    }
-    ,
-    100% {
-        visibility: visible;
-    }
-}
-
-@keyframes alpha8 {
-    0% {
-        visibility: hidden;
-    }
-    ,
-    70% {
-        visibility: hidden;
-    }
-    ,
-    100% {
-        visibility: visible;
-    }
-}
-
 
 /**/
 

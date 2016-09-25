@@ -11,7 +11,7 @@
             </top-handle>
             <div class="_cover-content _effect"
                 :class="{'_effect--30':decline}">
-                <div></div>
+                <div>123</div>
             </div>
         </div>
         <!-- router -->

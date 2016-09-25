@@ -62,8 +62,7 @@ export default {
             next
         }) {
             //icon
-            var cls = this.dialogue_type === 'group' ? 'group' : 'person'
-            this.topModel.nextIcon = 'icon-chat-' + cls
+            this.topModel.nextIcon = 'icon-chat-' + this.dialogue_type
             this.topModel.curText = this.chat_base.name
             //bar
             this.dialogue_bar_type = this.dialogue_bar.menu.length > 0 ? 'dialogueBar' : 'dialogueBarPerson'
@@ -78,7 +77,8 @@ export default {
             } else if (roleType === 'friends') {
                 nextPath = '/chat/dialogue/chat-detail'
             } else if(roleType === 'service'){
-                nextPath = '/contact/public-info'
+                nextPath = ''
+                // nextIcon = ''
             }
             this.topModel.nextPath = nextPath
 

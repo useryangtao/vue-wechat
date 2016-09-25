@@ -58,7 +58,7 @@ export default {
     methods: {
         switch_way(way) {
             //say,txt
-            console.log(way)
+            // console.log(way)
             this.way = way;
         },
         switch_way_say(boo) {

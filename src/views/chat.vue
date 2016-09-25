@@ -70,9 +70,6 @@ export default {
         }) {
 
             this.set_menu_active(0)
-            this.get_menu_wechat_list(() => {
-                this.computed_unRead_count()
-            })
             next()
         }
     },
@@ -116,7 +113,8 @@ export default {
         },
         computed_unRead_count() {
             //计算未读数量
-            let sum = 0
+            let sum = 0;
+            console.log(this.wechat_list)
             this.wechat_list.forEach(({
                 chatBaseModel,
                 chatConfigModel
@@ -161,7 +159,11 @@ export default {
     components: {
         searchBar
     },
-    created() {}
+    created() {
+        this.get_menu_wechat_list(() => {
+            this.computed_unRead_count()
+        })
+    }
 }
 </script>
 <style scoped>
