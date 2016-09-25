@@ -1,7 +1,17 @@
 # vue-wechat
 > 用vue.js开发微信app(ios版)界面的demo
 
-vue-cli vue vuex vue-router vue-toutch zepto weui
+vue 
+vuex 
+vue-cli
+vue-router 
+vue-toutch 
+vue-animated-list
+
+weui
+zepto
+fastclick
+
 
 
 
@@ -24,7 +34,7 @@ npm run build
 (仿照ios系统切换风格:下一页打开时,当前页左偏移-30%;当前页关闭时,上一页左偏移从-30%过渡到0%)
 ![](./src/assets/images/readme/view-wechat-animation.gif)
 
-####消息列表 未读操作以及删除
+####消息列表 (未读/已读)操作 及 删除
 ![](./src/assets/images/readme/view-wechat-chat.gif)
 
 ####发现-朋友圈
@@ -55,6 +65,9 @@ js中内下划线( _ )开头的为私有属性
 ### 参考
 
 [Vue-cnodejs](https://github.com/shinygang/Vue-cnodejs)
+
 [vue-zhihu-daily](https://github.com/hilongjw/vue-zhihu-daily)
+
 [vue-mobile-qq](https://github.com/hilongjw/vue-mobile-qq)
+
 [vue-shopping](https://github.com/andylei18/vue-shopping)
