@@ -69,7 +69,7 @@ npm run build
   
   图标-iconfont
   
-  ### 为了减少图片加载,图标使用的iconfont
+### 为了减少图片加载,图标使用的iconfont
 
   ![](./src/assets/images/readme/font.png)
  
