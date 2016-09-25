@@ -1,6 +1,6 @@
 # vue-wechat
   用vue.js开发微信app(ios版)界面的demo
-  线上地址:[vue-wechat.github.io](https://vue-wechat.github.io)
+  线上地址:[vue-wechat.github.io](https://vue-wechat.github.io){:target="_blank"}
 
 
 ### 安装
@@ -75,10 +75,10 @@ npm run build
 
 ### 参考
 
-  [Vue-cnodejs](https://github.com/shinygang/Vue-cnodejs)
+  [Vue-cnodejs](https://github.com/shinygang/Vue-cnodejs){:target="_blank"}
 
-  [vue-zhihu-daily](https://github.com/hilongjw/vue-zhihu-daily)
+  [vue-zhihu-daily](https://github.com/hilongjw/vue-zhihu-daily){:target="_blank"}
 
-  [vue-mobile-qq](https://github.com/hilongjw/vue-mobile-qq)
+  [vue-mobile-qq](https://github.com/hilongjw/vue-mobile-qq){:target="_blank"}
 
-  [vue-shopping](https://github.com/andylei18/vue-shopping)
+  [vue-shopping](https://github.com/andylei18/vue-shopping){:target="_blank"}
