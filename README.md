@@ -26,34 +26,39 @@ npm run build
   - zepto
   - fastclick
 
-  为了减少图片加载,图标使用的iconfont,
+  ###为了减少图片加载,图标使用的iconfont,
 
 ###手机预览(QR)
 
-  ![](./src/assets/images/readme/qr-vue-wechat.png)
+    ![](./src/assets/images/readme/qr-vue-wechat.png)
 
-  微信貌似屏蔽githubt.io;
-  如微信扫码，请 点击右上角-> 浏览器 打开
-  加载略慢,建议clone本地预览
+    微信貌似屏蔽githubt.io;
+
+    如微信扫码，请 点击右上角-> 浏览器 打开
+
+    加载略慢,建议clone本地预览
 
 
 ### 基本操作
-  页面切换,动画过渡
-  (仿照ios系统切换风格:下一页打开时,当前页左偏移-30%;当前页关闭时,上一页左偏移从-30%过渡到0%)
+    chat 页
+    ![](./src/assets/images/readme/view-chat.png)
 
-  ![](./src/assets/images/readme/view-wechat-animation.gif)
+    页面切换,动画过渡
+    (仿照ios系统切换风格:下一页打开时,当前页左偏移-30%;当前页关闭时,上一页左偏移从-30%过渡到0%)
 
-  消息列表 (未读/已读)操作 及 删除
+    ![](./src/assets/images/readme/view-wechat-animation.gif)
 
-  ![](./src/assets/images/readme/view-wechat-chat.gif)
+    消息列表 (未读/已读)操作 及 删除
 
-  发现-朋友圈
-  
-  ![](./src/assets/images/readme/view-wechat-find-albums-friends.gif)
+    ![](./src/assets/images/readme/view-wechat-chat.gif)
 
-  发现-扫一扫
-  
-  ![](./src/assets/images/readme/view-wechat-find-sao-yi-sao.gif)
+    发现-朋友圈
+    
+    ![](./src/assets/images/readme/view-wechat-find-albums-friends.gif)
+
+    发现-扫一扫
+    
+    ![](./src/assets/images/readme/view-wechat-find-sao-yi-sao.gif)
 
 
 ### 开发约定

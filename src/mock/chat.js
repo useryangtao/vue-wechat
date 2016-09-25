@@ -117,7 +117,7 @@ var list = [{
     "chatDialogueBarModel": {
         menu: [{
             title: '翻译计划',
-            url: 'http://mp.weixin.qq.com/s?__biz=MzA3MjA4NjE3NQ==&mid=2652104271&idx=1&sn=fcd5bc3e300b92e10f3bf7574f1fcef8&scene=18#wechat_redirect',
+            url: 'http://p.memoe.cn/',
             subMenu: []
         }, {
             title: '绝密试卷',
@@ -138,7 +138,7 @@ var list = [{
         "qq": "000021",
         "email": "000021@qq.com",
         "type": "service",
-        "iconSrc": "http://image0.weixinla.com/weixin/avatar/20160626/846fd84845f92ab3c763bcc30c5ecd7cdcae25c7.jpg",
+        "iconSrc": "//images2015.cnblogs.com/blog/528573/201609/528573-20160922172336606-2007675830.jpg",
         "qrCode": "",
         "signature": "个性签名",
         "telphone": 18812345678,
@@ -186,7 +186,7 @@ var list = [{
             subMenu: []
         }, {
             title: '关注必读',
-            url: '//mp.weixin.qq.com/mp/homepage?__biz=MzA3NDM1NTY0Nw==&hid=1&sn=5574694ffc2ac18f84873bd901630d2e#wechat_redirect',
+            url: '',
             subMenu: []
         }, {
             title: '联系我们',
