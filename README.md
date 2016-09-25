@@ -53,7 +53,7 @@ js中内下划线( _ )开头的为私有属性
 
 
 ### 参考
-蘑菇街
-zhihu
-cnodejs
-qq-demo
+[cnodejs:Vue-cnodejs]: https://github.com/shinygang/Vue-cnodejs
+[知乎日报:vue-zhihu-daily]: https://github.com/hilongjw/vue-zhihu-daily
+[QQ:vue-mobile-qq]: https://github.com/hilongjw/vue-mobile-qq
+[蘑菇街:vue-shopping]: https://github.com/andylei18/vue-shopping
