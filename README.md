@@ -55,7 +55,11 @@ npm run build
   消息列表 (未读/已读)操作 及 删除
 
   ![](./src/assets/images/readme/view-wechat-chat.gif)
-
+  
+  按下说话,松开结束 效果
+  
+  ![](./src/assets/images/readme/tap-say.png)
+  
   发现-朋友圈
   
   ![](./src/assets/images/readme/view-wechat-find-albums-friends.gif)
@@ -63,6 +67,12 @@ npm run build
   发现-扫一扫
   
   ![](./src/assets/images/readme/view-wechat-find-sao-yi-sao.gif)
+  
+  图标-iconfont
+
+  ![](./src/assets/images/readme/font.png)
+ 
+
 
 
 ### 开发约定
