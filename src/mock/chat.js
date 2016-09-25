@@ -108,7 +108,7 @@ var list = [{
     },
     //对话列表基本项
     "chatBaseModel": {
-        "newsUnreadCount": 0,
+        "newsUnreadCount": 11,
         "endTimeStr": 1472632586443,
         "endChatAuth": "",
         "endChatTxt": "挖掘最优质的互联网技术",

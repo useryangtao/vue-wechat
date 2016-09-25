@@ -13,7 +13,16 @@
 >zepto
 >fastclick
 
+>为了减少图片加载,图标使用的iconfont,
+>
 
+###手机预览(QR)
+
+![](./src/assets/images/readme/qr-vue-wechat.png)
+
+####微信貌似屏蔽githubt.io;
+####如微信扫码，请 点击右上角-> 浏览器 打开
+####加载略慢
 
 
 ### 安装
