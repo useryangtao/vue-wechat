@@ -1,28 +1,28 @@
 # vue-wechat
 > 用vue.js开发微信app(ios版)界面的demo
 
-# 技术栈
-##此demo在技术使用上以下技术的部分语法
-- vue 
-- vuex 
+### 技术栈
+此demo在技术使用上以下技术的部分语法
+- vue
+- vuex
 - vue-cli
-- vue-router 
-- vue-toutch 
+- vue-router
+- vue-toutch
 - vue-animated-list
 
 - weui
 - zepto
 - fastclick
 
-> 为了减少图片加载,图标使用的iconfont,
+为了减少图片加载,图标使用的iconfont,
 
 ###手机预览(QR)
 
 ![](./src/assets/images/readme/qr-vue-wechat.png)
 
-####微信貌似屏蔽githubt.io;
-####如微信扫码，请 点击右上角-> 浏览器 打开
-####加载略慢
+#####微信貌似屏蔽githubt.io;
+#####如微信扫码，请 点击右上角-> 浏览器 打开
+#####加载略慢
 
 
 ### 安装
@@ -39,8 +39,8 @@ npm run build
 
 ```
 
-## 基本操作
-####页面切换,动画过渡
+### 基本操作
+#####页面切换,动画过渡
 (仿照ios系统切换风格:下一页打开时,当前页左偏移-30%;当前页关闭时,上一页左偏移从-30%过渡到0%)
 ![](./src/assets/images/readme/view-wechat-animation.gif)
 
