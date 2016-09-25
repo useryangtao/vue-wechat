@@ -8,7 +8,7 @@ var list = [{
         "qq": "00001",
         "email": "00001@qq.com",
         "type": "friends",
-        "iconSrc": "//ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
+        "iconSrc": "https://images2015.cnblogs.com/blog/528573/201609/528573-20160925131410373-516492873.jpg",
         "qrCode": "",
         "signature": "个性签名",
         "telphone": 18812345678,
@@ -29,7 +29,7 @@ var list = [{
     "chatDialogueModel": [],
     "chatMemberModel": [{
         "id": 1,
-        "iconSrc": "//ww1.sinaimg.cn/mw690/d0d07035jw1f7f2n6w1j1j20e60e6wg4.jpg",
+        "iconSrc": "https://images2015.cnblogs.com/blog/528573/201609/528573-20160925131410373-516492873.jpg",
         "name": "杨涛",
         "nickname": "nick_杨涛",
         "remark": "remark_杨涛",
@@ -70,14 +70,14 @@ var list = [{
     "chatDialogueModel": [],
     "chatMemberModel": [{
         "id": 1,
-        "iconSrc": "//images2015.cnblogs.com/blog/528573/201609/528573-20160922181803449-1753077357.jpg",
+        "iconSrc": "https://images2015.cnblogs.com/blog/528573/201609/528573-20160925131410373-516492873.jpg",
         "name": "yangtao01",
         "nickname": "nick_微信群01",
         "remark": "remark_微信群01",
     }, {
         "id": 1,
-        "iconSrc": "//images2015.cnblogs.com/blog/528573/201609/528573-20160922181803449-1753077357.jpg",
-        "name": "yangtao01",
+        "iconSrc": "https://images2015.cnblogs.com/blog/528573/201609/528573-20160925131410373-516492873.jpg",
+        "name": "yangtao02",
         "nickname": "nick_微信群01",
         "remark": "remark_微信群01"
     }],

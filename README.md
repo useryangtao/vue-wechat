@@ -2,14 +2,21 @@
 > 用vue.js开发微信app(ios版)界面的demo
 
 vue 
+
 vuex 
+
 vue-cli
+
 vue-router 
+
 vue-toutch 
+
 vue-animated-list
 
 weui
+
 zepto
+
 fastclick
 
 
