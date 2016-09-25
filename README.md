@@ -19,6 +19,21 @@ npm run build
 
 ```
 
+## 基本操作
+####页面切换,动画过渡
+(仿照ios系统切换风格:下一页打开时,当前页左偏移-30%;当前页关闭时,上一页左偏移从-30%过渡到0%)
+![](./src/assets/images/readme/view-wechat-animation.gif)
+
+####消息列表 未读操作以及删除
+![](./src/assets/images/readme/view-wechat-chat.gif)
+
+####发现-朋友圈
+![](./src/assets/images/readme/view-wechat-find-albums-friends.gif)
+
+####发现-扫一扫
+![](./src/assets/images/readme/view-wechat-find-sao-yi-sao.gif)
+
+
 ### 开发约定
 ``` bash
 所有变量名 统一小写
@@ -35,20 +50,6 @@ js中内下划线( _ )开头的为私有属性
 所有state统一下划线 命名
 所有 action统一下划线命名
 ```
-
-## 基本操作
-####页面切换,动画过渡
-(仿照ios系统切换风格:下一页打开时,当前页左偏移-30%;当前页关闭时,上一页左偏移从-30%过渡到0%)
-![](./static/gif/view-wechat-animation.gif)
-
-####消息列表 未读操作以及删除
-![](./static/gif/view-wechat-chat.gif)
-
-####发现-朋友圈
-![](./static/gif/view-wechat-find-albums-friends.gif)
-
-####发现-扫一扫
-![](./static/gif/view-wechat-find-sao-yi-sao.gif)
 
 
 ### 参考
