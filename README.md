@@ -38,17 +38,17 @@ npm run build
 
 
 ### 基本操作
-  #######页面切换,动画过渡
+  ######页面切换,动画过渡
   (仿照ios系统切换风格:下一页打开时,当前页左偏移-30%;当前页关闭时,上一页左偏移从-30%过渡到0%)
   ![](./src/assets/images/readme/view-wechat-animation.gif)
 
-  ######消息列表 (未读/已读)操作 及 删除
+  #####消息列表 (未读/已读)操作 及 删除
   ![](./src/assets/images/readme/view-wechat-chat.gif)
 
-  ######发现-朋友圈
+  #####发现-朋友圈
   ![](./src/assets/images/readme/view-wechat-find-albums-friends.gif)
 
-  ######发现-扫一扫
+  #####发现-扫一扫
   ![](./src/assets/images/readme/view-wechat-find-sao-yi-sao.gif)
 
 
