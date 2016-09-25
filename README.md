@@ -47,8 +47,8 @@ js中内下划线( _ )开头的为私有属性
 ####发现-朋友圈
 ![](./static/gif/view-wechat-find-albums-friends.gif)
 
-####发现-其他
-![](./static/gif/view-wechat-find-other.gif)
+####发现-扫一扫
+![](./static/gif/view-wechat-find-sao-yi-sao.gif)
 
 
 ### 参考
