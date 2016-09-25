@@ -21,6 +21,5 @@ export const person_info = ({ contacts }) => contacts.person_info
 export const contact_friends = ({ contacts }) => contacts.contact_friends
 
 //find
-
 export const iframe_url = ({ find }) => find.iframe_url
 export const iframe_title = ({ find }) => find.iframe_title

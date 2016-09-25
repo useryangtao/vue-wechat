@@ -47,14 +47,6 @@ export const set_iframe_url = ({ dispatch }, urlObj, fn) => {
 }
 
 
-// export const set_person_info = ({ dispatch }, id) => {
-//     dispatch('PERSON_ID', id)
-// }
-
-
-
-
-
 
 
 // export const deleteTodo = makeAction('DELETE_TODO')
@@ -65,4 +57,4 @@ export const set_iframe_url = ({ dispatch }, urlObj, fn) => {
 
 // function makeAction (type) {
 //   return ({ dispatch }, ...args) => dispatch(type, ...args)
-// }</div>
+// }

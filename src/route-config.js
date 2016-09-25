@@ -15,7 +15,7 @@ export default function(router) {
 
             }
         }
-        //个人相册
+    //个人相册
     const albums = {
         component: resolve => {
             require(['./views/find/albums-friends.vue'], resolve)
@@ -31,6 +31,7 @@ export default function(router) {
             'person-info': personInfo
         }
     }
+    //相互引用
     personInfo.albums = albums
 
     //对话框
@@ -57,15 +58,15 @@ export default function(router) {
                         'person-info': personInfo
                     }
                 },
-                'link':{
+                'link': {
                     component: resolve => {
                         require(['./components/iframe.vue'], resolve)
                     }
                 }
-                //other
             }
         }
-        //
+
+    //map
     router.map({
         '/chat': {
             component: resolve => {
@@ -165,7 +166,7 @@ export default function(router) {
                         require(['./views/find/drift-bottle.vue'], resolve)
                     }
                 },
-                'shopping':{
+                'shopping': {
                     component: resolve => {
                         require(['./components/iframe.vue'], resolve)
                     }

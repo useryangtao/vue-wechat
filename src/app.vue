@@ -55,11 +55,11 @@ export default {
         }
     },
     created() {
-        var isMobile = function(){
-            var userAgentInfo = navigator.userAgent;
-            var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
-            var flag = false;
-            for (var v = 0; v < Agents.length; v++) {
+        let isMobile = function(){
+            let userAgentInfo = navigator.userAgent;
+            let Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod")
+            let flag = false;
+            for (let v = 0; v < Agents.length; v++) {
                 if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = true; break; }
             };
             return flag;
@@ -71,9 +71,7 @@ export default {
         setTimeout(() => {
             this.welcome = false;
         }, 2000)
-        if(isMobile){
-
-        }else{
+        if(!isMobile){
             this.isnotMobile = true;
         }
     },
