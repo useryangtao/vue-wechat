@@ -5,7 +5,7 @@
             <li class="item _line-fine" v-for="item in wechat_list" transition="chat-item">
                 <div class="info" :class="{
                     'current':currentIndex==$index
-                    }" @touchstart="info_touchstart($index)" @touchend="info_touchend" v-touch:tap="info_tap($index)" v-touch:swipeleft="info_swipeleft($index)" v-touch-options:swipe="{ direction: 'horizontal' }">
+                    }" @touchstart="info_touchstart($index)" v-touch:tap="info_tap($index)" v-touch:swipeleft="info_swipeleft($index)" v-touch-options:swipe="{ direction: 'horizontal' }">
                     <div class="ico-box">
                         <i :class="item.chatConfigModel | f_news 'nclass'" v-text="item.chatBaseModel | f_news 'ntext'" v-show="item.chatBaseModel | f_news 'nshow'"></i>
                         <div class="ico">
@@ -90,7 +90,6 @@ export default {
         info_touchstart(_index) {
             this.currentIndex = -1
         },
-        info_touchend() {},
         info_tap(_index) {
             var index = _index;
             if (index >= 0 && !this.isTouchSwipe) {
@@ -102,7 +101,6 @@ export default {
             this.isTouchSwipe = false
         },
         info_swipeleft(_index) {
-            // console.log('swipeleft')
             event.stopPropagation()
             if (!this.isTouchSwipe) {
                 this.isTouchSwipe = true

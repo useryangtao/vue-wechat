@@ -251,7 +251,6 @@
     /* opacity: 0 ; */
 }
 
-
 .voice-inner .voice-volume span:nth-child(1) {
     width: 24px;
     visibility: hidden;
@@ -289,21 +288,24 @@
     width: 8px;
 }
 
+
 /**/
 
 .recording-cancel {
     // display: none;
 }
-.recording-cancel p{
-    border-radius:3px;
-    background-color:#9d383e;
+
+.recording-cancel p {
+    border-radius: 3px;
+    background-color: #9d383e;
 }
-.cancel-inner{
+
+.cancel-inner {
     width: 110px;
     height: 110px;
     margin: 0 auto;
-    background-image:url(../images/record-cancel.png);
-    background-repeat:no-repeat;
-    background-position:center center;
+    background-image: url(../images/record-cancel.png);
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: contain;
 }

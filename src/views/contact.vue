@@ -70,11 +70,6 @@ import {
     get_person_info } from 'actions'
 import searchBar from '../components/search-bar.vue'
 export default {
-    route:{
-        // activate({from,to,next}) {
-        //     next()
-        // },
-    },
     vuex:{
         getters:{
             contact_friends
@@ -85,7 +80,6 @@ export default {
             get_person_info
         }
     },
-
     data() {
         return {
             decline:false
@@ -97,7 +91,6 @@ export default {
                 this.$router.go({'path':'/contact/person-info'})
             })
         }
-        
     },
     created(){
         this.get_friends_list()

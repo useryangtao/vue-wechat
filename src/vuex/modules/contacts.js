@@ -1,4 +1,9 @@
-import { PERSON_INFO, CONTACT_FRIENDS, FRIEND_ID } from '../mutation-types'
+import {
+    PERSON_INFO,
+    CONTACT_FRIENDS,
+    FRIEND_ID
+} from '../mutation-types'
+
 let state = {
     person_info: {
         base: {}

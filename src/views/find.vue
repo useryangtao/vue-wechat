@@ -129,12 +129,9 @@ export default {
     created() {
 
     },
-    ready() {
-
-    },
     components: {
         topHandle
-    },
+    }
 }
 </script>
 <style scoped>

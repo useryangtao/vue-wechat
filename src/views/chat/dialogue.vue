@@ -66,17 +66,16 @@ export default {
             this.topModel.curText = this.chat_base.name
             //bar
             this.dialogue_bar_type = this.dialogue_bar.menu.length > 0 ? 'dialogueBar' : 'dialogueBarPerson'
-            // console.log(this.dialogue_bar_type)
+
             this.topModel.isMute = this.chat_config.newsMute
-                //nextPath
+            //nextPath
             let nextPath = '';
             let roleType = this.dialogue_type;
-            // console.log(roleType)
             if (roleType === 'group') {
                 nextPath = '/chat/dialogue/chat-info'
             } else if (roleType === 'friends') {
                 nextPath = '/chat/dialogue/chat-detail'
-            } else if(roleType === 'service'){
+            } else if (roleType === 'service') {
                 nextPath = ''
                 // nextIcon = ''
             }

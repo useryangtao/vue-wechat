@@ -1,45 +1,54 @@
 .weui_cells_contact-head {
-    margin-top:0;
+    margin-top: 0;
 }
-.weui_cells_contact-head .weui_cell{
-    padding:9px 15px
+
+.weui_cells_contact-head .weui_cell {
+    padding: 9px 15px
 }
-.weui_cells_contact-head .weui_cell_hd{
+
+.weui_cells_contact-head .weui_cell_hd {
     height: 36px;
     width: 36px;
     overflow: hidden;
-    margin-right:10px;
+    margin-right: 10px;
 }
-.img-obj-cover{
+
+.img-obj-cover {
     display: block;
-    border:0;
+    border: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.component-contact{
-    background:#f1f0f6;
+
+.component-contact {
+    background: #f1f0f6;
     overflow: auto;
 }
+
 .contact-friends .weui_cells::before,
-.contact-friends .weui_cells::after{
+.contact-friends .weui_cells::after {
     visibility: hidden;
 }
-.contact-friends .weui_cells{
-    margin-top:0;
+
+.contact-friends .weui_cells {
+    margin-top: 0;
 }
-.contact-alpha{
-    padding-left:15px;
+
+.contact-alpha {
+    padding-left: 15px;
     height: 20px;
     line-height: 20px;
-    font-size:14px;
-    color:#888888;
+    font-size: 14px;
+    color: #888888;
 }
-.contact-friends .weui_cell_primary{
-    font-size:16px;
+
+.contact-friends .weui_cell_primary {
+    font-size: 16px;
 }
-.contact-friends .weui_cell_hd img{
-    width:35px;
-    margin-right:5px;
-    display:block;
+
+.contact-friends .weui_cell_hd img {
+    width: 35px;
+    margin-right: 5px;
+    display: block;
 }

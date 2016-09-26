@@ -1,7 +1,9 @@
 @import 'reset.css';
 @import 'weui.min.css';
 @import 'iconfont.css';
+
 /**/
+
 a,
 button,
 input,
@@ -102,9 +104,10 @@ body,
     border-top: 0;
 }
 
-.padding-top-1{
+.padding-top-1 {
     padding-top: 1px;
 }
+
 
 /*1px线*/
 
@@ -173,6 +176,7 @@ body,
     left: 15px;
 }
 
+
 /*cell 箭头*/
 
 .weui_select_before .weui_cell_hd::before,
@@ -183,15 +187,15 @@ body,
     vertical-align: middle;
 }
 
+
 /*weui end*/
+
 
 /*
     router-view -> transition="cover"
     cover开头的 是router-view过渡切换是公用的样式
     _cover-* 是会被cover 影响的元素
 */
-
-
 
 .cover-transition {
     opacity: 1;
@@ -233,7 +237,7 @@ body,
 
 ._cover-content {
     position: relative;
-    width:100%;
+    width: 100%;
     height: 100%;
     overflow: hidden;
     z-index: 1;
@@ -242,7 +246,7 @@ body,
     transform: translate3d(0%, 0, 0);
     height: calc(100% - 45px);
     background-color: #efeff4;
-    box-shadow: 0px 0 41px rgba(0,0,0,.1);
+    box-shadow: 0px 0 41px rgba(0, 0, 0, .1);
 }
 
 
@@ -278,13 +282,11 @@ body,
 }
 
 
-
 /*
     component- 开头的 是router-view最外层的组件元素
 */
 
 [class*="component-"] {}
-
 
 
 /* 保证next page 能覆盖住 current page */
@@ -323,6 +325,7 @@ body,
 
 
 /* components */
+
 
 /*top-handle.vue*/
 

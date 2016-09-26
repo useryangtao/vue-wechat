@@ -1,5 +1,5 @@
 <template>
-<div id="app">  
+<div id="app">
     <section class="welcome" v-show="welcome" transition="welcome"></section>
     <section class="mobile-tips" style="dislay:none;" v-show="isnotMobile">
         <div class="mobile-tips-inner">
@@ -37,21 +37,12 @@ require('assets/css/base.scss')
 export default {
     replace: false,
     store,
-    route: {
-        activate({
-            from,
-            to,
-            next
-        }) {
-            next()
-        }
-    },
     data() {
         return {
-            appload: false,
-            welcome: false,
-            isnotMobile:false,
-            decline: false,
+            appload: false,//主结构
+            welcome: false,//欢迎页
+            isnotMobile:false,//是否为移动设备访问
+            decline: false //router animation
         }
     },
     created() {
@@ -64,6 +55,9 @@ export default {
             };
             return flag;
         }();
+        if(!isMobile){
+            this.isnotMobile = true;
+        }
         if (this.$route.matched.length === 1) {
             this.welcome = true;
         }
@@ -71,9 +65,6 @@ export default {
         setTimeout(() => {
             this.welcome = false;
         }, 2000)
-        if(!isMobile){
-            this.isnotMobile = true;
-        }
     },
     events: {
         'route-pipe' (_decline) {

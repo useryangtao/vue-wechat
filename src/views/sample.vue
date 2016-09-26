@@ -56,7 +56,7 @@ export default {
         }
     },
     methods:{
-        
+
     },
     events:{
         'route-pipe'(_decline){
@@ -76,5 +76,5 @@ export default {
 }
 </script>
 <style scoped>
-    
+
 </style>

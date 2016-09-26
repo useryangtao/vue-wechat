@@ -77,7 +77,6 @@ let state = {
 }
 const mutations = {
     [SET_MENU_WECHAT_LIST](state, list) {
-        // state.wechat_list.shift()
         state.wechat_list = list
     },
     [CHAT](state, {
@@ -99,7 +98,6 @@ const mutations = {
         state.wechat_list[index].chatBaseModel.newsUnreadCount = val
     },
     [DELETE_NEWS](state,index){
-        // state.wechat_list.shift();
         state.wechat_list.splice(index,1);
     }
 

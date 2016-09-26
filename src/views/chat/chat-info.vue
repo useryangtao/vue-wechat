@@ -188,8 +188,6 @@ export default {
             }
         }
     },
-    ready(){
-    },
     events:{
         'route-pipe'(_decline){
             this.decline = _decline
