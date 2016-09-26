@@ -5,15 +5,7 @@
   
   因为github.io的限制,每次访问的入口都应是从主页([vue-wechat.github.io](https://vue-wechat.github.io))访问,不要刷新。
   
-  vue-wechat是主要在利用Vue.js * 实现了微信app及很多细节：
-  
-  如新页面跳转过渡动画参照ios页面切换风格；
-  
-  语音文字对话框组件切换；
-  
-  还有一些交互的动画,如扫一扫；
-  
-  listview部分也使用了是weui的结构。 
+  如果喜欢，请点start,不要点fork.
 
 
 ### 安装
@@ -30,7 +22,17 @@ npm run build
 
 ```
 ### 技术栈
-  此demo在技术使用上以下技术的部分语法
+  vue-wechat是主要在利用Vue.js * 实现了微信app及很多细节：
+  
+   如新页面跳转过渡动画参照ios页面切换风格；
+   
+  语音文字对话框组件切换；
+  
+  还有一些交互的动画,如扫一扫；
+  
+  listview部分也使用了是weui的结构。 
+  
+  此demo在技术使用上以下技术
   - vue
   - vuex
   - vue-cli
