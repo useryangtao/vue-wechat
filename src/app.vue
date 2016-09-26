@@ -110,7 +110,7 @@ export default {
 }
 .mobile-tips-inner{
     width: 330px;
-    margin-top: -30%;
+    padding-bottom: 200px;
 }
 .mobile-model{
     flex-grow: 1;
