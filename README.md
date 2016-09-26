@@ -4,6 +4,7 @@
   线上地址:[vue-wechat.github.io](https://vue-wechat.github.io)
   
   因为github.io的限制,每次访问的入口都应是从主页([vue-wechat.github.io](https://vue-wechat.github.io))访问,不要刷新。
+  
   vue-wechat是主要在利用Vue.js * 实现了微信app及很多细节：
   
   如新页面跳转过渡动画参照ios页面切换风格；
