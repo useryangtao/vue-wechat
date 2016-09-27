@@ -1,9 +1,9 @@
 # vue-wechat
   用vue.js开发微信app界面的demo
 
-  线上地址:[vue-wechat.github.io](https://vue-wechat.github.io)
+  线上地址:  [vue-wechat.github.io](https://vue-wechat.github.io)
   
-  项目地址:[vue-wechat](https://github.com/useryangtao/vue-wechat)
+  项目地址:  [useryangtao/vue-wechat](https://github.com/useryangtao/vue-wechat)
   
   因为github.io的限制,每次访问的入口都应是从主页([vue-wechat.github.io](https://vue-wechat.github.io))访问,不要刷新。
   
