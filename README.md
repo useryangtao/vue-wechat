@@ -22,9 +22,9 @@ npm run build
 
 ```
 ### 技术栈
-  vue-wechat是主要在利用Vue.js * 实现了微信app及很多细节：
+  vue-wechat是主要在利用Vue.js * 实现了微信app及很多细节。
   
-  此demo在技术使用上以下技术
+  此demo在实现上使用了以下技术
   - vue
   - vuex
   - vue-cli
@@ -34,22 +34,24 @@ npm run build
   - weui
   - zepto
   - fastclick
-#### 操作亮点
+#### 一些亮点
 
   新页面跳转的过渡动画 参照ios系统的页面切换风格,是通过router-view及transition特性结合实现的。
   
   消息列表页的item 左划操作处理,使用vuex(getters,actions)实现实时处理计算数据
   
   (语音/文字)对话框 组件间 动画切换，还有通过事件注册tap 实现 按住说话效果；
-  
+
   还有一些交互行为细节及动画：
-    - 如css3动画实现的扫一扫;
-    - 删除消息列表item，通过vue-animated-list 实现动画移除;
-    - 消息页右上角+的显出无动画，隐藏有动画；
+   - 如css3动画实现的扫一扫;
+   - 删除消息列表item，通过vue-animated-list 实现动画移除;
+   - 消息页右上角+的显出无动画，隐藏有动画；
   
   朋友圈下拉拖拽显示完整封面
   
   listview部分也使用了weui的结构。 
+  
+  小图标全部使用iconfont方式,减少图片请求。
   
 
 ###手机预览(QR)
