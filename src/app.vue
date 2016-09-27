@@ -1,16 +1,5 @@
 <template>
 <div id="app">
-    <section class="welcome" v-show="welcome" transition="welcome"></section>
-    <section class="mobile-tips" style="dislay:none;" v-show="isnotMobile">
-        <div class="mobile-tips-inner">
-            <div class="mobile-model"> <img src="./assets/images/mobile.png" alt=""></div>
-            <p><br>为保证最佳用户体验,<br></p>
-            <p class="_align-left">1.请用chrome移动设备调试模式(F12)下打开</p>
-            <p class="_align-left">2.手机浏览器访问</p>
-            <br>
-            <button class="weui_btn weui_btn_mini weui_btn_primary" v-touch:tap='isnotMobile = false'>关闭</button>
-        </div>
-    </section>
     <header class="app-header" style="display:none;" v-show="appload">
         <div class="_effect" :class="{'_effect--50':decline}">
             <index-header style="overflow:visible;"></index-header>
@@ -24,7 +13,19 @@
         <div class="_effect " :class="{'_effect--50':decline}">
             <index-nav></index-nav>
         </div>
-    </footer>
+    </footer>   
+    <!--mask layer--> 
+    <section class="welcome" v-show="welcome" transition="welcome"></section>
+    <section class="mobile-tips" style="dislay:none;" v-show="isnotMobile">
+        <div class="mobile-tips-inner">
+            <div class="mobile-model"> <img src="./assets/images/mobile.png" alt=""></div>
+            <p><br>为保证最佳用户体验,<br></p>
+            <p class="_align-left">1.请用chrome移动设备调试模式(F12)下打开</p>
+            <p class="_align-left">2.手机浏览器访问</p>
+            <br>
+            <button class="weui_btn weui_btn_mini weui_btn_primary" v-touch:tap='isnotMobile = false'>关闭</button>
+        </div>
+    </section>
 </div>
 </template>
 <script>
