@@ -7,6 +7,7 @@
   
   因为github.io的限制,每次访问的入口都应是从主页([vue-wechat.github.io](https://vue-wechat.github.io))访问,不要刷新。
   
+  加载略慢,建议clone本地调试预览。
 
 
 ### 安装
@@ -58,10 +59,9 @@ npm run build
 ###手机预览(QR)
 
   ![](./src/assets/images/readme/qr-vue-wechat.png)
+  
+  如微信扫码浏览空白，请 点击右上角-> 浏览器 打开
 
-    如微信扫码浏览空白，请 点击右上角-> 浏览器 打开
-
-    加载略慢,建议clone本地预览
 
 
 ### 基本操作
