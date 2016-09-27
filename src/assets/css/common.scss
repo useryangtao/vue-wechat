@@ -337,7 +337,11 @@ body,
 ._cover-top .top-back:active {
     color: #bbbbbb;
 }
-
+._cover-top .top-back .icon-return-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 ._cover-top .top-back .iconfont {}
 
 ._cover-top .top-back .iconfont:before {

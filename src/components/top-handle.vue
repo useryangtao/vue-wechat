@@ -29,7 +29,8 @@ slot
     <div class="_cover-top">
         <!-- left -->
         <div class="top-back">
-            <div class="_ellipsis iconfont icon-return-arrow" v-link="backPath" v-text="backText"></div>
+            <div class="_ellipsis iconfont icon-return-arrow" v-link="backPath" v-text="backText">
+            </div>
         </div>
         <!-- right -->
         <div class="top-other">
