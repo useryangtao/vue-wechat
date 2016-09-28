@@ -63,9 +63,10 @@ npm run build
 
 
 ### 基本操作
-  chat 页
 
-  ![](./src/assets/images/readme/view-chat.png)
+  主页
+
+  ![](./src/assets/images/readme/view-chat-contact.png)![](./src/assets/images/readme/view-chat.png)
 
   页面切换,动画过渡
   (仿照ios系统切换风格:下一页打开时,当前页左偏移-30%;当前页关闭时,上一页左偏移从-30%过渡到0%)
