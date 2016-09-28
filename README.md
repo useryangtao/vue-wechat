@@ -29,7 +29,7 @@ npm run build
   - vuex
   - vue-cli
   - vue-router
-  - vue-toutch
+  - vue-touch
   - vue-animated-list
   - weui
   - zepto
