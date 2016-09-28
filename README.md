@@ -2,12 +2,10 @@
   用vue.js开发微信app界面的demo
 
   线上地址:  [vue-wechat.github.io](https://vue-wechat.github.io)
-  
+
   项目地址:  [useryangtao/vue-wechat](https://github.com/useryangtao/vue-wechat)
-  
-  因为github.io的限制,每次访问的入口都应是从主页([vue-wechat.github.io](https://vue-wechat.github.io))访问,不要刷新。
-  
-  加载略慢,建议clone本地调试预览。
+
+  github.io 加载略慢, 建议clone本地调试预览。
 
 
 ### 安装
@@ -66,7 +64,7 @@ npm run build
 
 ### 基本操作
   chat 页
-  
+
   ![](./src/assets/images/readme/view-chat.png)
 
   页面切换,动画过渡
@@ -77,25 +75,28 @@ npm run build
   消息列表 (未读/已读)操作 及 删除
 
   ![](./src/assets/images/readme/view-wechat-chat.gif)
-  
+
   按下说话,松开结束 效果
-  
+
   ![](./src/assets/images/readme/tap-say.png)
-  
+
   发现-朋友圈
-  
+
   ![](./src/assets/images/readme/view-wechat-find-albums-friends.gif)
 
   发现-扫一扫
-  
+
   ![](./src/assets/images/readme/view-wechat-find-sao-yi-sao.gif)
-  
+
   图标-iconfont
-  
-### 为了减少图片加载,图标使用的iconfont
+
+#### 为了减少图片加载,图标使用的iconfont
 
   ![](./src/assets/images/readme/font.png)
- 
+
+### 添加到主屏幕
+
+  ![](./src/assets/images/readme/add-to-screen.png)
 
 
 
