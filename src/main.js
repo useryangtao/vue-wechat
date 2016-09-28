@@ -20,8 +20,7 @@ Vue.use(VueTouch)
 Vue.use(VueAnimatedList)
 
 const router = new VueRouter({
-    history: true,
-    abstract: false,
+    hashbang:true,
     saveScrollPosition: true
 })
 
