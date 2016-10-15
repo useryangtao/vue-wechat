@@ -23,8 +23,9 @@ npm run build
 ```
 ### 技术栈
   vue-wechat是主要在利用Vue.js * 实现了微信app及很多细节。
-  
+
   此demo在实现上使用了以下技术
+  
   - vue
   - vuex
   - vue-cli
@@ -34,6 +35,7 @@ npm run build
   - weui
   - zepto
   - fastclick
+
 #### 一些亮点
 
   新页面跳转的过渡动画 参照ios系统的页面切换风格,是通过router-view及transition特性结合实现的。
@@ -59,6 +61,7 @@ npm run build
   ![](./src/assets/images/readme/qr-vue-wechat.png)
   
   如微信扫码浏览空白，请 点击右上角-> 浏览器 打开
+  首次加载都很慢,请耐心等待。
 
 
 
