@@ -1,7 +1,9 @@
 # vue-wechat
   用vue.js开发微信app界面的demo
-
-  线上地址:  [vue-wechat.github.io](https://vue-wechat.github.io)
+### 已将《用vue2开发微信app界面》提到2017日程中。
+#### 开发完善的功能，如实现注册账号，加好友，实现聊天功能，等等，
+#### 个人开发，精力有限，请各位持续关注。
+  线上地址:  [vue-wechat.github.io](https://vue-wechat.github.io)
 
   项目地址:  [useryangtao/vue-wechat](https://github.com/useryangtao/vue-wechat)
 
