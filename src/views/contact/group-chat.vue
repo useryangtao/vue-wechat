@@ -10,7 +10,7 @@
                     </div>
                     <div class="weui_cells group-list">
                         <div class="weui_cell" v-for="item in 20">
-                            <div class="weui_cell_hd"><img src="//images2015.cnblogs.com/blog/528573/201609/528573-20160922181803449-1753077357.jpg" alt=""></div>
+                            <div class="weui_cell_hd"><img src="//ad-gold-cdn.xitu.io/1499913766441c45960d8bd44ed5ffcf0d4a67d0aa317.jpg" alt=""></div>
                             <div class="weui_cell_bd weui_cell_primary">
                                 <p>web前端交流群<span>{{$index}} </span></p>
                             </div>

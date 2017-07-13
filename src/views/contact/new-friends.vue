@@ -27,7 +27,7 @@
                 <div class="weui_cells message-list">
                     <div class="weui_cell">
                         <div class="weui_cell_hd">
-                            <img src="//images2015.cnblogs.com/blog/528573/201609/528573-20160922181544949-1515459394.jpg" alt="" style="width:40px;margin-right:5px;display:block">
+                            <img src="//ad-gold-cdn.xitu.io/14999140634069b6825290779221783b3b59fbba0addd.jpg" alt="" style="width:40px;margin-right:5px;display:block">
                         </div>
                         <div class="weui_cell_bd weui_cell_primary">
                             <p><b>陌生人</b></p>
@@ -36,7 +36,7 @@
                         <div class="weui_cell_ft">已添加</div>
                     </div>
                     <div class="weui_cell">
-                        <div class="weui_cell_hd"><img src="//images2015.cnblogs.com/blog/528573/201609/528573-20160922181544949-1515459394.jpg" alt="" style="width:40px;margin-right:5px;display:block"></div>
+                        <div class="weui_cell_hd"><img src="//ad-gold-cdn.xitu.io/14999140634069b6825290779221783b3b59fbba0addd.jpg" alt="" style="width:40px;margin-right:5px;display:block"></div>
                         <div class="weui_cell_bd weui_cell_primary">
                             <p><b>陌生人</b></p>
                             <p><span>我是群聊""的</span><span>陌生人</span></p>
@@ -44,7 +44,7 @@
                         <div class="weui_cell_ft">已拒绝</div>
                     </div>
                     <div class="weui_cell">
-                        <div class="weui_cell_hd"><img src="//images2015.cnblogs.com/blog/528573/201609/528573-20160922181544949-1515459394.jpg" alt="" style="width:40px;margin-right:5px;display:block"></div>
+                        <div class="weui_cell_hd"><img src="//ad-gold-cdn.xitu.io/14999140634069b6825290779221783b3b59fbba0addd.jpg" alt="" style="width:40px;margin-right:5px;display:block"></div>
                         <div class="weui_cell_bd weui_cell_primary">
                             <p><b>陌生人</b></p>
                             <p><span>我是群聊""的</span><span>陌生人</span></p>

@@ -3,11 +3,11 @@
         <div class="weui_cells weui_cells_access me-line">
             <a class="weui_cell " href="javascript:;">
                 <div class="weui_cell_hd">
-                    <img src="//images2015.cnblogs.com/blog/528573/201609/528573-20160925223248967-1344840692.jpg">
+                    <img src="//ad-gold-cdn.xitu.io/1499914112624921aaaa7e1a76cf937757f564538142e.jpg">
                 </div>
                 <div class="weui_cell_bd weui_cell_primary">
                     <p>yangtao</p>
-                    <p><span>微信号:&nbsp;&nbsp;</span><span>wxid_yangtao</span></p>
+                    <p><span>微信号:&nbsp;&nbsp;</span><span>yangtao_0215</span></p>
                 </div>
                 <div class="weui_cell_ft">
                     <img class="_align-middle" style="height:25px;" src="../assets/images/chat-info-qr.png">

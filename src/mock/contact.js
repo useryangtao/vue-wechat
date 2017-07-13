@@ -9,7 +9,7 @@ module.exports = [{
         "qq": "00000",
         "email": "00000@qq.com",
         "type": "friends",
-        "iconSrc": "//images2015.cnblogs.com/blog/528573/201609/528573-20160925131410373-516492873.jpg",
+        "iconSrc": "//ad-gold-cdn.xitu.io/14999138688354f1720f589d2d33db77f026bb07c8f67.jpg",
         "qrCode": "",
         "signature": "个性签名"
     }]
@@ -24,7 +24,7 @@ module.exports = [{
         "qq": "00000",
         "email": "00000@qq.com",
         "type": "friends",
-        "iconSrc": "//images2015.cnblogs.com/blog/528573/201609/528573-20160925131428609-740668516.jpg",
+        "iconSrc": "//ad-gold-cdn.xitu.io/1499914019068553d2c25d0b33b83481795c552e0b47f.jpg",
         "qrCode": "",
         "signature": "个性签名"
     }]
@@ -39,7 +39,7 @@ module.exports = [{
         "qq": "00011",
         "email": "00011@qq.com",
         "type": "firends",
-        "iconSrc": "//images2015.cnblogs.com/blog/528573/201609/528573-20160925131419593-1613633261.jpg",
+        "iconSrc": "//ad-gold-cdn.xitu.io/1499913563353063825fa09e5e83359a90c91417e029e.jpg",
         "qrCode": "",
         "telphone":18812345678,
         "signature": "个性签名",
@@ -54,7 +54,7 @@ module.exports = [{
         "qq": "00011",
         "email": "00011@qq.com",
         "type": "firends",
-        "iconSrc": "//images2015.cnblogs.com/blog/528573/201609/528573-20160922181544949-1515459394.jpg",
+        "iconSrc": "//ad-gold-cdn.xitu.io/14999140634069b6825290779221783b3b59fbba0addd.jpg",
         "qrCode": "",
         "telphone":18812345678,
         "signature": "个性签名",
